@@ -1,5 +1,5 @@
 # Binabox - homework project
 
-Student: Sadkovska Oksana
+Student: Sadkovska Oksana :)
 
 Mentor: Talitskikh Dmitrii
