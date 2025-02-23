@@ -11,42 +11,46 @@
 
 <body>
   <header class="header">
-    <a href="/">
-      <img class="header-logo logo" src="image/logo.svg" alt="Logo" />
+    <a class="header-link" href="/">
+      <img class="header__logo logo" src="image/logo.svg" alt="Logo" />
     </a>
-    <nav class="header-navigation">
-      <ul>
-        <li class="header-navigation__element"><a href="#">Home</a></li>
-        <li class="header-navigation__element"><a href="#">Blog</a></li>
-        <li class="header-navigation__element"><a href="#">slider</a></li>
-        <li class="header-navigation__element"><a href="#">Contact Us</a></li>
+    <nav class="header__navigation">
+      <ul class="header__navigation-block">
+        <li class="header__element"><a href="#">Home</a></li>
+        <li class="header__element"><a href="#">Blog</a></li>
+        <li class="header__element"><a href="#">slider</a></li>
+        <li class="header__element"><a href="#">Contact Us</a></li>
       </ul>
     </nav>
-
-    <input class="header-search" type="search" placeholder="Search" />
-    <img class="header-search__icon" src="image/search.svg" alt="Search" />
-    <a class="header__btn button primary-btn" href="#" target="_blank">Discord</a>
-    <img class="button__icon" src="image/discord.svg" alt="Discort" />
+    <div class="header-search">
+      <input class="header-search__input" type="search" placeholder="Search" />
+      <img class="header-search__icon" src="image/search.svg" alt="Search" />
+    </div>
+  <div class="header-btn">
+    <a class="header-btn button button-secondary" href="#" target="_blank">Discord</a>
+    <img class="header-btn__icon" src="image/discord.svg" alt="Discort" />
     <button class="header__btn button button-primary">Connect</button>
-    <img class="button__icon" src="image/wallet.svg" alt="wallet" />
+    <img class="header-btn__icon" src="image/wallet.svg" alt="wallet" />
+  </div>
   </header>
+  
   <main>
     <section class="banner">
-      <h1 class="banner-heading">
+      <h1 class="banner__heading">
         WITH
-        <span class="banner-heading__text text__highlight">BINABOX</span> EXPLORE NFT COLLECTION
+        <span class="banner__highlighted-text">BINABOX</span> EXPLORE NFT COLLECTION
       </h1>
-      <p class="banner-text">We are the best way to check the rarity of NFT collection</p>
-      <dl class="banner-statistics statistics">
-        <dt class="statistics-numbers">2240+</dt>
-        <dd class="statistics-text">Total Iteam</dd>
+      <p class="banner__text">We are the best way to check the rarity of NFT collection</p>
+      <dl class="banner__statistics statistics">
+        <dt class="statistics__numbers">2240+</dt>
+        <dd class="statistics__text">Total Iteam</dd>
 
-        <dt class="statistics-numbers">1000+</dt>
-        <dd class="statistics-text">Profiles whitelisted</dd>
+        <dt class="statistics__numbers">1000+</dt>
+        <dd class="statistics__text">Profiles whitelisted</dd>
       </dl>
-      <button class="button primary-btn">Connect Wallet</button>
+      <button class="banner__btn button button-primary">Connect Wallet</button>
       <a class="button button-secondary" href="#" target="_blank">Whitelist now</a>
-      <img class="header__image" src="image/cube.png" alt="cube" />
+      <img class="banner__image" src="image/cube.png" alt="cube" />
     </section>
 
     <section class="slider">
@@ -102,15 +106,15 @@
     </section>
 
     <section class="blog">
-      <h2 class="blog-heading">Our blog</h2>
-      <article class="image-card">
+      <h2 class="blog__heading">Our blog</h2>
+      <article class="blog__card image-card">
         <img class="image-card__img" src="/image/lady.jpeg" alt="lady" />
         <img class="image-card__icon" src="image/user.svg" alt="user" />
         <p class="image-card__name">Tony Nguyen</p>
         <img class="image-card__icon" src="image/calendar.svg" alt="calendar" />
-        <time class="datetime" datetime="2022-06-20">20 Jun 2022</time>
+        <time class="image-card__datetime datetime" datetime="2022-06-20">20 Jun 2022</time>
         <h3 class="image-card__heading">Sonic live</h3>
-        <blockquote class="card-blockquote" cite="#">
+        <blockquote class="image-card__blockquote card-blockquote" cite="#">
           <p class="card-blockquote__text">
             One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
             nulla imperdiet...
@@ -120,14 +124,14 @@
         <a class="image-card__btn button-secondary" href="#">Read more ></a>
         <p class="image-card__label">NFT</p>
       </article>
-      <article class="image-card">
+      <article class="blog__card image-card">
         <img class="image-card__img" src="/image/sceleton-head.jpeg" alt="sceleton-head" />
         <img class="image-card__icon" src="image/user.svg" alt="user" />
         <p class="image-card__name">Tony Nguyen</p>
         <img class="image-card__icon" src="image/calendar.svg" alt="calendar" />
-        <time class="datetime" datetime="2022-06-20">20 Jun 2022</time>
+        <time class="image-card__datetime datetime" datetime="2022-06-20">20 Jun 2022</time>
         <h3 class="image-card__heading">Sonic Life</h3>
-        <blockquote class="card-blockquote" cite="#">
+        <blockquote class="image-card__blockquote card-blockquote" cite="#">
           <p class="card-blockquote__text">
             One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
             nulla imperdiet...
@@ -136,14 +140,14 @@
         <p class="image-card__label">NFT</p>
         <a class="image-card_btn button-secondary" href="#">Read more ></a>
       </article>
-      <article class="image-card">
+      <article class="blog__card image-card">
         <img class="image-card__img" src="/image/cat-head.jpeg" alt="cat-head" />
         <img class="image-card__icon" src="image/user.svg" alt="user" />
         <p class="image-card__name">Tony Nguyen</p>
         <img class="image-card__icon" src="image/calendar.svg" alt="calendar" />
-        <time class="datetime" datetime="2022-06-20">20 Jun 2022</time>
+        <time class="image-card__datetime datetime" datetime="2022-06-20">20 Jun 2022</time>
         <h3 class="image-card__heading">Sonic Life</h3>
-        <blockquote class="card-blockquote" cite="#">
+        <blockquote class="image-card__blockquote card-blockquote" cite="#">
           <p class="card-blockquote__text">
             One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
             nulla imperdiet...
@@ -152,14 +156,14 @@
         <p class="image-card__label">NFT</p>
         <a class="image-card_btn button-secondary" href="#">Read more ></a>
       </article>
-      <article class="image-card">
+      <article class="blog__card image-card">
         <img class="image-card__img" src="/image/monkey-head.jpeg" alt="monkey-head" />
         <img class="image-card__icon" src="image/user.svg" alt="user" />
         <p class="image-card__name">Tony Nguyen</p>
         <img class="image-card__icon" src="image/calendar.svg" alt="calendar" />
-        <time class="datetime" datetime="2022-06-20">20 Jun 2022</time>
+        <time class="image-card__datetime datetime" datetime="2022-06-20">20 Jun 2022</time>
         <h3 class="image-card__heading">Sonic Life</h3>
-        <blockquote class="card-blockquote" cite="#">
+        <blockquote class="image-card__blockquote card-blockquote" cite="#">
           <p class="card-blockquote__text">
             One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
             nulla imperdiet...
@@ -169,14 +173,14 @@
         <p class="image-card__label">NFT</p>
         <a class="image-card_btn button-secondary" href="#">Read more ></a>
       </article>
-      <article class="image-card">
+      <article class="blog__card image-card">
         <img class="image-card__img" src="/image/duck-head.jpeg" alt="duck-head" />
         <img class="image-card__icon" src="image/user.svg" alt="user" />
         <p class="image-card__name">Tony Nguyen</p>
         <img class="image-card__icon" src="image/calendar.svg" alt="calendar" />
-        <time class="datetime" datetime="2022-06-20">20 Jun 2022</time>
+        <time class="image-card__datetime datetime" datetime="2022-06-20">20 Jun 2022</time>
         <h3 class="image-card__heading">Sonic Life</h3>
-        <blockquote class="card-blockquote" cite="#">
+        <blockquote class="image-card__blockquote card-blockquote" cite="#">
           <p class="card-blockquote__text">
             One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
             nulla imperdiet...
@@ -186,14 +190,14 @@
         <p class="image-card__label">NFT</p>
         <a class="image-card_btn button-secondary" href="#">Read more ></a>
       </article>
-      <article class="image-card">
+      <article class="blog__card image-card">
         <img class="image-card__img" src="/image/frame-large.jpeg" alt="frame-large" />
         <img class="image-card__icon" src="image/user.svg" alt="user" />
         <p class="image-card__name">Tony Nguyen</p>
         <img class="image-card__icon" src="image/calendar.svg" alt="calendar" />
-        <time class="datetime" datetime="2022-06-20">20 Jun 2022</time>
+        <time class="image-card__datetime datetime" datetime="2022-06-20">20 Jun 2022</time>
         <h3 class="image-card__heading">Sonic Life</h3>
-        <blockquote class="card-blockquote" cite="#">
+        <blockquote class="image-card__blockquote card-blockquote" cite="#">
           <p class="card-blockquote__text">
             One September 22, 2021 A volutpat nulla eros, nulla ultrices nec
             nulla imperdiet...
@@ -214,12 +218,12 @@
         laborum velit esse cillum dolore eu fugiat nulla pariatu epteur sint
         occaecat
       </p>
-      <ul class="about-cards">
-        <li class="info-card">
+      <ul class="about__cards">
+        <li class="about__card info-card">
           <h3 class="info-card__heading">High quality</h3>
-          <p class="info__card__text">
-            Lorem Ipsum is simply dummy text of the printing and Ipsum
-            typesetting industry.
+          <p class="info-card__text">
+                Lorem Ipsum is simply dummy text of the printing and Ipsum
+                typesetting industry.
           </p>
         </li>
         <li class="info-card">
@@ -252,76 +256,76 @@
     </section>
     <section class="team">
       <h2 class="team__heading">Our team</h2>
-      <ul>
+      <ul class="team__block">
         <li>
           <img class="team__photo" src="image/photo-personal.jpg" alt="photo-personal" />
           <h3 class="team__heading">Jason Smith</h3>
           <p class="team__role">Co-founder</p>
-          <a class="team_link" href="#"><img class="team__icon" src="image/twitter.svg" alt="twitter" /></a>
-          <a class="team_link" href="#"><img class="team__icon" src="image/facebook.svg" alt="facebook" /></a>
-          <a class="team_link" href="#"><img class="team__icon" src="image/telegram.svg" alt="telegram" /></a>
-          <a class="team_link" href="#"><img class="team__icon" src="image/linkedin.svg" alt="linkedin" /></a>
-          <a class="team_link" href="#"><img class="team__icon" src="image/instagram.svg" alt="instagram" /></a>
+          <a class="team__link" href="#"><img class="team__icon" src="image/twitter.svg" alt="twitter" /></a>
+          <a class="team__link" href="#"><img class="team__icon" src="image/facebook.svg" alt="facebook" /></a>
+          <a class="team__link" href="#"><img class="team__icon" src="image/telegram.svg" alt="telegram" /></a>
+          <a class="team__link" href="#"><img class="team__icon" src="image/linkedin.svg" alt="linkedin" /></a>
+          <a class="team__link" href="#"><img class="team__icon" src="image/instagram.svg" alt="instagram" /></a>
         </li>
         <li>
           <img class="team__photo" src="image/photo-personal.jpg" alt="photo-personal" />
           <h3 class="team__heading">Jason Smith</h3>
           <p class="team__role">Co-founder</p>
-          <a class="team_link" href="#"><img class="team__icon" src="image/twitter.svg" alt="twitter" /></a>
-          <a class="team_link" href="#"><img class="team__icon" src="image/facebook.svg" alt="facebook" /></a>
-          <a class="team_link" href="#"><img class="team__icon" src="image/telegram.svg" alt="telegram" /></a>
-          <a class="team_link" href="#"><img class="team__icon" src="image/linkedin.svg" alt="linkedin" /></a>
-          <a class="team_link" href="#"><img class="team__icon" src="image/instagram.svg" alt="instagram" /></a>
+          <a class="team__link" href="#"><img class="team__icon" src="image/twitter.svg" alt="twitter" /></a>
+          <a class="team__link" href="#"><img class="team__icon" src="image/facebook.svg" alt="facebook" /></a>
+          <a class="team__link" href="#"><img class="team__icon" src="image/telegram.svg" alt="telegram" /></a>
+          <a class="team__link" href="#"><img class="team__icon" src="image/linkedin.svg" alt="linkedin" /></a>
+          <a class="team__link" href="#"><img class="team__icon" src="image/instagram.svg" alt="instagram" /></a>
         </li>
         <li>
           <img class="team__photo" src="image/photo-personal.jpg" alt="photo-personal" />
           <h3 class="team__heading">Jason Smith</h3>
           <p class="team__role">Co-founder</p>
-          <a class="team_link" href="#"><img class="team__icon" src="image/twitter.svg" alt="twitter" /></a>
-          <a class="team_link" href="#"><img class="team__icon" src="image/facebook.svg" alt="facebook" /></a>
-          <a class="team_link" href="#"><img class="team__icon" src="image/telegram.svg" alt="telegram" /></a>
-          <a class="team_link" href="#"><img class="team__icon" src="image/linkedin.svg" alt="linkedin" /></a>
-          <a class="team_link" href="#"><img class="team__icon" src="image/instagram.svg" alt="instagram" /></a>
+          <a class="team__link" href="#"><img class="team__icon" src="image/twitter.svg" alt="twitter" /></a>
+          <a class="team__link" href="#"><img class="team__icon" src="image/facebook.svg" alt="facebook" /></a>
+          <a class="team__link" href="#"><img class="team__icon" src="image/telegram.svg" alt="telegram" /></a>
+          <a class="team__link" href="#"><img class="team__icon" src="image/linkedin.svg" alt="linkedin" /></a>
+          <a class="team__link" href="#"><img class="team__icon" src="image/instagram.svg" alt="instagram" /></a>
         </li>
         <li>
           <img class="team__photo" src="image/photo-personal.jpg" alt="photo-personal" />
           <h3 class="team__heading">Jason Smith</h3>
           <p class="team__role">Co-founder</p>
-          <a class="team_link" href="#"><img class="team__icon" src="image/twitter.svg" alt="twitter" /></a>
-          <a class="team_link" href="#"><img class="team__icon" src="image/facebook.svg" alt="facebook" /></a>
-          <a class="team_link" href="#"><img class="team__icon" src="image/telegram.svg" alt="telegram" /></a>
-          <a class="team_link" href="#"><img class="team__icon" src="image/linkedin.svg" alt="linkedin" /></a>
-          <a class="team_link" href="#"><img class="team__icon" src="image/instagram.svg" alt="instagram" /></a>
+          <a class="team__link" href="#"><img class="team__icon" src="image/twitter.svg" alt="twitter" /></a>
+          <a class="team__link" href="#"><img class="team__icon" src="image/facebook.svg" alt="facebook" /></a>
+          <a class="team__link" href="#"><img class="team__icon" src="image/telegram.svg" alt="telegram" /></a>
+          <a class="team__link" href="#"><img class="team__icon" src="image/linkedin.svg" alt="linkedin" /></a>
+          <a class="team__link" href="#"><img class="team__icon" src="image/instagram.svg" alt="instagram" /></a>
         </li>
         <li>
           <img class="team__photo" src="image/photo-personal.jpg" alt="photo-personal" />
           <h3 class="team__heading">Jason Smith</h3>
           <p class="team__role">Co-founder</p>
-          <a class="team_link" href="#"><img class="team__icon" src="image/twitter.svg" alt="twitter" /></a>
-          <a class="team_link" href="#"><img class="team__icon" src="image/facebook.svg" alt="facebook" /></a>
-          <a class="team_link" href="#"><img class="team__icon" src="image/telegram.svg" alt="telegram" /></a>
-          <a class="team_link" href="#"><img class="team__icon" src="image/linkedin.svg" alt="linkedin" /></a>
-          <a class="team_link" href="#"><img class="team__icon" src="image/instagram.svg" alt="instagram" /></a>
+          <a class="team__link" href="#"><img class="team__icon" src="image/twitter.svg" alt="twitter" /></a>
+          <a class="team__link" href="#"><img class="team__icon" src="image/facebook.svg" alt="facebook" /></a>
+          <a class="team__link" href="#"><img class="team__icon" src="image/telegram.svg" alt="telegram" /></a>
+          <a class="team__link" href="#"><img class="team__icon" src="image/linkedin.svg" alt="linkedin" /></a>
+          <a class="team__link" href="#"><img class="team__icon" src="image/instagram.svg" alt="instagram" /></a>
         </li>
         <li>
           <img class="team__photo" src="image/photo-personal.jpg" alt="photo-personal" />
           <h3 class="team__heading">Jason Smith</h3>
           <p class="team__role">Co-founder</p>
-          <a class="team_link" href="#"><img class="team__icon" src="image/twitter.svg" alt="twitter" /></a>
-          <a class="team_link" href="#"><img class="team__icon" src="image/facebook.svg" alt="facebook" /></a>
-          <a class="team_link" href="#"><img class="team__icon" src="image/telegram.svg" alt="telegram" /></a>
-          <a class="team_link" href="#"><img class="team__icon" src="image/linkedin.svg" alt="linkedin" /></a>
-          <a class="team_link" href="#"><img class="team__icon" src="image/instagram.svg" alt="instagram" /></a>
+          <a class="team__link" href="#"><img class="team__icon" src="image/twitter.svg" alt="twitter" /></a>
+          <a class="team__link" href="#"><img class="team__icon" src="image/facebook.svg" alt="facebook" /></a>
+          <a class="team__link" href="#"><img class="team__icon" src="image/telegram.svg" alt="telegram" /></a>
+          <a class="team__link" href="#"><img class="team__icon" src="image/linkedin.svg" alt="linkedin" /></a>
+          <a class="team__link" href="#"><img class="team__icon" src="image/instagram.svg" alt="instagram" /></a>
         </li>
         <li>
           <img class="team__photo" src="image/photo-personal.jpg" alt="photo-personal" />
           <h3 class="team__heading">Jason Smith</h3>
           <p class="team__role">Co-founder</p>
-          <a class="team_link" href="#"><img class="team__icon" src="image/twitter.svg" alt="twitter" /></a>
-          <a class="team_link" href="#"><img class="team__icon" src="image/facebook.svg" alt="facebook" /></a>
-          <a class="team_link" href="#"><img class="team__icon" src="image/telegram.svg" alt="telegram" /></a>
-          <a class="team_link" href="#"><img class="team__icon" src="image/linkedin.svg" alt="linkedin" /></a>
-          <a class="team_link" href="#"><img class="team__icon" src="image/instagram.svg" alt="instagram" /></a>
+          <a class="team__link" href="#"><img class="team__icon" src="image/twitter.svg" alt="twitter" /></a>
+          <a class="team__link" href="#"><img class="team__icon" src="image/facebook.svg" alt="facebook" /></a>
+          <a class="team__link" href="#"><img class="team__icon" src="image/telegram.svg" alt="telegram" /></a>
+          <a class="team__link" href="#"><img class="team__icon" src="image/linkedin.svg" alt="linkedin" /></a>
+          <a class="team__link" href="#"><img class="team__icon" src="image/instagram.svg" alt="instagram" /></a>
         </li>
       </ul>
     </section>
@@ -329,64 +333,64 @@
     <section class="faq">
       <div class="faq__container">
         <h2 class="faq__heading">FAQs</h2>
-        <details class="details-block" open>
-          <summary class="details-block__heading">What are the NFTs?</summary>
-          <p class="details-block__text">
+        <details class="faq__details details" open>
+          <summary class="details__heading">What are the NFTs?</summary>
+          <p class="details__text">
             Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis.
             Nulla dapibus urna volutpat venenatis, risus faucibus.
           </p>
         </details>
-        <details class="details-block">
-          <summary class="details-block__heading">How do i get NFTs?</summary>
+        <details class="faq__details details" >
+          <summary class="details__heading">How do i get NFTs?</summary>
         </details>
-        <details class="details-block">
-          <summary class="details-block__heading">How can we buy your NFTs?</summary>
+        <details class="faq__details details" >
+          <summary class="details__heading">How can we buy your NFTs?</summary>
         </details>
-        <details class="details-block">
-          <summary class="details-block__heading">Who are the team behind the project?</summary>
+        <details class="faq__details details" >
+          <summary class="details__heading">Who are the team behind the project?</summary>
         </details>
       </div>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="footer-top">
-      <div class="footer-top__left">
-        <a class="logo-link" href="#"> <img class="footer__logo logo" src="image/logos.png" alt="Logo" /></a>
+    <div class="footer__top">
+      <div class="footer__logo-wrap">
+        <a class="footer__logo-link" href="#"> <img class="footer__logo logo" src="image/logos.png" alt="Logo" /></a>
         <p class="footer__text">We are the best way to check the rarity of NFT collection.</p>
       </div>
 
-      <div class="footer-top__right">
-        <div class="footer-nav">
-          <p class="footer-nav__heading">Subscribe</p>
-          <ul class="footer-nav__block">
-            <li class="footer-nav__item"><a class="footer-nav__link" href="#">Home</a></li>
-            <li class="footer-nav__item"><a class="footer-nav__link" href="#">Blog</a></li>
-            <li class="footer-nav__item"><a class="footer-nav__link" href="#">Slider</a></li>
-            <li class="footer-nav__item"><a class="footer-nav__link" href="#">Contact Us</a></li>
+      <div class="footer__subscribe">
+        <div class="footer__nav subscribe-nav">
+          <p class="subscribe-nav__heading">Subscribe</p>
+          <ul class="subscribe-nav__block">
+            <li class="subscribe-nav__item"><a class="footer-nav__link" href="#">Home</a></li>
+            <li class="subscribe-nav__item"><a class="footer-nav__link" href="#">Blog</a></li>
+            <li class="subscribe-nav__item"><a class="footer-nav__link" href="#">Slider</a></li>
+            <li class="subscribe-nav__item"><a class="footer-nav__link" href="#">Contact Us</a></li>
           </ul>
         </div>
 
-        <div class="footer-info">
-          <p class="footer-info__heading">Company</p>
+        <div class="footer__info">
+          <p class="footer__heading">Company</p>
 
-          <ul class="footer-info__block">
-            <li class="footer-info__item"><a class="footer-info__link" href="#">Terms Conditions</a></li>
-            <li class="footer-info__item"><a class="footer-info__link" href="#">Privacy Policy</a></li>
-            <li class="footer-info__item"><a class="footer-info__link" href="#">White paper</a></li>
-            <li class="footer-info__item"><a class="footer-info__link" href="#">Help Center</a></li>
+          <ul class="footer__block-pages info-pages">
+            <li class="info-pages__item"><a class="footer-info__link" href="#">Terms Conditions</a></li>
+            <li class="info-pages__item"><a class="footer-info__link" href="#">Privacy Policy</a></li>
+            <li class="info-pages__item"><a class="footer-info__link" href="#">White paper</a></li>
+            <li class="info-pages__item"><a class="footer-info__link" href="#">Help Center</a></li>
           </ul>
         </div>
       </div>
     </div>
 
-    <div class="footer-bottom">
-      <div class="footer-bottom__left">
-        <small class="footer__license">BINABOX 2022 - ALL rights reserved</small>
+    <div class="footer__license license">
+      <div class="flicense__block">
+        <small class="license__text">BINABOX 2022 - ALL rights reserved</small>
       </div>
 
-      <div class="footer-bottom__right">
-        <ul class="footer-social social__links-block">
+      <div class="footer__social">
+        <ul class="footer__links-block social">
           <li class="social__link">
             <a href="#"><img class="social__img" src="image/twitter.svg" alt="twitter" /></a>
           </li>
