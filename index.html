@@ -11,11 +11,11 @@
 
 <body>
   <header class="header">
-    <a class="header-link" href="/">
+    <a class="header__link" href="/">
       <img class="header__logo logo" src="image/logo.svg" alt="Logo" />
     </a>
     <nav class="header__navigation">
-      <ul class="header__navigation-block">
+      <ul class="header__list">
         <li class="header__element"><a href="#">Home</a></li>
         <li class="header__element"><a href="#">Blog</a></li>
         <li class="header__element"><a href="#">slider</a></li>
@@ -27,9 +27,9 @@
       <img class="header-search__icon" src="image/search.svg" alt="Search" />
     </div>
   <div class="header-btn">
-    <a class="header-btn button button-secondary" href="#" target="_blank">Discord</a>
+    <a class="header-btn__secondary button" href="#" target="_blank">Discord</a>
     <img class="header-btn__icon" src="image/discord.svg" alt="Discort" />
-    <button class="header__btn button button-primary">Connect</button>
+    <button class="header-btn__primary button">Connect</button>
     <img class="header-btn__icon" src="image/wallet.svg" alt="wallet" />
   </div>
   </header>
@@ -67,26 +67,23 @@
           <p class="product-card__label">New</p>
         </figcaption>
       </figure>
-
-      <figure class="product-card">
-        <img class="product-card__img" src="img/cat.jpeg" alt="cat" />
+      <figure class="slider__product-card product-card">
+        <img class="product-card__img" src="img/cat.jpeg" alt="cat"  />
         <figcaption class="product-card__description">
           <p class="product-card__price">$199</p>
           <p class="product-card__title">Name Product</p>
           <p class="product-card__label">New</p>
         </figcaption>
       </figure>
-
-      <figure class="product-card">
+      <figure class="slider__product-card product-card">
         <img class="product-card__img" src="img/scissors.jpeg" alt="scissors" />
         <figcaption class="product-card__description">
           <p class="product-card__price">$199</p>
-          <p>Name Product</p>
-          <button disabled="disabled">Sold out</button>
+          <p class="product-card__title">Name Product</p>
+          <p class="product-card__label">New</p>
         </figcaption>
       </figure>
-
-      <figure class="product-card">
+      <figure class="slider__product-card product-card">
         <img class="product-card__img" src="img/card.jpeg" alt="card" />
         <figcaption class="product-card__description">
           <p class="product-card__price">$199</p>
@@ -94,8 +91,7 @@
           <p class="product-card__label">New</p>
         </figcaption>
       </figure>
-
-      <figure class="product-card">
+      <figure class="slider__product-card product-card">
         <img class="product-card__img" src="img/frame.jpeg" alt="frame" />
         <figcaption class="product-card__description">
           <p class="product-card__price">$199</p>
@@ -104,7 +100,6 @@
         </figcaption>
       </figure>
     </section>
-
     <section class="blog">
       <h2 class="blog__heading">Our blog</h2>
       <article class="blog__card image-card">
@@ -385,7 +380,7 @@
     </div>
 
     <div class="footer__license license">
-      <div class="flicense__block">
+      <div class="license__block">
         <small class="license__text">BINABOX 2022 - ALL rights reserved</small>
       </div>
 
