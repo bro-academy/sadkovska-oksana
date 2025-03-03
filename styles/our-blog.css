@@ -1,0 +1,27 @@
+.blog__heading {
+    font-family: "Bakbak One", Georgia, 'Times New Roman', Times, serif;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.image-card__name .datetime {
+    font-weight: 600;
+    font-style: 14px;
+}
+
+.image-card__heading {
+    font-family: inherit;
+    font-weight: 400;
+    font: 36px;
+}
+
+.card-blockquote__text {
+    font-style: 16px;
+    font-weight: 400;
+}
+
+.blog__card,
+.image-card__btn {
+
+    background-color: var(--color-background-alternative);
+}

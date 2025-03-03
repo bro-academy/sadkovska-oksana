@@ -1,181 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Binabox blog page</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="header">
-      <a class="header__link" href="/">
-        <img class="header__logo logo" src="image/logo.svg" alt="Logo" />
-      </a>
-      <nav class="header__navigation">
-        <ul class="header__list">
-          <li class="header__element"><a href="#">Home</a></li>
-          <li class="header__element"><a href="#">Blog</a></li>
-          <li class="header__element"><a href="#">slider</a></li>
-          <li class="header__element"><a href="#">Contact Us</a></li>
-        </ul>
-      </nav>
-      <div class="header-search">
-        <input class="header-search__input" type="search" placeholder="Search" />
-        <img class="header-search__icon" src="image/search.svg" alt="Search" />
-      </div>
-    <div class="header-btn">
-      <a class="header-btn__secondary button" href="#" target="_blank">Discord</a>
-      <img class="header-btn__icon" src="image/discord.svg" alt="Discort" />
-      <button class="header-btn__primary button">Connect</button>
-      <img class="header-btn__icon" src="image/wallet.svg" alt="wallet" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Binabox blog page</title>
+  <link rel="stylesheet" type="text/css" href="normalize.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Poppins:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css" />
+</head>
+
+<body>
+  <!-------------- HEADER -------------->
+  <header class="header">
+    <a class="header__link logo" href="/">
+      <img class="header__logo logo_img" src="assets/logo.svg" alt="Logo" />
+      <img src="assets/logo-heading.svg" class="logo__heading" alt="Logo"></img>
+    </a>
+    <nav class="header__navigation">
+      <ul class="header__list">
+        <li class="header__element"><a class="header__link-menu" href="#">Home</a></li>
+        <li class="header__element"><a class="header__link-menu" href="#">Blog</a></li>
+        <li class="header__element"><a class="header__link-menu" href="#">Slider</a></li>
+        <li class="header__element"><a class="header__link-menu" href="#">Contact Us</a></li>
+      </ul>
+    </nav>
+    <div class="header__search">
+      <input class="header__input" type="search" placeholder="Search" />
+      <!-- <img class="header__icon" src="assets/search.svg" alt="Search" /> -->
     </div>
-    </header>
-    <main>
-      <div  class="our-blog"> 
-        <h1 class="our-blog__heading">Our blog</h1>
-        <ul class="our-blog__menu">
-            <li class="our-blog__item">Home</li>
-            <li class="our-blog__item">Our Blog</li>
-            <li class="our-blog__item">The Basilisks NFT</li>
+
+    <div class="header__btn">
+      <a class="button button--secondary" href="#" target="_blank">
+        <img src="assets/discord.svg" class="button__icon button__icon--left" alt="discort" />
+        Discord
+      </a>
+      <button class="button button--primary">
+        <img src="assets/wallet.svg" class="button__icon button__icon--left" alt="wallet" />
+        Connect</button>
+    </div>
+
+  </header>
+  <!-------------- /HEADER -------------->
+  <!-------------- OUR BLOG -------------->
+
+
+  <main>
+    <div class="our-blog">
+      <h1 class="our-blog__heading">Our blog</h1>
+      <ul class="our-blog__menu">
+        <li class="our-blog__item">Home</li>
+        <li class="our-blog__item">Our Blog</li>
+        <li class="our-blog__item">The Basilisks NFT</li>
+      </ul>
+      <section class="our-blog__aside aside-categories">
+        <h2 class="aside-categories__heading">Categories</h2>
+        <ul class="aside-categories_block">
+          <li class="aside-categories__item1">Our blog(12)</li>
+          <li class="aside-categories__item2">Metaverse (24)</li>
+          <li class="aside-categories__item3">Gaming (24)</li>
+          <li class="aside-categories__item4">Art (24)</li>
+          <li class="aside-categories__item5">Robot (24)</li>
+          <li class="aside-categories__item6">Lauchpad (24)</li>
+          <li class="aside-categories__item7">Crypto (430)</li>
         </ul>
-        <section class="our-blog__aside aside-categories">
-            <h2 class="aside-categories__heading">Categories</h2>
-            <ul class="aside-categories_block">
-                <li class="aside-categories__item1">Our blog(12)</li>
-                <li class="aside-categories__item2">Metaverse (24)</li>
-                <li class="aside-categories__item3">Gaming (24)</li>
-                <li class="aside-categories__item4">Art (24)</li>
-                <li class="aside-categories__item5">Robot (24)</li>
-                <li class="aside-categories__item6">Lauchpad (24)</li>
-                <li class="aside-categories__item7">Crypto (430)</li>
-            </ul>
-          </section>
-            <section class="our-blog__tags tags-menu" >
-            <h2 class="tags-menu__heading">Tag</h2>
-            <p class="tags-menu__item">NFT</p>
-            <p class="tags-menu__item">ICO</p>
-            <p class="tags-menu__item">Robot</p>
-            <p class="tags-menu__item">Crypto</p>
-            <p class="tags-menu__item">Lauchpad</p>
-            <p class="tags-menu__item">Metaverse</p>
-        </section>
+      </section>
+      <section class="our-blog__tags tags-menu">
+        <h2 class="tags-menu__heading">Tag</h2>
+        <p class="tags-menu__item">NFT</p>
+        <p class="tags-menu__item">ICO</p>
+        <p class="tags-menu__item">Robot</p>
+        <p class="tags-menu__item">Crypto</p>
+        <p class="tags-menu__item">Lauchpad</p>
+        <p class="tags-menu__item">Metaverse</p>
+      </section>
+    </div>
+    <!-------------- //OUR BLOG -------------->
+
+    <!-------------- MAIN IMAGE  -------------->
+
+
+    <section class="main-image">
+      <img class="main-image__img" src="#" alt="dragon.jpeg">
+      <p class="main-image__description">Photo caption</p>
+      <h2 class="main-image__heading">The Basilisks NFT</h2>
+      <p class="main-image__label">Gaming</p>
+      <img class="main-image__icon" src="image/user.svg" alt="user" />
+      <p class="main-image__autor">Tony Nguyen</p>
+      <img class="main-image__icon" src="image/calendar.svg" alt="calendar" />
+      <time class="main-image__datetime" datetime="2022-06-20">20 Jun 2022</time>
+      <p class="main-image__text main-text">The Basilisks that players collect are represented with NFTs on Ethereum’s
+        blockchain with real-world value.
+        Players use the <span class="main-text__linked">Basilisks they have</span> gathered to battle other players to
+        win ether (ETH).
+        In Balthazar Dragons, <mark class="main-image__mark">players</mark> are immersed in a 3D open world to explore
+        and capture dragon-like beasts called Basilisks.
+        Balthazar Dragons is an upcoming fantasy role-playing game developed on the Ethereum blockchain by a
+        decentralized autonomous organization (DAO) called the Balthazar DAO.</p>
+      <ul class="main-image__list list-paragpaph">
+        <li class="list-paragpaph__item">The Basilisks that players collect are represented with NFTs on Ethereum’s
+          blockchain with real-world value. Players use the Basilisks they have gathered to battle other players to win
+          ether (ETH).</li>
+        <li class="list-paragpaph__item">In Balthazar Dragons, players are immersed in a 3D open world to explore and
+          capture dragon-like beasts called Basilisks.
+          Balthazar Dragons is an upcoming fantasy role-playing game developed on the Ethereum blockchain by a
+          decentralized autonomous organization (DAO) called the Balthazar DAO.</li>
+      </ul>
+      <ol class="main-image__order list-order">
+        <li class="list-order__item"><a class="list-order__link"><img class="list-order__img" src="#" alt="logo">List
+            name 1</a></li>
+        <li class="list-order__item"><a class="list-order__link"><img class="list-order__img" src="#" alt="logo">List
+            name 2</a></li>
+        <li class="list-order__item"><a class="list-order__link"><img class="list-order__img" src="#" alt="logo">List
+            name 3</a></li>
+        <li class="list-order__item"><a class="list-order__link"><img class="list-order__img" src="#" alt="logo">List
+            name 1</a></li>
+      </ol>
+    </section>
+
+    <!-------------- // MAIN IMAGE  -------------->
+
+    <!-------------- MAIN INFO  -------------->
+
+
+
+    <section class="main-info">
+      <blockquote class="main-info__blockquote blockquote-blog">
+        <p class="blockquote-blog__text">“The first huge metaverse arena to arrange live sports, hang out and even make
+          bets and wagers”</p>
+        <img class="blockquote-blog__icon" src="#" alt="stars">
+        <cite class="blockquote-blog__cite">Markout Corporation</cite>
+        <span class="blockquote-blog__rating">8.5/10</span>
+      </blockquote>
+      <img class="main-info__image" src="#" alt="vasilisk1">
+      <p class="main-info__img-caption">Photo caption</p>
+      <img class="main-info__image" src="#" alt="vasilisk2">
+      <p class="main-info__img-caption">Photo caption</p>
+      <h2 class="main-info__heading">NFTs are digital assets that represent real-world objects</h2>
+      <p class="main-info__text">Setting up your avatar and personalizing your nickname on Binance is quick and easy.
+        Users can go to binance.com under Dashboard > Settings > My Profile > Avatar and Nickname. For those of you who
+        own NFT assets, you can select the NFT you want to use from your collection as your avatar to personalize your
+        profile.
+        For users who do not own any NFT avatars, check out the NFT avatar collections page to get started.</p>
+      <p class="main-info__text"> Alternatively, if you’re on nft.binance.com, go to User Center > Settings > Basic >
+        Set Avatar and Nickname, and you’ll be redirected to the main site. Binance NFT Creators have the option of
+        setting their Avatars on nft.binance.com.
+        Once you set your new unique nickname, it will be standardized and used across the Binance ecosystem.</p>
+      <h2 class="main-info__heading">NFT Avatar Generators</h2>
+      <p class="main-info__text">You can find a range of NFT marketplaces where you can buy existing NFTs or list your
+        own NFTs for sale.</p>
+    </section>
+
+    <!-------------- // MAIN INFO  -------------->
+
+
+
+
+    <section class="footer-tags">
+      <h2 class="footer-tags__heading">Tags:</h2>
+      <ul class="footer-tags__block">
+        <li class="footer-tags__item"><a class="footer-tags__link" href="#">NFT</a></li>
+        <li class="footer-tags__item"><a class="footer-tags__link" href="#">ICO</a></li>
+        <li class="footer-tags__item"><a class="footer-tags__link" href="#">Crypto</a></li>
+      </ul>
+      <h3 class="footer-tags__share share">Share</h3>
+      <ul class="share__block">
+        <li class="share__item"><a class="share__link" href="#"><img class="share__icon" src="twitter-icon.png"
+              alt="Twitter"></a></li>
+        <li class="share__item"><a class="share__link" href="#"><img class="share__icon" src="facebook-icon.png"
+              alt="Facebook"></a></li>
+        <li class="share__item"><a class="share__link" href="#"><img class="share__icon" src="instagram-icon.png"
+              alt="Instagram"></a></li>
+      </ul>
+    </section>
+
+  </main>
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__logo-wrap">
+        <a class="footer__logo-link" href="#"> <img class="footer__logo logo" src="image/logos.png" alt="Logo" /></a>
+        <p class="footer__text">We are the best way to check the rarity of NFT collection.</p>
       </div>
-        <section class="main-image">
-            <img class="main-image__img" src="#" alt="dragon.jpeg">
-            <p class="main-image__description">Photo caption</p>
-                <h2 class="main-image__heading">The Basilisks NFT</h2>
-            <p class="main-image__label">Gaming</p>
-            <img class="main-image__icon" src="image/user.svg" alt="user" />
-          <p class="main-image__autor">Tony Nguyen</p>
-          <img class="main-image__icon"  src="image/calendar.svg" alt="calendar" />
-          <time  class="main-image__datetime" datetime="2022-06-20">20 Jun 2022</time>
-          <p class="main-image__text main-text">The Basilisks that players collect are represented with NFTs on Ethereum’s blockchain with real-world value. 
-            Players use the <span class="main-text__linked">Basilisks they have</span> gathered to battle other players to win ether (ETH).
-            In Balthazar Dragons, <mark class="main-image__mark">players</mark> are immersed in a 3D open world to explore and capture dragon-like beasts called Basilisks. 
-             Balthazar Dragons is an upcoming fantasy role-playing game developed on the Ethereum blockchain by a decentralized autonomous organization (DAO) called the Balthazar DAO.</p>
-             <ul class="main-image__list list-paragpaph">
-                <li class="list-paragpaph__item">The Basilisks that players collect are represented with NFTs on Ethereum’s blockchain with real-world value. Players use the Basilisks they have gathered to battle other players to win ether (ETH).</li>
-                <li class="list-paragpaph__item">In Balthazar Dragons, players are immersed in a 3D open world to explore and capture dragon-like beasts called Basilisks. 
-                     Balthazar Dragons is an upcoming fantasy role-playing game developed on the Ethereum blockchain by a decentralized autonomous organization (DAO) called the Balthazar DAO.</li>
-             </ul>
-             <ol class="main-image__order list-order">
-                <li class="list-order__item"><a class="list-order__link"><img class="list-order__img" src="#" alt="logo">List name 1</a></li>
-                <li class="list-order__item"><a class="list-order__link"><img class="list-order__img" src="#" alt="logo">List name 2</a></li>
-                <li class="list-order__item"><a class="list-order__link"><img class="list-order__img" src="#" alt="logo">List name 3</a></li>
-                <li class="list-order__item"><a class="list-order__link"><img class="list-order__img" src="#" alt="logo">List name 1</a></li>
-             </ol>
-        </section>
-        <section class="main-info">
-            <blockquote class="main-info__blockquote blockquote-blog">
-                <p class="blockquote-blog__text">“The first huge metaverse arena to arrange live sports, hang out and even make bets and wagers”</p>
-                <img class="blockquote-blog__icon" src="#" alt="stars">
-                <cite class="blockquote-blog__cite" >Markout Corporation</cite>
-                <span class="blockquote-blog__rating">8.5/10</span>
-            </blockquote>
-            <img class="main-info__image" src="#" alt="vasilisk1">
-            <p class="main-info__img-caption">Photo caption</p>
-            <img  class="main-info__image" src="#" alt="vasilisk2">
-            <p class="main-info__img-caption">Photo caption</p>
-            <h2 class="main-info__heading">NFTs are digital assets that represent real-world objects</h2>
-            <p class="main-info__text">Setting up your avatar and personalizing your nickname on Binance is quick and easy. Users can go to binance.com under Dashboard > Settings > My Profile > Avatar and Nickname. For those of you who own NFT assets, you can select the NFT you want to use from your collection as your avatar to personalize your profile. 
-                For users who do not own any NFT avatars, check out the NFT avatar collections page to get started.</p>
-               <p class="main-info__text"> Alternatively, if you’re on nft.binance.com, go to User Center > Settings > Basic > Set Avatar and Nickname, and you’ll be redirected to the main site. Binance NFT Creators have the option of setting their Avatars on nft.binance.com. 
-                Once you set your new unique nickname, it will be standardized and used across the Binance ecosystem.</p>
-                <h2 class="main-info__heading">NFT Avatar Generators</h2>
-                <p class="main-info__text">You can find a range of NFT marketplaces where you can buy existing NFTs or list your own NFTs for sale.</p>
-               </section>
-               <section class="footer-tags">
-                    <h2 class="footer-tags__heading">Tags:</h2>
-                    <ul class="footer-tags__block">
-                        <li class="footer-tags__item"><a  class="footer-tags__link" href="#">NFT</a></li>
-                        <li class="footer-tags__item"><a class="footer-tags__link" href="#">ICO</a></li>
-                        <li class="footer-tags__item"><a class="footer-tags__link" href="#">Crypto</a></li>
-                    </ul>
-                    <h3 class="footer-tags__share share">Share</h3>
-                    <ul class="share__block">
-                        <li class="share__item"><a  class="share__link" href="#"><img class="share__icon" src="twitter-icon.png" alt="Twitter"></a></li>
-                        <li class="share__item"><a class="share__link" href="#"><img class="share__icon" src="facebook-icon.png" alt="Facebook"></a></li>
-                        <li class="share__item"><a class="share__link" href="#"><img class="share__icon" src="instagram-icon.png" alt="Instagram"></a></li>
-                    </ul>
-        </section>
-    </main>
-    <footer class="footer">
-      <div class="footer__top">
-        <div class="footer__logo-wrap">
-          <a class="footer__logo-link" href="#"> <img class="footer__logo logo" src="image/logos.png" alt="Logo" /></a>
-          <p class="footer__text">We are the best way to check the rarity of NFT collection.</p>
+
+      <div class="footer__subscribe">
+        <div class="footer__nav subscribe-nav">
+          <p class="subscribe-nav__heading">Subscribe</p>
+          <ul class="subscribe-nav__block">
+            <li class="subscribe-nav__item"><a class="footer-nav__link" href="#">Home</a></li>
+            <li class="subscribe-nav__item"><a class="footer-nav__link" href="#">Blog</a></li>
+            <li class="subscribe-nav__item"><a class="footer-nav__link" href="#">Slider</a></li>
+            <li class="subscribe-nav__item"><a class="footer-nav__link" href="#">Contact Us</a></li>
+          </ul>
         </div>
-  
-        <div class="footer__subscribe">
-          <div class="footer__nav subscribe-nav">
-            <p class="subscribe-nav__heading">Subscribe</p>
-            <ul class="subscribe-nav__block">
-              <li class="subscribe-nav__item"><a class="footer-nav__link" href="#">Home</a></li>
-              <li class="subscribe-nav__item"><a class="footer-nav__link" href="#">Blog</a></li>
-              <li class="subscribe-nav__item"><a class="footer-nav__link" href="#">Slider</a></li>
-              <li class="subscribe-nav__item"><a class="footer-nav__link" href="#">Contact Us</a></li>
-            </ul>
-          </div>
-  
-          <div class="footer__info">
-            <p class="footer__heading">Company</p>
-  
-            <ul class="footer__block-pages info-pages">
-              <li class="info-pages__item"><a class="footer-info__link" href="#">Terms Conditions</a></li>
-              <li class="info-pages__item"><a class="footer-info__link" href="#">Privacy Policy</a></li>
-              <li class="info-pages__item"><a class="footer-info__link" href="#">White paper</a></li>
-              <li class="info-pages__item"><a class="footer-info__link" href="#">Help Center</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-  
-      <div class="footer__license license">
-        <div class="flicense__block">
-          <small class="license__text">BINABOX 2022 - ALL rights reserved</small>
-        </div>
-  
-        <div class="footer__social">
-          <ul class="footer__links-block social">
-            <li class="social__link">
-              <a href="#"><img class="social__img" src="image/twitter.svg" alt="twitter" /></a>
-            </li>
-            <li class="social__link">
-              <a href="#"><img class="social__img" src="image/facebook.svg" alt="facebook" /></a>
-            </li>
-            <li class="social__link">
-              <a href="#"><img class="social__img" src="image/telegram.svg" alt="telegram" /></a>
-            </li>
-            <li class="social__link">
-              <a href="#"><img class="social__img" src="image/tik-tok.svg" alt="tik-tok" /></a>
-            </li>
-            <li class="social__link">
-              <a href="#"><img class="social__img" src="image/discord.svg" alt="discord" /></a>
-            </li>
+
+        <div class="footer__info">
+          <p class="footer__heading">Company</p>
+
+          <ul class="footer__block-pages info-pages">
+            <li class="info-pages__item"><a class="footer-info__link" href="#">Terms Conditions</a></li>
+            <li class="info-pages__item"><a class="footer-info__link" href="#">Privacy Policy</a></li>
+            <li class="info-pages__item"><a class="footer-info__link" href="#">White paper</a></li>
+            <li class="info-pages__item"><a class="footer-info__link" href="#">Help Center</a></li>
           </ul>
         </div>
       </div>
-    </footer>
+    </div>
+
+    <div class="footer__license license">
+      <div class="flicense__block">
+        <small class="license__text">BINABOX 2022 - ALL rights reserved</small>
+      </div>
+
+      <div class="footer__social">
+        <ul class="footer__links-block social">
+          <li class="social__link">
+            <a href="#"><img class="social__img" src="image/twitter.svg" alt="twitter" /></a>
+          </li>
+          <li class="social__link">
+            <a href="#"><img class="social__img" src="image/facebook.svg" alt="facebook" /></a>
+          </li>
+          <li class="social__link">
+            <a href="#"><img class="social__img" src="image/telegram.svg" alt="telegram" /></a>
+          </li>
+          <li class="social__link">
+            <a href="#"><img class="social__img" src="image/tik-tok.svg" alt="tik-tok" /></a>
+          </li>
+          <li class="social__link">
+            <a href="#"><img class="social__img" src="image/discord.svg" alt="discord" /></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 </body>
+
 </html>

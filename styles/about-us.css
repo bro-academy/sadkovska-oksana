@@ -1,0 +1,20 @@
+.about__heading .info-card__heading {
+    font-family: "Bakbak One", Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 36px;
+}
+
+.about__text {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.info-card__heading {
+    font-size: 24px;
+}
+
+.info-card__text {
+    font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
+    font-size: 18px;
+
+}

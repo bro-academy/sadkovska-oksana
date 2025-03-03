@@ -1,0 +1,43 @@
+@import url(ui-elements.css);
+@import url(header.css);
+@import url(banner.css);
+@import url(product-cards.css);
+@import url(our-blog.css);
+@import url(about-us.css);
+@import url(our-team.css);
+@import url(faq.css);
+@import url(footer.css);
+@import url(main-image.css);
+@import url(main-info.css);
+
+
+
+
+:root {
+    --color-primary: rgba(2, 101, 220, 1);
+    --color-secondary: rgba(245, 248, 251, 1);
+    --color-background: rgba(13, 13, 21, 1);
+    --color-border-transparent: rgba(208, 215, 251, 0.17);
+    --color-critical: rgba(234, 56, 41, 1);
+    --color-background-alternative: rgba(29, 28, 40, 1);
+    --color-text-secondary: rgba(239, 245, 250, 0.82);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
+    color: var(--color-secondary);
+    background-color: var(--color-background);
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
