@@ -1,0 +1,15 @@
+.blockquote-blog__text {
+    font-family: "Bakbak One", Georgia, 'Times New Roman', Times, serif;
+    font-size: 28px;
+    line-height: 36px;
+    background-color: var(--color-elements-invert);
+}
+
+.blockquote-blog__cite .blockquote-blog__rating {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+}
+.blockquote-blog {
+    background-color: var(--color-elements-invert);
+}

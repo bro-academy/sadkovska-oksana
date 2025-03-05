@@ -1,0 +1,19 @@
+.product-card__price {
+    font-family: "Bakbak One", Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 36px;
+}
+
+.product-card__title {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.product-card__label--sold {
+    background-color: var(--color-critical);
+    color: var(--color-secondary);
+}
+
+.product-card {
+    background-color: var(--color-background-alternative);
+}

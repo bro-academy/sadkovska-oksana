@@ -1,0 +1,31 @@
+.main-text__linked{
+    color: var(--color-primary);
+ 
+}
+.main-image__mark{
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+}
+.main-image__label {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+}
+.main-image__heading{
+    font-size: 36px;
+    line-height: 48px;
+}
+.main-image__text .main-image__list 
+.main-info__text {
+    font-size: 18px;
+    line-height: 28px;
+}
+.list-order  li{
+    list-style: none;
+    font-size: 18px;
+    line-height: 28px;
+}
+.main-info__heading {
+    font-size: 28px;
+    line-height: 36px;
+
+}

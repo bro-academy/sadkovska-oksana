@@ -1,0 +1,10 @@
+.team__heading {
+    font-family: "Bakbak One", Georgia, 'Times New Roman', Times, serif;
+    font-style: 24px;
+}
+
+.team__role {
+    font-style: 18px;
+    line-height: 28px;
+    color: var(--color-text-secondary);
+}
