@@ -12,3 +12,7 @@
 .faq__details details {
     background-color: var(--color-background-alternative);
 }
+.details__heading {
+    list-style-type: none;
+
+}
