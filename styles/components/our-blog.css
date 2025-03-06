@@ -1,5 +1,5 @@
 .blog__heading {
-    font-family: "Bakbak One", Georgia, 'Times New Roman', Times, serif;
+    font-family: "var(--font-family-secondary)";
     font-size: 36px;
     font-weight: 400;
 }
@@ -25,7 +25,7 @@
 
 
 .our-blog__heading {
-    font-family: "Bakbak One", Georgia, 'Times New Roman', Times, serif;
+    font-family: "var(--font-family-secondary)";
     font-size: 56px;
     line-height: 62px;
 

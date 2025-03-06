@@ -1,15 +1,15 @@
 @import url(ui-elements.css);
-@import url(header.css);
-@import url(banner.css);
-@import url(product-cards.css);
-@import url(our-blog.css);
-@import url(about-us.css);
-@import url(our-team.css);
-@import url(faq.css);
-@import url(footer.css);
-@import url(main-image.css);
-@import url(main-info.css);
-@import url(footer-tags.css);
+@import url(components/header.css);
+@import url(components/banner.css);
+@import url(components/product-cards.css);
+@import url(components/our-blog.css);
+@import url(components/about-us.css);
+@import url(components/our-team.css);
+@import url(components/faq.css);
+@import url(components/footer.css);
+@import url(components/main-image.css);
+@import url(components/main-info.css);
+@import url(components/footer-tags.css);
 
 
 
@@ -23,8 +23,10 @@
     --color-critical: rgba(234, 56, 41, 1);
     --color-background-alternative: rgba(29, 28, 40, 1);
     --color-text-secondary: rgba(239, 245, 250, 0.82);
-    --color-elements-secondary: rgba(231,238,247,0.66);
-    --color-elements-invert rgba (0,39,84,1);
+    --color-elements-secondary: rgba(231, 238, 247, 0.66);
+    --color-elements-invert: rgba(0, 39, 84, 1);
+    --font-family-primary: "Poppins", Arial, Verdana, Tahoma, sans-serif;
+    --font-family-secondary: "Bakbak One", Georgia, 'Times New Roman', Times, serif;
 }
 
 * {
@@ -32,7 +34,7 @@
 }
 
 body {
-    font-family: "Poppins", Arial, Verdana, Tahoma, sans-serif;
+    font-family: var(--font-family-primary);
     color: var(--color-secondary);
     background-color: var(--color-background);
     font-weight: 400;
@@ -41,6 +43,7 @@ body {
 a {
     text-decoration: none;
 }
-footer  li {
-list-style-type: none;
+
+footer li {
+    list-style-type: none;
 }

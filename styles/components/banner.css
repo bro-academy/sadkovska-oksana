@@ -1,12 +1,13 @@
 .banner__heading {
-    font-family: "Bakbak One", Georgia, 'Times New Roman', Times, serif;
+    font-family: "var(--font-family-secondary)";
     font-weight: 400;
-    font-size: 52;
+    font-size: 52px;
     color: var(--color-secondary);
 
-    .banner__heading--highlight {
-        color: var(--color-primary);
-    }
+}
+
+.banner__heading--highlight {
+    color: var(--color-primary);
 }
 
 .heading--highlight {
@@ -19,7 +20,7 @@
 }
 
 .statistics__numbers {
-    font-family: "Bakbak One", Georgia, 'Times New Roman', Times, serif;
+    font-family: "var(--font-family-secondary)";
     font-size: 52px;
     font-weight: 400;
     text-shadow: #F5F8FB 1px 0 10px;

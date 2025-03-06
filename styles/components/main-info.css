@@ -1,5 +1,5 @@
 .blockquote-blog__text {
-    font-family: "Bakbak One", Georgia, 'Times New Roman', Times, serif;
+    font-family: "var(--font-family-secondary)";
     font-size: 28px;
     line-height: 36px;
     background-color: var(--color-elements-invert);
@@ -10,6 +10,7 @@
     font-weight: 600;
     line-height: 20px;
 }
+
 .blockquote-blog {
     background-color: var(--color-elements-invert);
 }

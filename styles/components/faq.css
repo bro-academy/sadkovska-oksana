@@ -1,5 +1,6 @@
 .details__heading {
-    font-family: "Bakbak One", Georgia, 'Times New Roman', Times, serif;
+    font-family: "var(--font-family-secondary)";
+    ;
     font-style: 24px;
     list-style: 32px;
 }
@@ -12,6 +13,7 @@
 .faq__details details {
     background-color: var(--color-background-alternative);
 }
+
 .details__heading {
     list-style-type: none;
 
