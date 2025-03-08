@@ -1,0 +1,20 @@
+.footer-link {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--color-secondary);
+
+}
+
+.footer__text {
+    font-size: 14px;
+
+}
+
+.license__text {
+    font-size: 14px;
+}
+
+.footer {
+    background-color: var(--color-background-alternative);
+}

@@ -1,0 +1,19 @@
+.share__block {
+    list-style-type: none;
+
+}
+
+.footer-tags__item {
+    background-color: transparent;
+    border: 2px solid #D0D7FB2B;
+
+}
+
+.footer-tags__link {
+    color: var(--color-secondary);
+}
+
+.share__item {
+    display: inline-block;
+    border: 2px solid #D0D7FB2B;
+}

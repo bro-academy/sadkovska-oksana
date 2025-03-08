@@ -1,0 +1,51 @@
+.blog__heading {
+    font-family: var(--font-family-secondary);
+    font-size: 36px;
+    font-weight: 400;
+}
+
+
+
+.image-card__heading {
+    font-weight: 400;
+    font-size: 36px;
+}
+
+.card-blockquote__text {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.blog__card,
+.image-card__btn {
+
+    background-color: var(--color-background-alternative);
+}
+
+
+.our-blog__heading {
+    font-family: var(--font-family-secondary);
+    font-size: 56px;
+    line-height: 62px;
+
+}
+
+.our-blog__menu li:last-child {
+    color: var(--color-elements-secondary);
+
+}
+
+.our-blog__item {
+    font-weight: 600;
+
+}
+.aside-categories__heading {
+    font-size: 24px;
+    line-height: 32px;
+}
+.tags-menu__item {
+
+    background-color: transparent;
+    color: var(--color-secondary);
+    border: 2px solid  #D0D7FB2B;
+}

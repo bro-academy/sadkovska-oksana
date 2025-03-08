@@ -1,0 +1,36 @@
+.header
+.header__element {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    list-style-type: none;
+
+}
+
+.header__link-menu {
+    text-decoration: none;
+    line-height: 24px;
+    color: var(--color-secondary);
+}
+
+.header__link {
+    width: 188px;
+    height: 42px;
+    text-decoration: none;
+
+}
+
+.logo__heading {
+    text-align: center;
+    padding-bottom: 8px;
+}
+
+.header__input {
+    border: 1px solid var(--color-border-transparent);
+    color: var(--color-border-transparent);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    height: 48px;
+    background: url("assets/search.svg") no-repeat left;
+}
