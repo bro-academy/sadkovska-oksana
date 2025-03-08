@@ -5,7 +5,7 @@ details {
 .details__heading {
     font-family: var(--font-family-secondary);
     font-size: 24px;
-    list-style: 32px;
+    line-height: 32px;
     list-style-type: none;
 }
 
