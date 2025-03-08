@@ -1,5 +1,5 @@
 .product-card__price {
-    font-family: "var(--font-family-secondary)";
+    font-family: var(--font-family-secondary);
     font-weight: 400;
     font-size: 36px;
 }

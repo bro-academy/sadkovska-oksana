@@ -18,7 +18,7 @@
     line-height: 48px;
 }
 
-.main-image__text .main-image__list .main-info__text {
+.main-image__text, .main-image__list, .main-info__text {
     font-size: 18px;
     line-height: 28px;
 }

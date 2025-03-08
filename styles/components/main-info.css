@@ -1,11 +1,11 @@
 .blockquote-blog__text {
-    font-family: "var(--font-family-secondary)";
+    font-family: var(--font-family-secondary);
     font-size: 28px;
     line-height: 36px;
     background-color: var(--color-elements-invert);
 }
 
-.blockquote-blog__cite .blockquote-blog__rating {
+.blockquote-blog__cite, .blockquote-blog__rating {
     font-size: 14px;
     font-weight: 600;
     line-height: 20px;

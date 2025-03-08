@@ -1,5 +1,5 @@
 .banner__heading {
-    font-family: "var(--font-family-secondary)";
+    font-family: var(--font-family-secondary);
     font-weight: 400;
     font-size: 52px;
     color: var(--color-secondary);
@@ -20,7 +20,7 @@
 }
 
 .statistics__numbers {
-    font-family: "var(--font-family-secondary)";
+    font-family: var(--font-family-secondary);
     font-size: 52px;
     font-weight: 400;
     text-shadow: #F5F8FB 1px 0 10px;

@@ -1,10 +1,10 @@
 .team__heading {
-    font-family: "var(--font-family-secondary)";
-    font-style: 24px;
+    font-family: var(--font-family-secondary);
+    font-size: 24px;
 }
 
 .team__role {
-    font-style: 18px;
+    font-size: 18px;
     line-height: 28px;
     color: var(--color-text-secondary);
 }
