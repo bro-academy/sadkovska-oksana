@@ -32,9 +32,18 @@
     display: inline-block;
     position: relative;
     padding: 8px 20px;
+    transition: color .25s ease;
 }
 
-.header__link-menu::after {
+.header__link-menu:hover {
+    color: var(--color-primary);
+}
+
+.header__link-menu:active {
+    color: var(--color-primary-active);
+}
+
+.header__link--active::after {
     transition: background-color .25s;
     content: '';
     display: block;
@@ -43,11 +52,11 @@
     right: 0;
     bottom: 0;
     height: 2px;
-    background-color: transparent;
+    background-color: var(--color-primary);
 }
 
 .header__element:hover .header__link-menu::after {
-    background-color: var(--color-primary);
+    color: var(--color-primary);
 }
 
 .header__search {

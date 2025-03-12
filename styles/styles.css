@@ -17,16 +17,19 @@
 
 
 :root {
+
     --font-family-primary: "Poppins", Arial, Verdana, Tahoma, sans-serif;
     --font-family-secondary: "Bakbak One", Georgia, 'Times New Roman', Times, serif;
 
     --color-primary: rgba(2, 101, 220, 1);
     --color-primary-hover: rgba(56, 146, 243, 1);
-    --color-primary-pressed: rgba(0, 84, 182, 1);
+    --color-primary-active: rgba(0, 84, 182, 1);
+
 
     --color-secondary: rgba(245, 248, 251, 1);
     --color-secondary-hover: rgba(191, 197, 238, 0.12);
-    --color-secondary-visited: rgba(229, 236, 251, 0.36);
+    --color-secondary-active: rgba(229, 236, 251, 0.36);
+    
 
     --color-background: rgba(13, 13, 21, 1);
     --color-background-alternative: rgba(29, 28, 40, 1);
@@ -43,22 +46,6 @@
     --color-elements-invert: rgba(0, 39, 84, 1);
 
     --color-focus-border: rgba(56, 146, 243, 1);
-}
-
-*:nth-child(1) {
-    --index: 1;
-}
-
-*:nth-child(2) {
-    --index: 2;
-}
-
-*:nth-child(3) {
-    --index: 3;
-}
-
-*:nth-child(4) {
-    --index: 4;
 }
 
 * {
