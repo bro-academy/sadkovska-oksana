@@ -19,3 +19,6 @@
 .footer {
     background-color: var(--color-background-alternative);
 }
+.list-order_item {
+    display: inline-block;
+}

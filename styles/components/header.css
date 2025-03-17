@@ -40,6 +40,9 @@
 }
 
 .header__link-menu:active {
+    color: var(--color-primary-hover);
+}
+.header__link-menu:focus {
     color: var(--color-primary-active);
 }
 
