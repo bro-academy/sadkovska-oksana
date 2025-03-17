@@ -36,6 +36,9 @@
 .info-card:hover {
     border-image-source: url("../../assets/info-card-hover.png");
 }
+.info-card:active {
+    outline: 2px solid var(--color-primary-hover);
+}
 
 .info-card__heading::after {
     font-family: var(--font-family-secondary);
