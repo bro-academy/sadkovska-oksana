@@ -11,6 +11,7 @@
     text-align: center;
     text-decoration: none;
     border: 2px solid transparent;
+    transition: all .25s ease;
 }
 
 .button--primary {
@@ -18,10 +19,41 @@
     color: rgba(245, 248, 251, 1);
 }
 
+.button--primary:hover {
+    background-color: var(--color-primary-hover);
+}
+
+.button--primary:active {
+    background-color: var(--color-primary-active);
+
+}
+
+.button--primary:focus-visible {
+    border-color: var(--color-focus-border);
+    outline: 2px solid var(--color-focus-border);
+    outline-offset: 0;
+}
+
+
 .button--secondary {
     border-color: rgba(208, 215, 251, 0.17);
     color: rgba(245, 248, 251, 1);
     background-color: transparent;
+}
+
+.button--secondary:hover {
+    background-color: var(--color-secondary-hover);
+
+}
+.button--secondary:active {
+    background-color: var(--color-secondary-active);
+
+}
+
+.button--secondary:focus-visible {
+    border-color: var(--color-focus-border);
+    outline: 2px solid var(--color-focus-border);
+    outline-offset: 0;
 }
 
 .button__icon {
@@ -68,6 +100,79 @@
     display: inline-block;
     line-height: 20px;
 }
+.link {
+    padding: 4px;
+}
+
+.link:hover {
+    color: var(--color-primary-hover);
+
+}
+.link:active {
+    color: var(--color-primary-active);
+}
+
+.link:focus-visible {
+    outline: 2px solid var(--color-focus-border);
+    border-radius: 5px;
+}
+
+/**
+  * SEARCH
+  */
+.search {
+    position: relative;
+    display: inline-block;
+}
+
+.search__input {
+    background-color: var(--color-secondary-hover);
+
+}
+
+.search__input:hover {
+    border-color: var(--color-primary-hover);
+}
+
+.search__input:focus-visible {
+    border-color: var(--color-focus-border);
+    outline: 2px solid var(--color-focus-border);
+    outline-offset: 0;
+}
+
+.search__input {
+    padding-left: 38px;
+    border: 2px solid var(--color-border-transparent);
+    color: var(--color-border-transparent);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    height: 48px;
+    background: transparent;
+}
+
+.divider-vertical {
+    position: relative;
+}
+
+.divider-vertical::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2px;
+    height: 24px;
+    background-color: var(--color-border-transparent);
+}
+
+.divider-vertical--right {
+    margin-right: 20px;
+}
+
+.divider-vertical--right::after {
+    right: -15px;
+}
+
 
 /**
   *  END OF UI ELEMENTS

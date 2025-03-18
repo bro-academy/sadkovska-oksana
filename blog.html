@@ -15,37 +15,42 @@
 </head>
 
 <body>
-  <!-------------- HEADER -------------->
-  <header class="header">
-    <a class="header__link logo" href="/">
-      <img class="header__logo logo_img" src="assets/logo.svg" alt="Logo" />
-      <img src="assets/logo-heading.svg" class="logo__heading" alt="Logo"></img>
+ <!-------------- HEADER -------------->
+ <header class="header">
+  <a class="header__link logo" href="/">
+    <img class="header__logo logo_img" src="assets/logo.svg" alt="Logo" />
+    <img src="assets/logo-heading.svg" class="logo__heading" alt="Logo"></img>
+  </a>
+  <nav class="header__navigation">
+    <ul class="header__list">
+      <li class="header__element"><a class="header__link-menu header__link--active" href="#">Home</a></li>
+      <li class="header__element"><a class="header__link-menu" href="#">Blog</a></li>
+      <li class="header__element"><a class="header__link-menu" href="#">Slider</a></li>
+      <li class="header__element"><a class="header__link-menu" href="#">Contact Us</a></li>
+    </ul>
+  </nav>
+  <div class="header__search">
+    <div class="search divider-vertical divider-vertical--right">
+      <img class="search__icon" src="assets/search.svg" alt="Search" />
+      <input class="search__input" type="search" placeholder="Search" />
+    </div>
+
+
+  </div>
+
+  <div class="header__btn">
+    <a class="button button--secondary" href="#" target="_blank">
+      <img src="assets/discord.svg" class="button__icon button__icon--left" alt="discort" />
+      Discord
     </a>
-    <nav class="header__navigation">
-      <ul class="header__list">
-        <li class="header__element"><a class="header__link-menu" href="#">Home</a></li>
-        <li class="header__element"><a class="header__link-menu" href="#">Blog</a></li>
-        <li class="header__element"><a class="header__link-menu" href="#">Slider</a></li>
-        <li class="header__element"><a class="header__link-menu" href="#">Contact Us</a></li>
-      </ul>
-    </nav>
-    <div class="header__search">
-      <input class="header__input" type="search" placeholder="Search" />
-      <!-- <img class="header__icon" src="assets/search.svg" alt="Search" /> -->
-    </div>
+    <button class="button button--primary">
+      <img src="assets/wallet.svg" class="button__icon button__icon--left" alt="wallet" />
+      Connect</button>
+  </div>
 
-    <div class="header__btn">
-      <a class="button button--secondary" href="#" target="_blank">
-        <img src="assets/discord.svg" class="button__icon button__icon--left" alt="discort" />
-        Discord
-      </a>
-      <button class="button button--primary">
-        <img src="assets/wallet.svg" class="button__icon button__icon--left" alt="wallet" />
-        Connect</button>
-    </div>
+</header>
+<!-------------- /HEADER -------------->
 
-  </header>
-  <!-------------- /HEADER -------------->
   <!-------------- OUR BLOG -------------->
 
 
@@ -111,13 +116,13 @@
           decentralized autonomous organization (DAO) called the Balthazar DAO.</li>
       </ul>
       <ol class="main-image__order list-order">
-        <li class="list-order__item"><a class="list-order__link"><img class="list-order__img" src="assets/logo.svg" alt="logo">List
+        <li class="list-order__item"><a class="list-order__link link"><img class="list-order__img" src="assets/logo.svg" alt="logo">List
             name 1</a></li>
-        <li class="list-order__item"><a class="list-order__link"><img class="list-order__img" src="assets/logo.svg" alt="logo">List
+        <li class="list-order__item"><a class="list-order__link link"><img class="list-order__img" src="assets/logo.svg" alt="logo">List
             name 2</a></li>
-        <li class="list-order__item"><a class="list-order__link"><img class="list-order__img" src="assets/logo.svg" alt="logo">List
+        <li class="list-order__item"><a class="list-order__link link"><img class="list-order__img" src="assets/logo.svg" alt="logo">List
             name 3</a></li>
-        <li class="list-order__item"><a class="list-order__link"><img class="list-order__img" src="assets/logo.svg" alt="logo">List
+        <li class="list-order__item"><a class="list-order__link link"><img class="list-order__img" src="assets/logo.svg" alt="logo">List
             name 1</a></li>
       </ol>
     </section>
@@ -180,9 +185,9 @@
         <!-------------- // FOOTER TAGS  -------------->
 
   </main>
-   <!-------------- FOOTER -------------->
+  <!-------------- FOOTER -------------->
 
-   <footer class="footer">
+  <footer class="footer">
     <div class="footer__top">
       <div class="footer__logo-wrap">
         <img class="footer__logo logo_img" src="assets/logo.svg" alt="Logo" />
@@ -194,10 +199,10 @@
         <div class="footer__nav subscribe-nav">
           <p class="subscribe-nav__heading">Subscribe</p>
           <ul class="subscribe-nav__block">
-            <li class="subscribe-nav__item"><a class="footer-link" href="#">Home</a></li>
-            <li class="subscribe-nav__item"><a class="footer-link" href="#">Blog</a></li>
-            <li class="subscribe-nav__item"><a class="footer-link" href="#">Slider</a></li>
-            <li class="subscribe-nav__item"><a class="footer-link" href="#">Contact Us</a></li>
+            <li class="subscribe-nav__item"><a class="footer-link link" href="#">Home</a></li>
+            <li class="subscribe-nav__item"><a class="footer-link link" href="#">Blog</a></li>
+            <li class="subscribe-nav__item"><a class="footer-link link" href="#">Slider</a></li>
+            <li class="subscribe-nav__item"><a class="footer-link link" href="#">Contact Us</a></li>
           </ul>
         </div>
 
@@ -205,10 +210,10 @@
           <p class="footer__heading">Company</p>
 
           <ul class="footer__block-pages info-pages">
-            <li class="info-pages__item"><a class="footer-link" href="#">Terms Conditions</a></li>
-            <li class="info-pages__item"><a class="footer-link" href="#">Privacy Policy</a></li>
-            <li class="info-pages__item"><a class="footer-link" href="#">White paper</a></li>
-            <li class="info-pages__item"><a class="footer-link" href="#">Help Center</a></li>
+            <li class="info-pages__item"><a class="footer-link link" href="#">Terms Conditions</a></li>
+            <li class="info-pages__item"><a class="footer-link link" href="#">Privacy Policy</a></li>
+            <li class="info-pages__item"><a class="footer-link link" href="#">White paper</a></li>
+            <li class="info-pages__item"><a class="footer-link link" href="#">Help Center</a></li>
           </ul>
         </div>
       </div>

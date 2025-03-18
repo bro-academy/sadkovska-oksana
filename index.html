@@ -25,15 +25,19 @@
     </a>
     <nav class="header__navigation">
       <ul class="header__list">
-        <li class="header__element"><a class="header__link-menu" href="#">Home</a></li>
+        <li class="header__element"><a class="header__link-menu header__link--active" href="#">Home</a></li>
         <li class="header__element"><a class="header__link-menu" href="#">Blog</a></li>
         <li class="header__element"><a class="header__link-menu" href="#">Slider</a></li>
         <li class="header__element"><a class="header__link-menu" href="#">Contact Us</a></li>
       </ul>
     </nav>
     <div class="header__search">
-      <input class="header__input" type="search" placeholder="Search" />
-      <!-- <img class="header__icon" src="assets/search.svg" alt="Search" /> -->
+      <div class="search divider-vertical divider-vertical--right">
+        <img class="search__icon" src="assets/search.svg" alt="Search" />
+        <input class="search__input" type="search" placeholder="Search" />
+      </div>
+
+
     </div>
 
     <div class="header__btn">
@@ -72,12 +76,20 @@
 
     <!-------------- SLIDER -------------->
     <section class="slider">
-      <h2 class="slider__heading"><img src="assets/folder.svg" class="slider__img" alt="folder">Catalog</h2>
-      <button class="slider__btn button button--secondary">See all</button>
-      <button class="slider__arrow-right button button--secondary btn-arrow btn-arrow--right"><img
-          class="btn-arrow__img" src="#" alt="right" /></button>
-      <button class="slider__arrow-left button button--primary btn-arrow"><img class="btn-arrow__img" src="#"
-          alt="left" /></button>
+      <header class="slider__header">
+        <h2 class="slider__heading ">
+          <img src="assets/folder.svg" class="slider__img" alt="folder">
+          Catalog
+        </h2>
+        <div class="slider__header__actions">
+          <button class="slider__btn button button--secondary divider-vertical divider-vertical--right">
+            See all</button>
+          <button class="slider__arrow-left  button button--secondary btn-arrow btn-arrow--right"><img
+              src="assets/arrow-left.svg" class=" btn-arrow__img arrow--leff" alt=""></button>
+          <button class="slider__arrow-right button button--primary btn-arrow"><img src="assets/arrow-right.svg"
+              class="btn-arrow__img arrow--right" alt=""></button>
+        </div>
+      </header>
       <!-------------- /SLIDER -------------->
 
       <!-------------- PRODUCT CARDS -------------->
@@ -376,12 +388,24 @@
         </details>
         <details class="faq__details details">
           <summary class="details__heading">How do i get NFTs?</summary>
+          <p class="details__text">
+            Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis.
+            Nulla dapibus urna volutpat venenatis, risus faucibus.
+          </p>
         </details>
         <details class="faq__details details">
           <summary class="details__heading">How can we buy your NFTs?</summary>
+          <p class="details__text">
+            Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis.
+            Nulla dapibus urna volutpat venenatis, risus faucibus.
+          </p>
         </details>
         <details class="faq__details details">
           <summary class="details__heading">Who are the team behind the project?</summary>
+          <p class="details__text">
+            Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis.
+            Nulla dapibus urna volutpat venenatis, risus faucibus.
+          </p>
         </details>
       </div>
     </section>
@@ -402,10 +426,10 @@
         <div class="footer__nav subscribe-nav">
           <p class="subscribe-nav__heading">Subscribe</p>
           <ul class="subscribe-nav__block">
-            <li class="subscribe-nav__item"><a class="footer-link" href="#">Home</a></li>
-            <li class="subscribe-nav__item"><a class="footer-link" href="#">Blog</a></li>
-            <li class="subscribe-nav__item"><a class="footer-link" href="#">Slider</a></li>
-            <li class="subscribe-nav__item"><a class="footer-link" href="#">Contact Us</a></li>
+            <li class="subscribe-nav__item"><a class="footer-link link" href="#">Home</a></li>
+            <li class="subscribe-nav__item"><a class="footer-link link" href="#">Blog</a></li>
+            <li class="subscribe-nav__item"><a class="footer-link link" href="#">Slider</a></li>
+            <li class="subscribe-nav__item"><a class="footer-link link" href="#">Contact Us</a></li>
           </ul>
         </div>
 
@@ -413,10 +437,10 @@
           <p class="footer__heading">Company</p>
 
           <ul class="footer__block-pages info-pages">
-            <li class="info-pages__item"><a class="footer-link" href="#">Terms Conditions</a></li>
-            <li class="info-pages__item"><a class="footer-link" href="#">Privacy Policy</a></li>
-            <li class="info-pages__item"><a class="footer-link" href="#">White paper</a></li>
-            <li class="info-pages__item"><a class="footer-link" href="#">Help Center</a></li>
+            <li class="info-pages__item"><a class="footer-link link" href="#">Terms Conditions</a></li>
+            <li class="info-pages__item"><a class="footer-link link" href="#">Privacy Policy</a></li>
+            <li class="info-pages__item"><a class="footer-link link" href="#">White paper</a></li>
+            <li class="info-pages__item"><a class="footer-link link" href="#">Help Center</a></li>
           </ul>
         </div>
       </div>
