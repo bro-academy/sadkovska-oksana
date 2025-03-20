@@ -1,5 +1,4 @@
-.header
-.header__element {
+.header .header__element {
     font-size: 16px;
     font-weight: 600;
     text-align: center;
@@ -25,15 +24,48 @@
     padding-bottom: 8px;
 }
 
-.header__input {
-    border: 1px solid var(--color-border-transparent);
-    color: var(--color-border-transparent);
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
-    height: 48px;
-   
+.header__element {
+    display: inline-block;
 }
+
+.header__link-menu {
+    display: inline-block;
+    position: relative;
+    padding: 8px 20px;
+    transition: color .25s ease;
+}
+
+.header__link-menu:hover {
+    color: var(--color-primary);
+}
+
+.header__link-menu:active {
+    color: var(--color-primary-hover);
+}
+.header__link-menu:focus {
+    color: var(--color-primary-active);
+}
+
+.header__link--active::after {
+    transition: background-color .25s;
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background-color: var(--color-primary);
+}
+
+.header__element:hover .header__link-menu::after {
+    color: var(--color-primary);
+}
+
+.header__search {
+    position: relative;
+}
+
 .banner_bg {
     background-image: url(./../../assets/banner-cube.png);
     background-repeat: no-repeat;
