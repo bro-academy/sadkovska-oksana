@@ -6,12 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Binabox</title>
-  <link rel="stylesheet" type="text/css" href="normalize.css" />
+  <link rel="stylesheet" type="text/css" href="/styles/normalize.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Poppins:wght@400;500;600&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="stylesheet" href="/styles/styles.css" />
 
 </head>
 
@@ -52,26 +52,32 @@
   <!-------------- BANNER -------------->
   <main>
     <section class="banner">
-      <h1 class="banner__heading">
-        WITH
-        <span class="banner__heading heading--highlight">BINABOX</span> EXPLORE NFT COLLECTION
-      </h1>
-      <p class="banner__text">We are the best way to check the rarity of NFT collection</p>
-      <dl class="banner__statistics statistics">
-        <dt class="statistics__numbers">2240+</dt>
-        <dd class="statistics__text">Total Iteam</dd>
-
-        <dt class="statistics__numbers">1000+</dt>
-        <dd class="statistics__text">Profiles whitelisted</dd>
-      </dl>
-      <button class="banner__btn button button--primary">Connect Wallet</button>
-      <a class="button button--secondary" href="#" target="_blank">Whitelist now</a>
-      <img class="banner__image" src="assets/cube.png" alt="cube" />
+      <div class="banner__wrapper">
+        <div class="banner__details">
+          <h1 class="banner__heading">
+            WITH
+            <span class="banner__heading heading--highlight">BINABOX</span> EXPLORE NFT COLLECTION
+          </h1>
+          <p class="banner__text">We are the best way to check the rarity of NFT collection</p>
+          <dl class="banner__statistics statistics">
+            <dt class="statistics__numbers">2240+</dt>
+            <dd class="statistics__text">Total Iteam</dd>
+    
+            <dt class="statistics__numbers">1000+</dt>
+            <dd class="statistics__text">Profiles whitelisted</dd>
+          </dl>
+          <button class="banner__btn button button--primary">Connect Wallet</button>
+          <a class="button button--secondary" href="#" target="_blank">Whitelist now</a>
+        </div>
+        <div class="banner__image">
+          <img class="banner__image" src="/assets/banner-cube.png" alt="cube" />
+        </div>
+      </div>
     </section>
     <!-------------- /BANNER -------------->
 
     <!-------------- SLIDER -------------->
-    <section class="slider">
+    <section class="F">
       <h2 class="slider__heading"><img src="assets/folder.svg" class="slider__img" alt="folder">Catalog</h2>
       <button class="slider__btn button button--secondary">See all</button>
       <button class="slider__arrow-right button button--secondary btn-arrow btn-arrow--right"><img
