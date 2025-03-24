@@ -2,15 +2,21 @@
     font-family: var(--font-family-secondary);
     font-size: 56px;
     line-height: 62px;
+    text-align: center;
    
 }
 .our-blog{
-    background-image: url(./../../assets/background-our-blog.webp);
-    background-size: 300px;
-    object-fit: cover;
+    background-image: url("./../../assets/background-our-blog.webp");
     background-repeat: no-repeat;
+    background-position: center;
   
 }
+.our-blog__menu {
+    display: flex;
+    list-style-type: none;
+   
+}
+
 .blog__heading{
     font-size: 36px;
 }

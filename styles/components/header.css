@@ -66,12 +66,6 @@
     position: relative;
 }
 
-.banner_bg {
-    background-image: url(./../../assets/banner-cube.png);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
 .banner {
     background: radial-gradient(42.5% 42.5% at 22.28% -4.22%, rgba(2, 101, 220, 0.5) 0%, rgba(2, 101, 220, 0) 100%);
 }
