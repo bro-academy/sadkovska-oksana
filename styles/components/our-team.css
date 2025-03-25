@@ -29,7 +29,5 @@
     outline: 2px solid var(--color-primary-hover);
 }
 .team__photo {
-    width: 127px; 
-    height: 127px; 
     border-radius: 50%; 
 }

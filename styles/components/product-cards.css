@@ -19,15 +19,9 @@
     border-image-slice: 50;
     border-image-width: 50px;
     background-color: var(--color-background-alternative);
-    object-fit: cover;
-
-  
+    object-fit: cover; 
 }
-.product-card__img {
-    width: 252px;
-    height: 324px;
 
-}
 .product-card:hover {
     border-image-source: url("../../assets/info-card-hover.webp");
 }

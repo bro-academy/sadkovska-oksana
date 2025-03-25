@@ -61,14 +61,13 @@
    
 }
 .image-card__img{
-    width: 736px;
-    height: 198px;
+   
     object-fit: cover;
     object-position: -19px -203px
 
 }
 .image-card__img--big {
-    height: 664px;
+    
     object-position: center;
     object-fit: cover;
 
