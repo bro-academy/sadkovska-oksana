@@ -1,16 +1,18 @@
-@import url(ui-elements.css);
-@import url(components/header.css);
-@import url(components/banner.css);
-@import url(components/slider.css);
-@import url(components/product-cards.css);
-@import url(components/our-blog.css);
-@import url(components/about-us.css);
-@import url(components/our-team.css);
-@import url(components/faq.css);
-@import url(components/footer.css);
-@import url(components/main-image.css);
-@import url(components/main-info.css);
-@import url(components/footer-tags.css);
+@import url(../components/ui-elements.css);
+@import url(../components/header.css);
+@import url(../components/banner.css);
+@import url(../components/slider.css);
+@import url(../components/product-cards.css);
+@import url(../components/our-blog.css);
+@import url(../components/about-us.css);
+@import url(../components/our-team.css);
+@import url(../components/faq.css);
+@import url(../components/footer.css);
+@import url(../components/main-image.css);
+@import url(../components/main-info.css);
+@import url(../components/footer-tags.css);
+
+
 
 
 
