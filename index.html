@@ -6,12 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>Binabox</title>
-  <link rel="stylesheet" type="text/css" href="normalize.css" />
+  <link rel="stylesheet" type="text/css" href="/styles/normalize.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Poppins:wght@400;500;600&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="stylesheet" href="/styles/styles.css" />
 
 </head>
 
@@ -25,15 +25,19 @@
     </a>
     <nav class="header__navigation">
       <ul class="header__list">
-        <li class="header__element"><a class="header__link-menu" href="#">Home</a></li>
+        <li class="header__element"><a class="header__link-menu header__link--active" href="#">Home</a></li>
         <li class="header__element"><a class="header__link-menu" href="#">Blog</a></li>
         <li class="header__element"><a class="header__link-menu" href="#">Slider</a></li>
         <li class="header__element"><a class="header__link-menu" href="#">Contact Us</a></li>
       </ul>
     </nav>
     <div class="header__search">
-      <input class="header__input" type="search" placeholder="Search" />
-      <!-- <img class="header__icon" src="assets/search.svg" alt="Search" /> -->
+      <div class="search divider-vertical divider-vertical--right">
+        <img class="search__icon" src="assets/search.svg" alt="Search" />
+        <input class="search__input" type="search" placeholder="Search" />
+      </div>
+
+
     </div>
 
     <div class="header__btn">
@@ -52,37 +56,51 @@
   <!-------------- BANNER -------------->
   <main>
     <section class="banner">
-      <h1 class="banner__heading">
-        WITH
-        <span class="banner__heading heading--highlight">BINABOX</span> EXPLORE NFT COLLECTION
-      </h1>
-      <p class="banner__text">We are the best way to check the rarity of NFT collection</p>
-      <dl class="banner__statistics statistics">
-        <dt class="statistics__numbers">2240+</dt>
-        <dd class="statistics__text">Total Iteam</dd>
-
-        <dt class="statistics__numbers">1000+</dt>
-        <dd class="statistics__text">Profiles whitelisted</dd>
-      </dl>
-      <button class="banner__btn button button--primary">Connect Wallet</button>
-      <a class="button button--secondary" href="#" target="_blank">Whitelist now</a>
-      <img class="banner__image" src="assets/cube.png" alt="cube" />
+      <div class="banner__wrapper wrapper">
+        <div class="banner__details">
+          <h1 class="banner__heading">
+            WITH
+            <span class="banner__heading heading--highlight">BINABOX</span> EXPLORE NFT COLLECTION
+          </h1>
+          <p class="banner__text">We are the best way to check the rarity of NFT collection</p>
+          <dl class="banner__statistics statistics">
+            <dt class="statistics__numbers">2240+</dt>
+            <dd class="statistics__text">Total Iteam</dd>
+    
+            <dt class="statistics__numbers">1000+</dt>
+            <dd class="statistics__text">Profiles whitelisted</dd>
+          </dl>
+          <button class="banner__btn button button--primary">Connect Wallet</button>
+          <a class="button button--secondary" href="#" target="_blank">Whitelist now</a>
+        </div>
+        <div class="banner__image-block">
+          <img class="banner__image" width="533" height="642" src="./assets/banner-cube.webp" alt="nft-cube" />
+        </div>
+      </div>
     </section>
     <!-------------- /BANNER -------------->
 
     <!-------------- SLIDER -------------->
     <section class="slider">
-      <h2 class="slider__heading"><img src="assets/folder.svg" class="slider__img" alt="folder">Catalog</h2>
-      <button class="slider__btn button button--secondary">See all</button>
-      <button class="slider__arrow-right button button--secondary btn-arrow btn-arrow--right"><img
-          class="btn-arrow__img" src="#" alt="right" /></button>
-      <button class="slider__arrow-left button button--primary btn-arrow"><img class="btn-arrow__img" src="#"
-          alt="left" /></button>
+      <header class="slider__header">
+        <h2 class="slider__heading ">
+          <img src="assets/folder.svg" class="slider__img" alt="folder">
+          Catalog
+        </h2>
+        <div class="slider__header__actions">
+          <button class="slider__btn button button--secondary divider-vertical divider-vertical--right">
+            See all</button>
+          <button class="slider__arrow-left  button button--secondary btn-arrow btn-arrow--right"><img
+              src="assets/arrow-left.svg" class=" btn-arrow__img arrow--leff" alt=""></button>
+          <button class="slider__arrow-right button button--primary btn-arrow"><img src="assets/arrow-right.svg"
+              class="btn-arrow__img arrow--right" alt=""></button>
+        </div>
+      </header>
       <!-------------- /SLIDER -------------->
 
       <!-------------- PRODUCT CARDS -------------->
       <figure class="slider__product-card product-card">
-        <img class="product-card__img" src="img/sceleton.jpeg" alt="sceleton" />
+        <img class="product-card__img" width="252" height="324" src="./assets/sceleton.webp" alt="sceleton" />
         <figcaption class="product-card__description">
           <p class="product-card__price">$199</p>
           <p class="product-card__title">Name Product</p>
@@ -90,7 +108,7 @@
         </figcaption>
       </figure>
       <figure class="slider__product-card product-card">
-        <img class="product-card__img" src="img/cat.jpeg" alt="cat" />
+        <img class="product-card__img" width="252" height="324" src="./assets/green-eyes-cat.webp" alt="cat-with-green-eyes" />
         <figcaption class="product-card__description">
           <p class="product-card__price">$199</p>
           <p class="product-card__title">Name Product</p>
@@ -98,7 +116,7 @@
         </figcaption>
       </figure>
       <figure class="slider__product-card product-card">
-        <img class="product-card__img" src="img/scissors.jpeg" alt="scissors" />
+        <img class="product-card__img" width="252" height="324" src="./assets/scisors.webp" alt="scissors" />
         <figcaption class="product-card__description">
           <p class="product-card__price">$199</p>
           <p class="product-card__title">Name Product</p>
@@ -106,7 +124,7 @@
         </figcaption>
       </figure>
       <figure class="slider__product-card product-card">
-        <img class="product-card__img" src="img/card.jpeg" alt="card" />
+        <img class="product-card__img" width="252" height="324" src="./assets/disc-server.webp" alt="nft-server-disc" />
         <figcaption class="product-card__description">
           <p class="product-card__price">$199</p>
           <p class="product-card__title">Name Product</p>
@@ -114,7 +132,7 @@
         </figcaption>
       </figure>
       <figure class="slider__product-card product-card">
-        <img class="product-card__img" src="img/frame.jpeg" alt="frame" />
+        <img class="product-card__img" width="252" height="324" src="./assets/frame.webp" alt="frame" />
         <figcaption class="product-card__description">
           <p class="product-card__price">$199</p>
           <p class="product-card__title">Name Product</p>
@@ -128,8 +146,9 @@
     </section>
     <section class="blog">
       <h2 class="blog__heading heading">Our blog</h2>
+      <div class="blog__wrapper">
       <article class="blog__card image-card">
-        <img class="image-card__img" src="/assets/lady.jpeg" alt="lady" />
+        <img class="image-card__img image-card__img--big" width ="736" height="664" src="./assets/girl-face.webp" alt="lady-face" />
         <img class="main-image__icon icon" src="assets/profile.svg" alt="user" />
         <p class="image-card__name autor-name ">Tony Nguyen</p>
         <img class="main-image__icon icon" src="assets/calendar.svg" alt="calendar" />
@@ -146,8 +165,8 @@
         <p class="image-card__label label">NFT</p>
       </article>
       <article class="blog__card image-card">
-        <img class="image-card__img" src="/assets/sceleton-head.jpeg" alt="sceleton-head" />
-        <img class="image-card__icon icon" src="assets/profile.svg" alt="user" />
+        <img class="image-card__img" width="736" height="198" src="./assets/sceleton.webp" alt="sceleton-head" />
+        <img class="image-card__icon icon" src="/assets/profile.svg" alt="user" />
         <p class="image-card__name autor-name ">Tony Nguyen</p>
         <img class="main-image__icon icon" src="assets/calendar.svg" alt="calendar" />
         <time class="image-card__datetime datetime" datetime="2022-06-20">20 Jun 2022</time>
@@ -161,11 +180,12 @@
         <p class="image-card__label label">NFT</p>
         <a class="button button--secondary" href="#">Read more ></a>
       </article>
+
       <article class="blog__card image-card">
-        <img class="image-card__img" src="/assets/cat-head.jpeg" alt="cat-head" />
-        <img class="main-image__icon icon" src="assets/profile.svg" alt="user" />
+        <img class="image-card__img"  width="736" height="198" src="./assets/green-eyes-cat.webp" alt="cat-head" />
+        <img class="main-image__icon icon" src="./assets/profile.svg" alt="user" />
         <p class="image-card__name autor-name ">Tony Nguyen</p>
-        <img class="main-image__icon icon" src="assets/calendar.svg" alt="calendar" />
+        <img class="main-image__icon icon" src="./assets/calendar.svg" alt="calendar" />
         <time class="image-card__datetime datetime" datetime="2022-06-20">20 Jun 2022</time>
         <h3 class="image-card__heading">Sonic Life</h3>
         <blockquote class="image-card__blockquote card-blockquote" cite="#">
@@ -177,11 +197,12 @@
         <p class="image-card__label label">NFT</p>
         <a class="image-card_btn button button--secondary" href="#">Read more ></a>
       </article>
+
       <article class="blog__card image-card">
-        <img class="image-card__img" src="/assets/monkey-head.jpeg" alt="monkey-head" />
-        <img class="main-image__icon icon" src="assets/profile.svg" alt="user" />
+        <img class="image-card__img" width="736" height="198" src="./assets/gorilla.webp" alt="gorilla-head" />
+        <img class="main-image__icon icon" src="./assets/profile.svg" alt="user" />
         <p class="image-card__name autor-name ">Tony Nguyen</p>
-        <img class="main-image__icon icon" src="assets/calendar.svg" alt="calendar" />
+        <img class="main-image__icon icon" src="./assets/calendar.svg" alt="calendar" />
         <time class="image-card__datetime datetime" datetime="2022-06-20">20 Jun 2022</time>
         <h3 class="image-card__heading">Sonic Life</h3>
         <blockquote class="image-card__blockquote card-blockquote" cite="#">
@@ -195,10 +216,10 @@
         <a class="image-card_btn button button--secondary" href="#">Read more ></a>
       </article>
       <article class="blog__card image-card">
-        <img class="image-card__img" src="/assets/duck-head.jpeg" alt="duck-head" />
-        <img class="main-image__icon icon" src="assets/profile.svg" alt="user" />
+        <img class="image-card__img"   width="736" height="198" src="./assets/white-duck.webp" alt="duck-head" />
+        <img class="main-image__icon icon" src="./assets/profile.svg" alt="user" />
         <p class="image-card__name autor-name ">Tony Nguyen</p>
-        <img class="main-image__icon icon" src="assets/calendar.svg" alt="calendar" />
+        <img class="main-image__icon icon" src="./assets/calendar.svg" alt="calendar" />
         <time class="image-card__datetime datetime" datetime="2022-06-20">20 Jun 2022</time>
         <h3 class="image-card__heading">Sonic Life</h3>
         <blockquote class="image-card__blockquote card-blockquote" cite="#">
@@ -212,10 +233,10 @@
         <a class="image-card_btn button button--secondary" href="#">Read more ></a>
       </article>
       <article class="blog__card image-card">
-        <img class="image-card__img" src="/assets/frame-large.jpeg" alt="frame-large" />
-        <img class="main-image__icon icon" src="assets/profile.svg" alt="user" />
+        <img class="image-card__img image-card__img--big" width ="736" height="664" src="./assets/frame.webp" alt="frame-large" />
+        <img class="main-image__icon icon" src="./assets/profile.svg" alt="user" />
         <p class="image-card__name autor-name ">Tony Nguyen</p>
-        <img class="main-image__icon icon" src="assets/calendar.svg" alt="calendar" />
+        <img class="main-image__icon icon" src="./assets/calendar.svg" alt="calendar" />
         <time class="image-card__datetime datetime" datetime="2022-06-20">20 Jun 2022</time>
         <h3 class="image-card__heading">Sonic Life</h3>
         <blockquote class="image-card__blockquote card-blockquote" cite="#">
@@ -228,12 +249,12 @@
         <p class="image-card__label label">NFT</p>
         <a class="image-card_btn button button--secondary" href="#">Read more > </a>
       </article>
+    </div>
       <button class="button button--secondary">Read more </button>
     </section>
     <!-------------- //OUR BLOG -------------->
 
     <!-------------- ABOUT US -------------->
-
     <section class="about">
       <h2 class="about__heading heading">About us</h2>
       <p class="about__text">
@@ -289,7 +310,7 @@
       <h2 class="team__heading heading">Our team</h2>
       <ul class="team__block">
         <li class="team__item">
-          <img class="team__photo" src="assets/photo-personal.jpg" alt="photo-personal" />
+          <img class="team__photo" width="127" height="127" src="./assets/team-member-photo.webp" alt="photo-personal" />
           <h3 class="team__heading">Jason Smith</h3>
           <p class="team__role">Co-founder</p>
           <a class="team__link" href="#"><img class="team__icon" src="assets/twitter.svg" alt="twitter" /></a>
@@ -299,7 +320,7 @@
           <a class="team__link" href="#"><img class="team__icon" src="assets/instagram.svg" alt="instagram" /></a>
         </li>
         <li class="team__item">
-          <img class="team__photo" src="assets/photo-personal.jpg" alt="photo-personal" />
+          <img class="team__photo" width="127" height="127" src="./assets/team-member-photo.webp" alt="photo-personal" />
           <h3 class="team__heading">Jason Smith</h3>
           <p class="team__role">Co-founder</p>
           <a class="team__link" href="#"><img class="team__icon" src="assets/twitter.svg" alt="twitter" /></a>
@@ -309,7 +330,7 @@
           <a class="team__link" href="#"><img class="team__icon" src="assets/instagram.svg" alt="instagram" /></a>
         </li>
         <li class="team__item">
-          <img class="team__photo" src="assets/photo-personal.jpg" alt="photo-personal" />
+          <img class="team__photo" width="127" height="127" src="./assets/team-member-photo.webp" alt="photo-personal" />
           <h3 class="team__heading">Jason Smith</h3>
           <p class="team__role">Co-founder</p>
           <a class="team__link" href="#"><img class="team__icon" src="assets/twitter.svg" alt="twitter" /></a>
@@ -319,7 +340,7 @@
           <a class="team__link" href="#"><img class="team__icon" src="assets/instagram.svg" alt="instagram" /></a>
         </li>
         <li class="team__item">
-          <img class="team__photo" src="assets/photo-personal.jpg" alt="photo-personal" />
+          <img class="team__photo" width="127" height="127" src="./assets/team-member-photo.webp" alt="photo-personal" />
           <h3 class="team__heading">Jason Smith</h3>
           <p class="team__role">Co-founder</p>
           <a class="team__link" href="#"><img class="team__icon" src="assets/twitter.svg" alt="twitter" /></a>
@@ -329,7 +350,7 @@
           <a class="team__link" href="#"><img class="team__icon" src="assets/instagram.svg" alt="instagram" /></a>
         </li>
         <li class="team__item">
-          <img class="team__photo" src="assets/photo-personal.jpg" alt="photo-personal" />
+          <img class="team__photo" width="127" height="127" src="./assets/team-member-photo.webp" alt="photo-personal" />
           <h3 class="team__heading">Jason Smith</h3>
           <p class="team__role">Co-founder</p>
           <a class="team__link" href="#"><img class="team__icon" src="assets/twitter.svg" alt="twitter" /></a>
@@ -339,7 +360,7 @@
           <a class="team__link" href="#"><img class="team__icon" src="assets/instagram.svg" alt="instagram" /></a>
         </li>
         <li class="team__item">
-          <img class="team__photo" src="assets/photo-personal.jpg" alt="photo-personal" />
+          <img class="team__photo" width="127" height="127" src="./assets/team-member-photo.webp" alt="photo-personal" />
           <h3 class="team__heading">Jason Smith</h3>
           <p class="team__role">Co-founder</p>
           <a class="team__link" href="#"><img class="team__icon" src="assets/twitter.svg" alt="twitter" /></a>
@@ -349,7 +370,7 @@
           <a class="team__link" href="#"><img class="team__icon" src="assets/instagram.svg" alt="instagram" /></a>
         </li>
         <li class="team__item">
-          <img class="team__photo" src="assets/photo-personal.jpg" alt="photo-personal" />
+          <img class="team__photo" width="127" height="127" src="./assets/team-member-photo.webp" alt="photo-personal" />
           <h3 class="team__heading">Jason Smith</h3>
           <p class="team__role">Co-founder</p>
           <a class="team__link" href="#"><img class="team__icon" src="assets/twitter.svg" alt="twitter" /></a>
@@ -376,12 +397,24 @@
         </details>
         <details class="faq__details details">
           <summary class="details__heading">How do i get NFTs?</summary>
+          <p class="details__text">
+            Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis.
+            Nulla dapibus urna volutpat venenatis, risus faucibus.
+          </p>
         </details>
         <details class="faq__details details">
           <summary class="details__heading">How can we buy your NFTs?</summary>
+          <p class="details__text">
+            Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis.
+            Nulla dapibus urna volutpat venenatis, risus faucibus.
+          </p>
         </details>
         <details class="faq__details details">
           <summary class="details__heading">Who are the team behind the project?</summary>
+          <p class="details__text">
+            Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis.
+            Nulla dapibus urna volutpat venenatis, risus faucibus.
+          </p>
         </details>
       </div>
     </section>
@@ -402,10 +435,10 @@
         <div class="footer__nav subscribe-nav">
           <p class="subscribe-nav__heading">Subscribe</p>
           <ul class="subscribe-nav__block">
-            <li class="subscribe-nav__item"><a class="footer-link" href="#">Home</a></li>
-            <li class="subscribe-nav__item"><a class="footer-link" href="#">Blog</a></li>
-            <li class="subscribe-nav__item"><a class="footer-link" href="#">Slider</a></li>
-            <li class="subscribe-nav__item"><a class="footer-link" href="#">Contact Us</a></li>
+            <li class="subscribe-nav__item"><a class="footer-link link" href="#">Home</a></li>
+            <li class="subscribe-nav__item"><a class="footer-link link" href="#">Blog</a></li>
+            <li class="subscribe-nav__item"><a class="footer-link link" href="#">Slider</a></li>
+            <li class="subscribe-nav__item"><a class="footer-link link" href="#">Contact Us</a></li>
           </ul>
         </div>
 
@@ -413,10 +446,10 @@
           <p class="footer__heading">Company</p>
 
           <ul class="footer__block-pages info-pages">
-            <li class="info-pages__item"><a class="footer-link" href="#">Terms Conditions</a></li>
-            <li class="info-pages__item"><a class="footer-link" href="#">Privacy Policy</a></li>
-            <li class="info-pages__item"><a class="footer-link" href="#">White paper</a></li>
-            <li class="info-pages__item"><a class="footer-link" href="#">Help Center</a></li>
+            <li class="info-pages__item"><a class="footer-link link" href="#">Terms Conditions</a></li>
+            <li class="info-pages__item"><a class="footer-link link" href="#">Privacy Policy</a></li>
+            <li class="info-pages__item"><a class="footer-link link" href="#">White paper</a></li>
+            <li class="info-pages__item"><a class="footer-link link" href="#">Help Center</a></li>
           </ul>
         </div>
       </div>

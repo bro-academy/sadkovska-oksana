@@ -27,10 +27,14 @@
     list-style: none;
     font-size: 18px;
     line-height: 28px;
-}
 
+}
 .main-info__heading {
     font-size: 28px;
     line-height: 36px;
 
+}
+.main-image__img {
+    width: 1024px;
+    height: 557px;
 }

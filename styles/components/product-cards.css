@@ -15,5 +15,17 @@
 }
 
 .product-card {
+    padding: 24px;
+    border-image-slice: 50;
+    border-image-width: 50px;
     background-color: var(--color-background-alternative);
+    object-fit: cover; 
+}
+
+.product-card:hover {
+    border-image-source: url("../../assets/info-card-hover.webp");
+}
+.product-card:active{
+    outline: 2px solid var(--color-primary-hover);
+
 }
