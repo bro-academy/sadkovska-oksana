@@ -34,7 +34,7 @@
 }
 
 .info-card:hover {
-    border-image-source: url("../../assets/info-card-hover.png");
+    border-image-source: url("../../assets/info-card-hover.webp");
 }
 .info-card:active {
     outline: 2px solid var(--color-primary-hover);
