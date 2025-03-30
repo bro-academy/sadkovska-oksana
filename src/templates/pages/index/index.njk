@@ -1,5 +1,12 @@
-{% extends "layouts/base.njk" %}
+{% extends 'layouts/base.njk' %}
 
 {% block content %}
-index page content
+
+  {% include 'partials/banner.njk' %}
+  {% include 'partials/product-cards.njk' %}
+  {% include 'partials/our-blog.njk' %}
+  {% include 'partials/about-us.njk' %}
+  {% include 'partials/our-team.njk' %}
+  {% include 'partials/faq.njk' %}
+
 {% endblock %}

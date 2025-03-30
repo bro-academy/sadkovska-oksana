@@ -1,4 +1,287 @@
 {
-  "title": "test",
-  "h1": ""
+  "title_site": "Binabox",
+  "blog__heading": "Our blog",
+  "team__heading": "Our team",
+  "faq__heading": "FAQs",
+  "about__heading": "About us",
+  "button_read_more": "Read more",
+  "banner": {
+    "heading": {
+      "first": "With",
+      "accent": "Binabox",
+      "last": "explore NFT collection"
+    },
+    "text": "We are the best way to check the rarity of NFT collection",
+    "statistic": [
+      {
+        "number": "2240+",
+        "text": "Total Item"
+      },
+      {
+        "number": "1000+",
+        "text": "Profiles whitelisted"
+      }
+    ]
+  },
+  "product_card": [
+    {
+      "img": "img/sceleton.webp.webp",
+      "label": "New",
+      "price": "199",
+      "currency": "$",
+      "title": "Name Product",
+      "width": "252",
+      "height": "324",
+      "alt": "sceleton"
+    },
+    {
+      "img": "img/green-eyes-cat.webp",
+      "label": "New",
+      "price": "199",
+      "currency": "$",
+      "title": "Name Product",
+      "width": "252",
+      "height": "324",
+      "alt": "cat-with-green-eyes"
+    },
+    {
+      "img": "img/scisors.webp",
+      "label": "Sold out",
+      "price": "199",
+      "currency": "$",
+      "title": "Name Product",
+      "width": "252",
+      "height": "324",
+      "alt": "scissors"
+    },
+    {
+      "img": "img/disc-server.webp",
+      "label": "New",
+      "price": "199",
+      "currency": "$",
+      "title": "Name Product",
+      "width": "252",
+      "height": "324",
+      "alt": "nft-server-disc"
+    },
+    {
+      "img": "img/frame.webp",
+      "label": "New",
+      "price": "199",
+      "currency": "$",
+      "title": "Name Product",
+      "width": "252",
+      "height": "324",
+      "alt": "frame"
+    }
+  ],
+  "blog_card": [
+    {
+      "img": "img/girl-face.webp",
+      "heading": "Sonic live",
+      "datetime": "20 Jun 2022",
+      "date": "2022-06-20",
+      "name": "Tony Nguyen",
+      "width": "736",
+      "height": "664",
+      "alt": "lady-face",
+      "lavel": "NFT",
+      "button": "Read more >",
+      "text": "One September 22, 2021 A volutpat nulla eros, nulla ultrices necnulla imperdiet..."
+    },
+    {
+      "img": "img/sceleton.webp",
+      "heading": "Sonic live",
+      "datetime": "20 Jun 2022",
+      "date": "2022-06-20",
+      "name": "Tony Nguyen",
+      "width": "736",
+      "height": "198",
+      "alt": "sceleton",
+      "lavel": "NFT",
+      "button": "Read more >",
+      "text": "One September 22, 2021 A volutpat nulla eros, nulla ultrices necnulla imperdiet..."
+    },
+    {
+      "img": "img/green-eyes-cat.webp",
+      "heading": "Sonic live",
+      "datetime": "20 Jun 2022",
+      "date": "2022-06-20",
+      "name": "Tony Nguyen",
+      "width": "736",
+      "height": "198",
+      "alt": "cat-head",
+      "lavel": "NFT",
+      "button": "Read more >",
+      "text": "One September 22, 2021 A volutpat nulla eros, nulla ultrices necnulla imperdiet..."
+    },
+    {
+      "img": "img/gorilla.webp",
+      "heading": "Sonic live",
+      "datetime": "20 Jun 2022",
+      "date": "2022-06-20",
+      "name": "Tony Nguyen",
+      "width": "736",
+      "height": "198",
+      "alt": "gorilla",
+      "lavel": "NFT",
+      "button": "Read more >",
+      "text": "One September 22, 2021 A volutpat nulla eros, nulla ultrices necnulla imperdiet..."
+    },
+    {
+      "img": "img/white-duck.webp",
+      "heading": "Sonic live",
+      "datetime": "20 Jun 2022",
+      "date": "2022-06-20",
+      "name": "Tony Nguyen",
+      "width": "736",
+      "height": "198",
+      "alt": "duck-head",
+      "lavel": "NFT",
+      "button": "Read more >",
+      "text": "One September 22, 2021 A volutpat nulla eros, nulla ultrices necnulla imperdiet..."
+    },
+    {
+      "img": "img/frame.webp",
+      "heading": "Sonic live",
+      "datetime": "20 Jun 2022",
+      "date": "2022-06-20",
+      "name": "Tony Nguyen",
+      "width": "736",
+      "height": "664",
+      "alt": "frame",
+      "lavel": "NFT",
+      "button": "Read more >",
+      "text": "One September 22, 2021 A volutpat nulla eros, nulla ultrices necnulla imperdiet..."
+    }
+  ],
+  "slider": {
+    "button": "See all",
+    "heading": "Catalog"
+  },
+  "about_us": [
+    {
+      "heading": "High quality",
+      "text": "Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry."
+    },
+    {
+      "heading": "Big collection",
+      "text": "Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry."
+    },
+    {
+      "heading": "Top resourse",
+      "text": "Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry."
+    },
+    {
+      "heading": "Big community",
+      "text": "Lorem Ipsum is simply dummy text of the printing and Ipsum typesetting industry."
+    }
+  ],
+  "about": {
+    "text": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occae cat cupidatat non proident, sunt in culpa qui officia dese runt mollit anim id est laborum velit esse cillum dolore eu fugiat nulla pariatu epteur sintoccaecat"
+  },
+  "our_team": [
+    {
+      "width": "127",
+      "height": "127",
+      "name": "Jason Smith",
+      "role": "Co-founder",
+      "photo": "img/team-member-photo.webp",
+      "facebook": "img/facebook.svg",
+      "telegram": "img/telegram.svg",
+      "insta": "img/instagram.svg",
+      "linkedin": "img/linkedin.svg",
+      "twitter": "img/twitter.svg"
+    },
+    {
+      "width": "127",
+      "height": "127",
+      "name": "Jason Smith",
+      "role": "Co-founder",
+      "photo": "img/team-member-photo.webp",
+      "facebook": "img/facebook.svg",
+      "telegram": "img/telegram.svg",
+      "insta": "img/instagram.svg",
+      "linkedin": "img/linkedin.svg",
+      "twitter": "img/twitter.svg"
+    },
+    {
+      "width": "127",
+      "height": "127",
+      "name": "Jason Smith",
+      "role": "Co-founder",
+      "photo": "img/team-member-photo.webp",
+      "facebook": "img/facebook.svg",
+      "telegram": "img/telegram.svg",
+      "insta": "img/instagram.svg",
+      "linkedin": "img/linkedin.svg",
+      "twitter": "img/twitter.svg"
+    },
+    {
+      "width": "127",
+      "height": "127",
+      "name": "Jason Smith",
+      "role": "Co-founder",
+      "photo": "img/team-member-photo.webp",
+      "facebook": "img/facebook.svg",
+      "telegram": "img/telegram.svg",
+      "insta": "img/instagram.svg",
+      "linkedin": "img/linkedin.svg",
+      "twitter": "img/twitter.svg"
+    },
+    {
+      "width": "127",
+      "height": "127",
+      "name": "Jason Smith",
+      "role": "Co-founder",
+      "photo": "img/team-member-photo.webp",
+      "facebook": "img/facebook.svg",
+      "telegram": "img/telegram.svg",
+      "insta": "img/instagram.svg",
+      "linkedin": "img/linkedin.svg",
+      "twitter": "img/twitter.svg"
+    },
+    {
+      "width": "127",
+      "height": "127",
+      "name": "Jason Smith",
+      "role": "Co-founder",
+      "photo": "img/team-member-photo.webp",
+      "facebook": "img/facebook.svg",
+      "telegram": "img/telegram.svg",
+      "insta": "img/instagram.svg",
+      "linkedin": "img/linkedin.svg",
+      "twitter": "img/twitter.svg"
+    },
+    {
+      "width": "127",
+      "height": "127",
+      "name": "Jason Smith",
+      "role": "Co-founder",
+      "photo": "img/team-member-photo.webp",
+      "facebook": "img/facebook.svg",
+      "telegram": "img/telegram.svg",
+      "insta": "img/instagram.svg",
+      "linkedin": "img/linkedin.svg",
+      "twitter": "img/twitter.svg"
+    }
+  ],
+  "faq": [
+    {
+      "heading": "What are the NFTs?",
+      "text": "Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus."
+    },
+    {
+      "heading": "How do i get NFTs?",
+      "text": "Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus."
+    },
+    {
+      "heading": "How can we buy your NFTs?",
+      "text": "Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus."
+    },
+    {
+      "heading": "Who are the team behind the project?",
+      "text": "Urna vitae erat et lacus, consectetur ac nulla vestibulum lobortis. Nulla dapibus urna volutpat venenatis, risus faucibus."
+    }
+  ]
 }
