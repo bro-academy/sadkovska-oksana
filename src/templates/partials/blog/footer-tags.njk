@@ -1,0 +1,15 @@
+ <section class="footer-tags">
+      <h2 class="footer-tags__heading">{{ footer_tags__heading }}</h2>
+      <ul class="footer-tags__block">
+        {% for item in tags_block %}
+        <li class="footer-tags__item label"><a class="footer-tags__link" href="#">{{ item.label }}</a></li>
+      {% endfor %}
+      </ul>
+      <h3 class="footer-tags__share share">{{ share_heading }}</h3>
+      <ul class="share__block">
+        {% for item in share_block %}
+        <li class="share__item"><a class="share__link" href="{{ item.href }}"><img class="share__icon" src="{{ item.src }}"
+              alt="{{ item.alt }}"></a></li>
+       {% endfor %}
+      </ul>
+    </section>

@@ -88,16 +88,23 @@ export const clean = () => deleteAsync([paths.distDir])
 
 const getDataForFile = (file) => {
   const filePath = join(cwd(), paths.viewsDir, 'pages', dirname(file.relative), 'data.json');
-  let fileContent
+  const commonFilePath = join(cwd(), paths.viewsDir, 'partials', 'common', 'data.json');
+  let fileContent = {};
+  let commonFileContent = {};
 
   try {
-    fileContent = readFileSync(filePath, 'utf8')
+    fileContent = JSON.parse(readFileSync(filePath, 'utf8'))
   } catch (error) {
-    fileContent = "{}"
     if (args.debug) console.warn(error.message)
   }
 
-  return JSON.parse(fileContent)
+  try {
+    commonFileContent = JSON.parse(readFileSync(commonFilePath, 'utf8'))
+  } catch (error) {
+    if (args.debug) console.warn(error.message)
+  }
+
+  return Object.assign(commonFileContent, fileContent)
 };
 
 function htmllintReporter(results) {

@@ -1,0 +1,24 @@
+<section class="main-info">
+    <blockquote class="main-info__blockquote blockquote-blog">
+        <p class="blockquote-blog__text">“{{ blog_text }}”</p>
+        <img class="blockquote-blog__icon" src="img/stars.svg" alt="stars">
+        <cite class="blockquote-blog__cite">{{ blog__cite }}</cite>
+        <span class="blockquote-blog__rating">{{ blog__rating }}</span>
+    </blockquote>
+    <div class="main-info__img-container">
+        {% for item in main_info %}
+
+            <figure class="main-info__image" >
+                <img class="main-info__img" width="{{ item.width }}" height="{{ item.heidht }}" src="{{ item.src }}" alt="{{ item.alt }}">
+                <figcaption class="main-info__img-caption label-description">{{ item.caption }}</figcaption>
+            </figure>
+
+        {% endfor %}
+    </div>
+    {% for item in info_text %}
+        <h2 class="main-info__heading">{{ item.heading }}</h2>
+        <p class="main-info__text">{{ item.text }}</p>
+        <p class="main-info__text">{{ item.text1 }}</p>
+    {% endfor %}
+
+</section>

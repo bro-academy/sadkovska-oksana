@@ -1,0 +1,178 @@
+{
+    "footer_tags__heading": "Tags:",
+    "tags_block": [
+        {
+            "label": "NFT"
+        },
+        {
+            "label": "ICO"
+        },
+        {
+            "label": "Crypto"
+        }
+    ],
+    "share_heading": "Share:",
+    "share__block": [
+        {
+            "src": "img/twitter.svg",
+            "href": "#",
+            "alt": "Twitter"
+        },
+        {
+            "src": "img/facebook.svg",
+            "href": "#",
+            "alt": "Facebook"
+        },
+        {
+            "src": "img/instagram.svg",
+            "href": "#",
+            "alt": "Instagram"
+        }
+    ],
+    "blog_text": "The first huge metaverse arena to arrange live sports, hang out and even make bets and wagers",
+    "blog__cite": "Markout Corporation",
+    "blog__rating": "8.5/10",
+    "main_info": [
+        {
+            "width": "500",
+            "height": "394",
+            "src": "img/vasilisk-blog-secondary-head-1x.webp",
+            "alt": "vasilisk-head",
+            "caption": "Photo caption"
+        },
+        {
+            "width": "500",
+            "height": "394",
+            "src": "img/vasilisk-blog-secondary-with-knight-1x.webp",
+            "alt": "vasilisk-with-kight",
+            "caption": "Photo caption"
+        }
+    ],
+    "info_text": [
+        {
+            "heading": "NFTs are digital assets that represent real-world objects",
+            "text": "Setting up your avatar and personalizing your nickname on Binance is quick and easy. Users can go to binance.com under Dashboard > Settings > My Profile > Avatar and Nickname. For those of you who own NFT assets, you can select the NFT you want to use from your collection as your avatar to personalize your profile. For users who do not own any NFT avatars, check out the NFT avatar collections page to get started.",
+            "text1": " Alternatively, if you're on nft.binance.com, go to User Center > Settings > Basic > Set Avatar and Nickname, and you'll be redirected to the main site. Binance NFT Creators have the option of setting their Avatars on nft.binance.com.Once you set your new unique nickname, it will be standardized and used across the Binance ecosystem."
+        },
+        {
+            "heading": "NFT Avatar Generators",
+            "text": "You can find a range of NFT marketplaces where you can buy existing NFTs or list your own NFTs for sale."
+        }
+    ],
+    "our_blog_heading": "OUR blog",
+    "our_blog": [
+        {
+            "link": "Home"
+        },
+        {
+            "link": "Our Blog"
+        },
+        {
+            "link": "The Basilisks NFT"
+        }
+    ],
+    "aside_heading": "Categories",
+    "aside_categories": [
+        {
+            "category": "Our blog",
+            "numbers": "12"
+        },
+        {
+            "category": "Metaverse",
+            "numbers": "24"
+        },
+        {
+            "category": "Gaming",
+            "numbers": "24"
+        },
+        {
+            "category": "Art",
+            "numbers": "24"
+        },
+        {
+            "category": "Robot",
+            "numbers": "24"
+        },
+        {
+            "category": "Lauchpad",
+            "numbers": "24"
+        },
+        {
+            "category": "Crypto",
+            "numbers": "430"
+        }
+    ],
+    "tags_menu_heading": "Tag",
+    "tags_menu": [
+        {
+            "category": "Our blog"
+        },
+        {
+            "category": "Metaverse"
+        },
+        {
+            "category": "Gaming"
+        },
+        {
+            "category": "Art"
+        },
+        {
+            "category": "Robot"
+        },
+        {
+            "category": "Lauchpad"
+        },
+        {
+            "category": "Crypto"
+        }
+    ],
+    "main_image__heading": "The Basilisks NFT",
+    "main_image_img": {
+        "width": "1024",
+        "height": "557",
+        "src": "img/vasilisk-blog-main-photo-1x.webp",
+        "alt": "main-vasilisk-with-knight",
+        "caption": "Photo caption"
+    },
+    "main_image_label": "Gaming",
+    "main_image__autor": "Tony Nguyen",
+    "datetime": "20 Jun 2022",
+    "datetime.src": "2022-06-20",
+    "list_paragraph": [
+        {
+            "text": "The Basilisks that players collect are represented with NFTs on Ethereum’s blockchain with real-world value. Players use the Basilisks they have gathered to battle other players to win ether (ETH). "
+        },
+        {
+            "text": "In Balthazar Dragons, players are immersed in a 3D open world to explore and capture dragon-like beasts called Basilisks Balthazar Dragons is an upcoming fantasy role-playing game developed on the Ethereum blockchain by decentralized autonomous organization (DAO) called the Balthazar DAO."
+        }
+    ],
+    "list-order": [
+        {
+            "name": "List1",
+            "src": "img/logo.svg",
+            "alt": "logo"
+        },
+        {
+            "name": "List2",
+            "src": "img/logo.svg",
+            "alt": "logo"
+        },
+        {
+            "name": "List3",
+            "src": "img/logo.svg",
+            "alt": "logo"
+        },
+        {
+            "name": "List4",
+            "src": "img/logo.svg",
+            "alt": "logo"
+        }
+    ],
+    "main_image_text1": "The Basilisks that players collect are represented with NFTs on Ethereum’s blockchain with real-world value. Players use the",
+    "main_image_text2": "Basilisks they have",
+    "main_image_text3": "gathered to battle other players to win ether (ETH).In Balthazar Dragons,",
+    "main_image_text4": "players",
+    "main_image_text5": "are immersed in a 3D open world to explore and capture dragon-like beasts called Basilisks. Balthazar Dragons is an upcoming fantasy role-playing",
+    "main_image_text6": "game developed",
+    "main_image_text7": "game developed on the Ethereum blockchain by a decentralized autonomous organization (DAO) called the Balthazar DAO."
+}

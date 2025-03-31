@@ -1,0 +1,19 @@
+<aside>
+    
+    <div class="our-blog__aside aside-categories">
+        <h2 class="aside-categories__heading">{{ aside.heading }}</h2>
+        <ul class="aside-categories_block">
+            {% for item in aside_categories %}
+                <li class="aside-categories__item">{{ item.category }}({{ item.numbers }})</li>
+            {% endfor %}
+        </ul>
+    </div>
+    
+    <div class="our-blog__tags tags-menu">
+        <h2 class="tags-menu__heading">{{ tags_menu_heading }}</h2>
+        {% for item in tags_menu %}
+            <p class="tags-menu__item label">{{ item.category }}</p>
+        {% endfor %}
+    </div>
+
+</aside>

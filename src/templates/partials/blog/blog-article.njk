@@ -1,0 +1,101 @@
+<article>
+    <section class="main-image">
+
+        <figure class="main-image__image">
+            <img class="main-image__img"  width="{{ main_image_img.width }}" height="{{ main_image_img.height }}" src="{{ main_image_img.src }}" alt="{{ main_image_img.alt }}">
+            <figcaption class="main-image__description label-description">{{ main_image_img.caption }}</figcaption>
+        </figure>
+
+        <h2 class="main-image__heading">
+            {{ main_image__heading }}
+        </h2>
+
+        <p class="main-image__label label">
+            {{ main_image_label }}
+        </p>
+        <img class="main-image__icon icon" src="img/profile.svg" alt="user"/>
+        <p class="main-image__autor autor-name">
+            {{ main_image__autor }}
+        </p>
+        <img class="main-image__icon icon" src="img/calendar.svg" alt="calendar"/>
+        <time class="main-image__datetime datetime" datetime="{{ datetime.src }}">
+            {{ datetime }}
+        </time>
+
+        <p class="main-image__text main-text">
+            {{ main_image_text1 }}
+            <span class="main-text__linked">
+                {{ main_image_text2 }}
+            </span>
+            {{ main_image_text3 }}
+            <mark class="main-image__mark">
+                {{ main_image_text4 }}
+            </mark>
+            {{ main_image_text5 }}
+            <span class="main-text__linked">
+                {{ main_image_text6 }}
+            </span>
+            {{ main_image_text7 }}
+        </p>
+
+        <ul class="main-image__list list-paragpaph">
+            {% for item in list_paragraph %}
+                <li class="list-paragpaph__item">{{ item.text}}</li>
+            {% endfor %}
+        </ul>
+
+        <ol class="main-image__order list-order">
+            {% for item in list_order %}
+                <li class="list-order__item">
+                    <a class="list-order__link link"><img class="list-order__img" src="{{ item.src }}" alt="{{ item.alt }}">
+                        {{ item.name }}</a>
+                </li>
+            {% endfor %}
+        </ol>
+    </section>
+
+    <section class="main-info">
+        <blockquote class="main-info__blockquote blockquote-blog">
+            <p class="blockquote-blog__text">“{{ blog_text }}”</p>
+            <img class="blockquote-blog__icon" src="img/stars.svg" alt="stars">
+            <cite class="blockquote-blog__cite">{{ blog__cite }}</cite>
+            <span class="blockquote-blog__rating">{{ blog__rating }}</span>
+        </blockquote>
+        <div class="main-info__img-container">
+            {% for item in main_info %}
+
+                <figure class="main-info__image" >
+                    <img class="main-info__img" width="{{ item.width }}" height="{{ item.heidht }}" src="{{ item.src }}" alt="{{ item.alt }}">
+                    <figcaption class="main-info__img-caption label-description">{{ item.caption }}</figcaption>
+                </figure>
+
+            {% endfor %}
+        </div>
+        {% for item in info_text %}
+            <h2 class="main-info__heading">{{ item.heading }}</h2>
+            <p class="main-info__text">{{ item.text }}</p>
+            <p class="main-info__text">{{ item.text1 }}</p>
+        {% endfor %}
+
+    </section>
+
+    <section class="footer-tags">
+        <h2 class="footer-tags__heading">{{ footer-tags__heading }}</h2>
+        <ul class="footer-tags__block">
+            {% for item in tags_block %}
+                <li class="footer-tags__item label">
+                    <a class="footer-tags__link" href="#">{{ item.label }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+        <h3 class="footer-tags__share share">{{ share_heading }}</h3>
+        <ul class="share__block">
+            {% for item in share_block %}
+                <li class="share__item">
+                    <a class="share__link" href="{{ item.href }}"><img class="share__icon" src="{{ item.src }}"
+              alt="{{ item.alt }}"></a>
+                </li>
+            {% endfor %}
+        </ul>
+    </section>
+</article>
