@@ -34,7 +34,7 @@ const paths = {
   distDir: dist,
   dev: {
     scss:  dev+'styles/**/*.{css,scss}',
-    styles: dev+'styles/pages/*.{css,scss}',
+    styles: dev+'styles/style.{css,scss}',
     svg: dev+'images/sprite/*.svg',
     views: dev+'templates/**/*.{json,njk,html}',
     pages: dev+'templates/pages/*/*.{njk,html}',

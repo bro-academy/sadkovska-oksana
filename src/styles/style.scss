@@ -1,22 +1,18 @@
-@import url(../components/ui-elements.css);
-@import url(../components/header.css);
-@import url(../components/banner.css);
-@import url(../components/slider.css);
-@import url(../components/product-cards.css);
-@import url(../components/our-blog.css);
-@import url(../components/about-us.css);
-@import url(../components/our-team.css);
-@import url(../components/faq.css);
-@import url(../components/footer.css);
-@import url(../components/main-image.css);
-@import url(../components/main-info.css);
-@import url(../components/footer-tags.css);
+@import "./global/normalize.scss";
 
-
-
-
-
-
+@import "./components/ui-elements.scss";
+@import "./components/header.scss";
+@import "./components/banner.scss";
+@import "./components/slider.scss";
+@import "./components/product-cards.scss";
+@import "./components/our-blog.scss";
+@import "./components/about-us.scss";
+@import "./components/our-team.scss";
+@import "./components/faq.scss";
+@import "./components/footer.scss";
+@import "./components/main-image.scss";
+@import "./components/main-info.scss";
+@import "./components/footer-tags.scss";
 
 :root {
 
@@ -31,7 +27,7 @@
     --color-secondary: rgba(245, 248, 251, 1);
     --color-secondary-hover: rgba(191, 197, 238, 0.12);
     --color-secondary-active: rgba(229, 236, 251, 0.36);
-    
+
 
     --color-background: rgba(13, 13, 21, 1);
     --color-background-alternative: rgba(29, 28, 40, 1);
