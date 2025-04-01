@@ -1,0 +1,65 @@
+{
+    "header_nav_underlined": "Home",
+    "header_nav": [
+        {
+            "element": "Blog"
+        },
+        {
+            "element": "Slider"
+        },
+        {
+            "element": "Slider"
+        }
+    ],
+    "header_btn_secondary": "Discord",
+    "header_btn_primary": "Connect",
+    "footer__text": "We are the best way to check the rarity of NFT collection.",
+    "footer_nav": [
+        {
+            "link": "Home"
+        },
+        {
+            "link": "Blog"
+        },
+        {
+            "link": "Slider"
+        },
+        {
+            "link": "Contact Us"
+        }
+    ],
+    "footer_heading": "Company",
+    "footer_pages": [
+        {
+            "link": "Terms Conditions",
+            "link": "Privacy Policy",
+            "link": "White paper",
+            "link": "Help Center"
+        }
+    ],
+    "license_text": "BINABOX 2022 - ALL rights reserved",
+    "footer__heading": "Company",
+    "nav__heading": "Subscribe",
+    "footer_social": [
+        {
+            "src": "img/twitter.svg",
+            "alt": "twitter"
+        },
+        {
+            "src": "img/facebook.svg",
+            "alt": "facebook"
+        },
+        {
+            "src": "img/telegram.svg",
+            "alt": "telegram"
+        },
+        {
+            "src": "img/tiktok.svg",
+            "alt": "tik-tok"
+        },
+        {
+            "src": "img/discord.svg",
+            "alt": "discord"
+        }
+    ]
+}

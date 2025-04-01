@@ -1,0 +1,16 @@
+{% extends 'layouts/base.njk' %}
+
+{% block content %}
+
+  {# {% include 'partials/blog/blog-part.njk' %}
+  {% include 'partials/blog/main-image.njk' %}
+  {% include 'partials/blog/main-info.njk' %}
+  {% include 'partials/blog/footer-tags.njk' %} #}
+
+  <section class="our-blog">
+    {% include 'partials/blog/blog-header.njk' %}
+    {% include 'partials/blog/blog-aside.njk' %}
+    {% include 'partials/blog/blog-article.njk' %}
+  </section>
+
+{% endblock %}

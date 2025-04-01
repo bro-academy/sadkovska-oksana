@@ -1,0 +1,19 @@
+<section class="about">
+      <h2 class="about__heading heading">{{ about__heading }}</h2>
+      <p class="about__text">
+     {{ about.text }}
+      </p>
+      <ul class="about__cards">
+
+        {% for item in about_us %}
+        <li class="about__card info-card">
+          <h3 class="info-card__heading">{{ item.heading }}</h3>
+          <p class="info-card__text">
+          {{ item.text }}
+          </p>
+        </li>
+        {% endfor %}
+
+      </ul>
+      <a class="about__btn button button--secondary" href="#">{{ button_read_more }}</a>
+    </section>

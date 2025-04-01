@@ -1,0 +1,16 @@
+<section class="faq">
+  <div class="faq__container">
+    <h2 class="faq__heading heading">FAQs</h2>
+    {% for item in faq %}
+
+      <details class="faq__details details" open>
+        <summary class="details__heading">{{ item.heading }}</summary>
+        <p class="details__text">
+          {{ item.text }}
+        </p>
+      </details>
+
+    {% endfor %}
+
+  </div>
+</section>

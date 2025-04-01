@@ -1,0 +1,29 @@
+ <section class="banner">
+      <div class="banner__wrapper wrapper">
+        
+        <div class="banner__details">
+          
+          <h1 class="banner__heading">
+            {{ banner.heading.first }}
+            <span class="banner__heading heading--highlight">{{ banner.heading.accent }}</span> 
+            {{ banner.heading.last }}
+          </h1>
+          
+          <p class="banner__text">{{ banner.text }}</p>
+          
+          <dl class="banner__statistics">
+            {% for item in banner.statistic %}
+              <dt class="banner__statistics-numbers">{{ item.number }}</dt>
+              <dd class="banner__statistics-text">{{ item.text }}</dd>
+            {% endfor %}
+          </dl>
+          
+          <button class="banner__btn button button--primary">Connect Wallet</button>
+          <a class="button button--secondary" href="#" target="_blank">Whitelist now</a>
+        
+        </div>
+        <div class="banner__image-block">
+          <img class="banner__image" width="533" height="642" src="img/banner-cube-1x.webp" alt="nft-cube" />
+        </div>
+      </div>
+    </section>
