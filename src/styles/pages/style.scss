@@ -1,79 +1,19 @@
-@import "./../global/normalize.scss";
+@use "./../global/normalize";
+@use "./../global/variables";
+@use "./../global/global";
+@use "./../components/ui";
+@use "./../components/header";
+@use "./../components/footer";
 
-@import "./../components/ui-elements.scss";
-@import "./../components/header.scss";
-@import "./../components/banner.scss";
-@import "./../components/slider.scss";
-@import "./../components/product-cards.scss";
-@import "./../components/our-blog.scss";
-@import "./../components/about-us.scss";
-@import "./../components/our-team.scss";
-@import "./../components/faq.scss";
-@import "./../components/footer.scss";
-@import "./../components/main-image.scss";
-@import "./../components/main-info.scss";
-@import "./../components/footer-tags.scss";
+//@use "./../components/banner.scss";
+// @use "./../components/slider.scss";
+// @use "./../components/product-cards.scss";
+// @use "./../components/our-blog.scss";
+// @use "./../components/about-us.scss";
+// @use "./../components/our-team.scss";
+// @use "./../components/faq.scss";
 
+// @use "./../components/main-image.scss";
+// @use "./../components/main-info.scss";
+// @use "./../components/blog-tags.scss";
 
-
-
-
-:root {
-
-    --font-family-primary: "Poppins", Arial, Verdana, Tahoma, sans-serif;
-    --font-family-secondary: "Bakbak One", Georgia, 'Times New Roman', Times, serif;
-
-    --color-primary: rgba(2, 101, 220, 1);
-    --color-primary-hover: rgba(56, 146, 243, 1);
-    --color-primary-active: rgba(0, 84, 182, 1);
-
-
-    --color-secondary: rgba(245, 248, 251, 1);
-    --color-secondary-hover: rgba(191, 197, 238, 0.12);
-    --color-secondary-active: rgba(229, 236, 251, 0.36);
-    
-
-    --color-background: rgba(13, 13, 21, 1);
-    --color-background-alternative: rgba(29, 28, 40, 1);
-    --color-background-secondary:  rgba(26, 25, 37, 1);
-
-
-    --color-border-transparent: rgba(208, 215, 251, 0.17);
-
-    --color-critical: rgba(234, 56, 41, 1);
-
-    --color-text-secondary: rgba(239, 245, 250, 0.82);
-
-    --color-elements-secondary: rgba(231, 238, 247, 0.66);
-    --color-elements-invert: rgba(0, 39, 84, 1);
-
-    --color-focus-border: rgba(56, 146, 243, 1);
-}
-
-* {
-    box-sizing: border-box;
-}
-
-body {
-    font-family: var(--font-family-primary);
-    color: var(--color-secondary);
-    background-color: var(--color-background);
-    font-weight: 400;
-}
-
-a,
-button {
-    text-decoration: none;
-    outline: 0 solid transparent;
-    outline-offset: 0;
-}
-
-a,
-button,
-summary {
-    cursor: pointer;
-}
-
-footer li {
-    list-style-type: none;
-}

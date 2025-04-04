@@ -1,0 +1,45 @@
+@use './../../global/mixins' as mixin;
+
+.info-card {
+    display: inline-block;
+    list-style: none;
+    max-width: 300px;
+    padding: 20px;
+    border-image-slice: 50;
+    border-image-width: 50px;
+    background-color: var(--color-background-secondary);
+  
+    &:hover {
+      border-image-source: url("img/info-card-hover-1x.webp");
+    }
+  
+    &:active {
+      @include mixin.outline_card();
+    }
+  
+    &__heading {
+      font-family: var(--font-family-secondary);
+      @include mixin.subheading4();
+      position: relative;
+      z-index: +1;
+  
+      &::after {
+        font-family: var(--font-family-secondary);
+        font-size: 80px;
+        content: '0' counter(cards-counter);
+        position: absolute;
+        left: 0;
+        bottom: -20px;
+        color: var(--color-background-secondary);
+        z-index: -1;
+        -webkit-text-stroke: 2px var(--color-primary);
+        text-shadow: 0px 0px 2px var(--color-primary);
+        counter-increment: cards-counter;
+      }
+    }
+  
+    &__text {
+      font-family: var(--font-family-primary);
+      @include mixin.text1();
+    }
+  }
