@@ -1,0 +1,8 @@
+@use './../../global/mixins' as mixin;
+
+.autor-name {
+    @include mixin.text3();
+    font-weight: 600;
+    display: inline-block;
+
+}

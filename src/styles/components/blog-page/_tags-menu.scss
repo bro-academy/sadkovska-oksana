@@ -1,0 +1,9 @@
+@use './../../global/mixins' as mixin;
+
+.tags-menu {
+    &__item {
+      background-color: var( --transparent);
+      color: var(--color-secondary);
+      @include mixin.border_tags();
+    }
+  }

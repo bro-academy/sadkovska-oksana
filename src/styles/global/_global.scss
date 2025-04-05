@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: var(--font-family-primary);
+    color: var(--color-secondary);
+    background-color: var(--color-background);
+    font-weight: 400;
+  }
+  
+  a,
+  button {
+    text-decoration: none;
+    outline: 0 solid transparent;
+    outline-offset: 0;
+  
+    &,
+    summary {
+      cursor: pointer;
+    }
+  }
+  
+  footer {
+    li {
+      list-style-type: none;
+    }
+  }
+  
+// * {
+//     box-sizing: border-box;
+// }
+
+// body {
+//     font-family: var(--font-family-primary);
+//     color: var(--color-secondary);
+//     background-color: var(--color-background);
+//     font-weight: 400;
+// }
+
+// a,
+// button {
+//     text-decoration: none;
+//     outline: 0 solid transparent;
+//     outline-offset: 0;
+// }
+
+// a,
+// button,
+// summary {
+//     cursor: pointer;
+// }
+
+// footer li {
+//     list-style-type: none;
+// }

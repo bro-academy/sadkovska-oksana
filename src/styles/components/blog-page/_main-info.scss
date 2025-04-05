@@ -1,0 +1,33 @@
+@use './../../global/mixins' as mixin;
+.main-info {
+    display: inline-block;
+  
+    &__image {
+      width: 500px;
+    }
+  
+    &__img-container {
+      display: flex;
+    }
+  
+    &__heading {
+      @include mixin.subheading3();
+    }
+  }
+// .main-info {
+//     display: inline-block
+// }
+
+
+// .main-info__image {
+//     width: 500px;
+// }
+
+// .main-info__img-container {
+//     display: flex;
+// }
+// .main-info__heading {
+//     font-size: 28px;
+//     line-height: 36px;
+
+// }

@@ -1,0 +1,7 @@
+@use './../../global/mixins' as mixin;
+
+.datetime {
+    @include mixin.text3();
+    display: inline-block;
+
+}

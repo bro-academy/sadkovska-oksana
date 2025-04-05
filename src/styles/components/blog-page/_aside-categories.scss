@@ -1,0 +1,7 @@
+@use './../../global/mixins' as mixin;
+
+.aside-categories {
+    &__heading {
+      @include mixin.subheading4();
+    }
+  }

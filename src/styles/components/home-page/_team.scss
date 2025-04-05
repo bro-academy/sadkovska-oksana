@@ -1,0 +1,74 @@
+@use './../../global/mixins' as mixin;
+.team {
+    &__heading {
+      font-family: var(--font-family-secondary);
+      font-size: 24px;
+    }
+  
+    &__role {
+      @include mixin.text2();
+      color: var(--color-text-secondary);
+    }
+  
+    &__block {
+      display: flex;
+      gap: 20px;
+      counter-reset: cards-counter;
+    }
+  
+    &__item {
+      display: inline-block;
+      list-style: none;
+      max-width: 300px;
+      padding: 20px;
+      border-image-slice: 50;
+      border-image-width: 50px;
+      background-color: var(--color-background-secondary);
+  
+      &:hover {
+        border-image-source: url("img/info-card-hover.webp");
+      }
+  
+      &:active {
+        outline: 2px solid var(--color-primary-hover);
+      }
+    }
+  
+    &__photo {
+      @include mixin.round_border();
+    }
+  }
+
+// .team__heading {
+//     font-family: var(--font-family-secondary);
+//     font-size: 24px;
+// }
+
+// .team__role {
+//     font-size: 18px;
+//     line-height: 28px;
+//     color: var(--color-text-secondary);
+// }
+// .team__block {
+//     display: flex;
+//     gap: 20px;
+//     counter-reset: cards-counter;
+// }
+// .team__item {
+//     display: inline-block;
+//     list-style: none;
+//     max-width: 300px;
+//     padding: 20px;
+//     border-image-slice: 50;
+//     border-image-width: 50px;
+//     background-color: var(--color-background-secondary);
+// }
+// .team__item:hover {
+//     border-image-source: url("../../assets/info-card-hover.webp");
+// }
+// .team__item:active {
+//     outline: 2px solid var(--color-primary-hover);
+// }
+// .team__photo {
+//     border-radius: 50%; 
+// }

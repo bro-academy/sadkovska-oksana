@@ -1,0 +1,29 @@
+@use './../../global/mixins' as mixin;
+.blog {
+    &____heading {
+        @include mixin.heading2();
+    }
+
+    &__wrapper {
+        display: flex;
+    }
+
+    &__card {
+        background-color: var(--color-background-alternative);
+    }
+
+
+
+}
+
+// .blog__heading {
+//     font-size: 36px;
+// }
+// .blog__wrapper {
+//     display: flex;
+
+// }
+// .blog__card {
+
+//     background-color: var(--color-background-alternative);
+// }

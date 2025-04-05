@@ -1,0 +1,20 @@
+@use './../../global/mixins' as mixin;
+
+.share {
+    &__block {
+      list-style-type: none;
+    }
+  
+    &__item {
+      display: inline-block;
+      @include mixin.border_tags();
+    }
+  }
+  // .share__block {
+//     list-style-type: none;
+
+// }
+// .share__item {
+//     display: inline-block;
+//     border: 2px solid #D0D7FB2B;
+// }

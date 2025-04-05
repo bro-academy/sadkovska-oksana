@@ -1,0 +1,6 @@
+@use './../../global/mixins' as mixin;
+
+.label-description {
+    @include mixin.text2();
+    font-weight: 500;
+}

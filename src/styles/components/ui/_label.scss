@@ -1,0 +1,13 @@
+@use './../../global/mixins' as mixin;
+
+.label {
+    display: inline-block;
+    padding: 10px 24px;
+    @include mixin.text3();
+    text-align: center;
+    text-decoration: none;
+    color: var(--color-primary);
+    background-color: var(--color-secondary);
+    
+}
+
