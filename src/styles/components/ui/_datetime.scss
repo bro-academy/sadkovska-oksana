@@ -1,6 +1,7 @@
+@use './../../global/mixins' as mixin;
+
 .datetime {
-    font-weight: 600;
-    font-size: 14px;
+    @include mixin.text3();
     display: inline-block;
-    line-height: 20px;
+
 }

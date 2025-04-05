@@ -1,17 +1,13 @@
+@use './../../global/mixins' as mixin;
+
 .label {
     display: inline-block;
     padding: 10px 24px;
-    font-size: 14px;
-    line-height: 20px;
-    font-weight: 600;
+    @include mixin.text3();
     text-align: center;
     text-decoration: none;
     color: var(--color-primary);
     background-color: var(--color-secondary);
+    
 }
 
-.label-description {
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 500;
-}

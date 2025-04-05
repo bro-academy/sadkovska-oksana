@@ -1,4 +1,5 @@
 @use './../../global/mixins' as mixin;
+
 .banner {
     background: radial-gradient(
       42.5% 42.5% at 22.28% -4.22%,
@@ -7,8 +8,10 @@
     );
   
     &__heading {
+      font-family: var(--font-family-secondary);
       @include mixin.heading1();
       color: var(--color-secondary);
+      text-transform: uppercase;
   
       &--highlight {
         color: var(--color-primary);
@@ -16,7 +19,7 @@
     }
   
     &__text {
-      font-size: 20px;
+      @include mixin.subheading5();
       font-weight: 500;
     }
   

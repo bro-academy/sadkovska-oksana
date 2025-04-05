@@ -169,7 +169,7 @@ function htmllintReporter(results) {
 }
 
 export const styles = () =>
-  src(paths.dev.styles, { sourcemaps: true, since: lastRun(styles) })
+  src(paths.dev.styles, { sourcemaps: true })
     .pipe(sass({
       outputStyle: 'expanded',
       indentWidth: 4

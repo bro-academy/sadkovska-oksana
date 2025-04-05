@@ -65,3 +65,7 @@ border: 2px solid var(--color-border-transparent)
     border-radius: 50%;
 
 }
+@mixin border_focus_visible(){
+    outline: 2px solid var(--color-focus-border);
+    border-radius: 5px;
+}
