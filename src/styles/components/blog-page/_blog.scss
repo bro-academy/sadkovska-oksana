@@ -1,0 +1,14 @@
+@use './../../global/mixins' as mixin;
+.blog {
+    &__heading {
+        @include mixin.heading2();
+    }
+
+    &__wrapper {
+        display: flex;
+    }
+
+    &__card {
+        background-color: var(--color-background-alternative);
+    }
+}

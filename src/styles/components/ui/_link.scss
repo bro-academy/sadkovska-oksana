@@ -1,0 +1,18 @@
+@use './../../global/mixins' as mixin;
+
+.link {
+    padding: 4px;
+  
+    &:hover {
+      color: var(--color-primary-hover);
+    }
+  
+    &:active {
+      color: var(--color-primary-active);
+    }
+  
+    &:focus-visible {
+      @include mixin.border_focus_visible();
+    }
+  }
+  

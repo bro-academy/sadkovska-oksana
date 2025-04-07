@@ -1,0 +1,13 @@
+@use './../../global/mixins' as mixin;
+
+.share {
+    &__block {
+      list-style-type: none;
+    }
+  
+    &__item {
+      @include mixin.border_tags();
+      display: inline-block;
+      
+    }
+  }

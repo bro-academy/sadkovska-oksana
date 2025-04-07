@@ -1,0 +1,21 @@
+@use './../../global/mixins' as mixin;
+
+.main-info {
+    display: inline-block;
+  
+    &__image {
+      width: 500px;
+    }
+  
+    &__img-container {
+      display: flex;
+    }
+  
+    &__heading {
+      @include mixin.subheading3();
+    }
+
+    &__text {
+      @include mixin.text1();
+    }
+  }

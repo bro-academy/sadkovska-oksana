@@ -1,0 +1,82 @@
+/**
+ * Typography
+ */
+
+@mixin heading1() {
+    font-size: 52px;
+    line-height: 62px;
+    font-weight: 400;
+}
+
+@mixin heading2() {
+    font-size: 36px;
+    line-height: 48px;
+}
+
+@mixin heading3() {
+    font-size: 28px;
+    line-height: 36px;
+}
+
+@mixin subheading3() {
+    font-size: 28px;
+    line-height: 36px;
+}
+
+@mixin subheading4() {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+@mixin subheading5() {
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 500;
+}
+
+@mixin text1() {
+    font-size: 18px;
+    line-height: 28px;
+}
+
+@mixin text2() {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+@mixin text3() {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+@mixin text4() {
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 600;
+
+}
+
+@mixin border_tags() {
+    border: 2px solid var(--color-border-transparent)
+}
+
+@mixin card_width_max() {
+    max-width: 784px;
+}
+
+@mixin outline_card() {
+    outline: 2px solid var(--color-primary-hover);
+
+}
+
+@mixin round_border() {
+    border-radius: 50%;
+
+}
+
+@mixin border_focus_visible() {
+    outline: 2px solid var(--color-focus-border);
+    border-radius: 5px;
+}

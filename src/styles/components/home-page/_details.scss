@@ -1,0 +1,45 @@
+@use './../../global/mixins' as mixin;
+
+.details {
+    background-color: var(--color-background-alternative);
+    margin-bottom: 24px;
+    position: relative;
+    padding: 24px;
+  
+    &__heading {
+      @include mixin.subheading4();
+      font-family: var(--font-family-secondary);
+      list-style-type: none;
+  
+      &::-webkit-details-marker {
+        display: none;
+      }
+  
+      &::after {
+        content: url(img/plus.svg);
+        position: absolute;
+        top: 25px;
+        right: 24px;
+      }
+    }
+  
+    &[open] {
+      .details__heading::after {
+        content: url(img/minus.svg);
+      }
+    }
+  
+    &__text {
+      @include mixin.text2();
+  
+      &::before {
+        content: '';
+        height: 2px;
+        background-color: var(--color-border-transparent);
+        display: block;
+        margin-right: 10px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+  

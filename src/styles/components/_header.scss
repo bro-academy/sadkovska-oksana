@@ -1,0 +1,61 @@
+@use './../global/mixins' as mixin;
+
+.header {
+    display: flex;
+  
+    &__element {
+      @include mixin.text2();
+      text-align: center;
+      list-style-type: none;
+      display: inline-block;
+    }
+  
+    &__link {
+      width: 188px;
+      height: 42px;
+      text-decoration: none;
+    }
+  
+    &__link-menu {
+      text-decoration: none;
+      color: var(--color-secondary);
+      display: inline-block;
+      position: relative;
+      padding: 8px 20px;
+      transition: color 0.25s ease;
+
+  
+      &:hover {
+        color: var(--color-primary);
+      
+      }
+     
+  
+      &:active {
+        color: var(--color-primary-hover);
+      }
+  
+      &:focus {
+        color: var(--color-primary-active);
+      }
+    }
+  
+    &__link--active {
+      &::after {
+        transition: background-color 0.25s;
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 2px;
+        background-color: var(--color-primary);
+      }
+    }
+  
+    &__search {
+      position: relative;
+    }
+  }
+ 

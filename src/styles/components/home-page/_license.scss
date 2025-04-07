@@ -1,0 +1,5 @@
+@use './../../global/mixins' as mixin;
+
+.license__text {
+    @include mixin.text3();
+}

@@ -1,0 +1,63 @@
+@use './../../global/mixins' as mixin;
+
+.button {
+  @include mixin.text1();
+  @include mixin.border_tags();
+  display: inline-block;
+  padding: 10px 24px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.25s ease;
+
+  &--primary {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+
+    &:hover {
+      background-color: var(--color-primary-hover);
+    }
+
+    &:active {
+      background-color: var(--color-primary-active);
+    }
+
+    &:focus-visible {
+      @include mixin.outline_card();
+      border-color: var(--color-focus-border);
+      outline-offset: 0;
+    }
+  }
+
+  &--secondary {
+    border-color: rgba(208, 215, 251, 0.17);
+    color: var(--color-secondary);
+    background-color: var(--transparent);
+
+    &:hover {
+      background-color: var(--color-secondary-hover);
+    }
+
+    &:active {
+      background-color: var(--color-secondary-active);
+    }
+
+    &:focus-visible {
+      border-color: var(--color-focus-border);
+      outline: 2px solid var(--color-focus-border);
+      outline-offset: 0;
+    }
+  }
+
+  &__icon {
+    display: inline-block;
+    line-height: 20px;
+    vertical-align: middle;
+  }
+
+  &__icon--left {
+    margin-right: 4px;
+  }
+}

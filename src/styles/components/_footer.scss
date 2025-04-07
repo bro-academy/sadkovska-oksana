@@ -1,0 +1,14 @@
+@use './../global/mixins' as mixin;
+
+.footer {
+    background-color: var(--color-background-alternative);
+  
+    &__text {
+      @include mixin.text3();
+    }
+  
+    &__link {
+      @include mixin.text4();
+      color: var(--color-secondary);
+    }
+  }

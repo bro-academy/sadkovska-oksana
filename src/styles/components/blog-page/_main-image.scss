@@ -1,0 +1,27 @@
+@use './../../global/mixins' as mixin;
+
+.main-image {
+    &__img {
+      object-fit: contain;
+      width: 1024px;
+      height: 557px;
+    }
+  
+    &__mark,
+    &__label {
+      background-color: var(--color-primary);
+      color: var(--color-secondary);
+    }
+  
+    &__heading {
+      @include mixin.heading1();
+    }
+  
+    &__text,
+    &__list {
+      @include mixin.text1();
+    }
+  }
+  
+
+  

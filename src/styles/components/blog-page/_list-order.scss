@@ -1,0 +1,11 @@
+@use './../../global/mixins' as mixin;
+
+.list-order {
+
+  &__item {
+    @include mixin.text1();
+    display: inline-block;
+    list-style: none;
+    
+  }
+}

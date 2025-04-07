@@ -1,0 +1,29 @@
+@use './../../global/mixins' as mixin;
+
+.our-blog {
+    background-image: url("./../../assets/background-our-blog.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+  
+    &__heading {
+      @include mixin.heading1();
+      font-family: var(--font-family-secondary);
+      text-align: center;
+    }
+  
+    &__menu {
+      display: flex;
+      list-style-type: none;
+  
+      li:last-child {
+        color: var(--color-elements-secondary);
+      }
+    }
+  
+    &__item {
+      font-weight: 600;
+    }
+  }
+  
+ 
+  
