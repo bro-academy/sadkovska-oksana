@@ -7,25 +7,8 @@
       @include mixin.text3();
     }
   
-    &-link {
+    &__link {
       @include mixin.text4();
       color: var(--color-secondary);
     }
   }
-  
-// .footer-link {
-//     font-weight: 600;
-//     font-size: 12px;
-//     line-height: 16px;
-//     color: var(--color-secondary);
-
-// }
-
-// .footer__text {
-//     font-size: 14px;
-
-// }
-
-// .footer {
-//     background-color: var(--color-background-alternative);
-// }

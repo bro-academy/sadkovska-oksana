@@ -1,8 +1,10 @@
 @use './../../global/mixins' as mixin;
+
 .about {
     &__heading {
-      font-family: var(--font-family-secondary);
       @include mixin.heading2();
+      font-family: var(--font-family-secondary);
+   
     }
   
     &__text {
@@ -16,66 +18,3 @@
     }
   }
   
-
-// .about__heading {
-//     font-family: var(--font-family-secondary);
-//     font-size: 36px;
-//     font-weight: 400;
-// }
-
-// .about__text {
-//     font-weight: 500;
-//     font-size: 20px;
-// }
-
-// .info-card__heading {
-//     font-family: var(--font-family-secondary);
-//     font-size: 24px;
-//     font-weight: 400;
-//     position: relative;
-//     z-index: +1;
-// }
-
-// .about__cards {
-//     display: flex;
-//     gap: 20px;
-//     counter-reset: cards-counter;
-// }
-
-// .info-card {
-//     display: inline-block;
-//     list-style: none;
-//     max-width: 300px;
-//     padding: 20px;
-//     border-image-slice: 50;
-//     border-image-width: 50px;
-//     background-color: var(--color-background-secondary);
-// }
-
-// .info-card:hover {
-//     border-image-source: url("../../assets/info-card-hover.webp");
-// }
-// .info-card:active {
-//     outline: 2px solid var(--color-primary-hover);
-// }
-
-// .info-card__heading::after {
-//     font-family: var(--font-family-secondary);
-//     content: '0' counter(cards-counter);
-//     position: absolute;
-//     left: 0;
-//     font-size: 80px;
-//     bottom: -20px;
-//     color: var(--color-background-secondary);
-//     z-index: -1;
-//     -webkit-text-stroke: 2px var(--color-primary);
-//     text-shadow: 0px 0px 2px var(--color-primary);
-//     counter-increment: cards-counter;
-   
-// }
-
-// .info-card__text {
-//     font-family: var(--font-family-primary);
-//     font-size: 18px;
-
-// }

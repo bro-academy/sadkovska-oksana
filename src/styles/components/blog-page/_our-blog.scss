@@ -1,12 +1,13 @@
 @use './../../global/mixins' as mixin;
+
 .our-blog {
     background-image: url("./../../assets/background-our-blog.webp");
     background-repeat: no-repeat;
     background-position: center;
   
     &__heading {
-      font-family: var(--font-family-secondary);
       @include mixin.heading1();
+      font-family: var(--font-family-secondary);
       text-align: center;
     }
   
@@ -26,57 +27,3 @@
   
  
   
-
-  
-
-  
- // .our-blog__heading {
-    //     font-family: var(--font-family-secondary);
-    //     font-size: 56px;
-    //     line-height: 62px;
-    //     text-align: center;
-
-    // }
-
-    // .our-blog {
-    //     background-image: url("./../../assets/background-our-blog.webp");
-    //     background-repeat: no-repeat;
-    //     background-position: center;
-
-    // }
-
-    // .our-blog__menu {
-    //     display: flex;
-    //     list-style-type: none;
-
-    // }
-
-
-    // .image-card__text {
-    //     font-size: 16px;
-    //     font-weight: 400;
-    // }
-
-
-
-    // .our-blog__menu li:last-child {
-    //     color: var(--color-elements-secondary);
-
-    // }
-
-    // .our-blog__item {
-    //     font-weight: 600;
-
-    // }
-
-    // .aside-categories__heading {
-    //     font-size: 24px;
-    //     line-height: 32px;
-    // }
-
-    // .tags-menu__item {
-    //     background-color: var( --transparent);
-    //     color: var(--color-secondary);
-    //     border: 2px solid #D0D7FB2B;
-    // }
-

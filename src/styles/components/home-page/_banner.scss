@@ -1,96 +1,42 @@
 @use './../../global/mixins' as mixin;
 
 .banner {
-    background: radial-gradient(
-      42.5% 42.5% at 22.28% -4.22%,
+  background: radial-gradient(42.5% 42.5% at 22.28% -4.22%,
       var(--color-primary) 0%,
-      var(--color-gradient-banner) 100%
-    );
-  
-    &__heading {
-      font-family: var(--font-family-secondary);
-      @include mixin.heading1();
-      color: var(--color-secondary);
-      text-transform: uppercase;
-  
-      &--highlight {
-        color: var(--color-primary);
-      }
-    }
-  
-    &__text {
-      @include mixin.subheading5();
-      font-weight: 500;
-    }
-  
-    &__statistics {
-      &-numbers {
-        font-family: var(--font-family-secondary);
-        font-size: 52px;
-        font-weight: 400;
-        text-shadow: #f5f8fb 1px 0 10px;
-      }
-  
-      &-text {
-        font-size: 16px;
-        font-weight: 400;
-      }
-    }
-  
-    &__wrapper {
-      display: flex;
-      gap: 12px;
-      padding: 100px;
-    }
+      var(--color-gradient-banner) 100%);
+
+  &__heading {
+    @include mixin.heading1();
+    font-family: var(--font-family-secondary);
+    color: var(--color-secondary);
+    text-transform: uppercase;
+
   }
 
-// .banner {
-//     background: radial-gradient(42.5% 42.5% at 22.28% -4.22%, rgba(2, 101, 220, 0.5) 0%, rgba(2, 101, 220, 0) 100%);
-// }
-// .banner__heading {
-//     @include mixin.heading1();
-//     color: var(--color-secondary);
-    
-// }
+  &__heading--highlight {
+    color: var(--color-primary);
+  }
 
-// .banner__heading--highlight {
-//     color: var(--color-primary);
-// }
+  &__text {
+    @include mixin.subheading5();
+    font-weight: 500;
+  }
 
+  &__statistics-numbers {
+    font-family: var(--font-family-secondary);
+    font-size: 52px;
+    font-weight: 400;
+    text-shadow: #f5f8fb 1px 0 10px;
+  }
 
-// .banner__text {
-//     font-size: 20px;
-//     font-weight: 500;
-// }
+  &__statistics-text {
+    font-size: 16px;
+    font-weight: 400;
+  }
 
-// .banner__statistics-numbers {
-//     font-family: var(--font-family-secondary);
-//     font-size: 52px;
-//     font-weight: 400;
-//     text-shadow: #F5F8FB 1px 0 10px;
-// }
-
-// .banner__statistics-text {
-//     font-size: 16px;
-//     font-weight: 400;
-// }
-// .banner {
-//     background: radial-gradient(42.5% 42.5% at 22.28% -4.22%, 
-//     rgba(2, 101, 220, 0.5) 0%, rgba(2, 101, 220, 0) 100%);
-// }
-
-// .banner__wrapper{
-//     margin: 0 auto;
-//     max-width: 1600px;
-//     display: flex;
-//     gap: 12px;
-//     padding: 100px;
-// }
-// .banner__wrapper {
-//     margin: 0 auto;
-//     max-width: 1600px;
-//     display: flex;
-//     gap: 12px;
-//     padding: 100px;
-// }
-
+  &__wrapper {
+    display: flex;
+    gap: 12px;
+    padding: 100px;
+  }
+}

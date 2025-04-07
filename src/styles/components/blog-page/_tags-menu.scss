@@ -2,8 +2,8 @@
 
 .tags-menu {
     &__item {
+      @include mixin.border_tags();
       background-color: var( --transparent);
       color: var(--color-secondary);
-      @include mixin.border_tags();
     }
   }

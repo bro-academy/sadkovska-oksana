@@ -2,8 +2,8 @@
 
 .blog-tags {
     &__item {
-      background-color: var( --transparent);
       @include mixin.border_tags();
+      background-color: var( --transparent);
     }
   
     &__link {
@@ -11,13 +11,4 @@
     }
   }
   
-// .blog-tags__item {
-//     background-color: var( --transparent);
-//     border: 2px solid #D0D7FB2B;
-
-// }
-
-// .blog-tags__link {
-//     color: var(--color-secondary);
-// }
 

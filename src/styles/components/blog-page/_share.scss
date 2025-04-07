@@ -6,15 +6,8 @@
     }
   
     &__item {
-      display: inline-block;
       @include mixin.border_tags();
+      display: inline-block;
+      
     }
   }
-  // .share__block {
-//     list-style-type: none;
-
-// }
-// .share__item {
-//     display: inline-block;
-//     border: 2px solid #D0D7FB2B;
-// }

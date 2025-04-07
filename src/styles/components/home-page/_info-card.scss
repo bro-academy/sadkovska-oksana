@@ -18,8 +18,8 @@
     }
   
     &__heading {
-      font-family: var(--font-family-secondary);
       @include mixin.subheading4();
+      font-family: var(--font-family-secondary);
       position: relative;
       z-index: 1;
   
@@ -39,7 +39,7 @@
     }
   
     &__text {
-      font-family: var(--font-family-primary);
       @include mixin.text1();
+      font-family: var(--font-family-primary);
     }
   }
