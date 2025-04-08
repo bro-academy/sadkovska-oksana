@@ -1,0 +1,18 @@
+@use './../../global/mixins' as mixin;
+
+.contact-form {
+    max-width: 640px;
+    text-align: left;
+    margin: 0 auto;
+
+    &__input {
+        width: 640px;
+        border: 1px solid var(--border-contact-page);
+        background-color: var(--color-background);
+    }
+    &__terms-link {
+        color: var(--color-primary-accent-link);
+
+    }
+         
+}

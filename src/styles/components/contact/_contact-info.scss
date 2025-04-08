@@ -1,0 +1,27 @@
+@use './../../global/mixins' as mixin;
+
+.contact-info {
+    
+    
+    &__block {
+        display: flex;
+      
+
+    }
+    &__item {
+        border: 1px solid var(--border-contact-page);
+        text-align: center;
+        margin-right: 16px;
+        width: 288px;
+        padding: 40px 32px;
+    }
+
+    &__title {
+        @include mixin.heading2();
+
+    }
+    &__adress {
+        @include mixin.text2();
+        color: var( --color-secondary-invert );
+    }
+}

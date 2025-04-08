@@ -1,0 +1,71 @@
+{
+    "title_site": "Binabox",
+    "our_blog_heading": "Explore Catalog",
+    "our_blog": [
+        {
+            "link": "Home"
+        },
+        {
+            "link": "Contact Us"
+        }
+    ],
+    "filters": [
+        {
+            "name": "Clothing",
+            "type": "checkbox",
+            "items": [
+                {
+                    "name": "combatant",
+                    "value": "combatant",
+                    "label": "Combatant"
+                },
+                {
+                    "name": "ninja",
+                    "value": "ninja",
+                    "label": "Ninja"
+                },
+                {
+                    "name": "king",
+                    "value": "king",
+                    "label": "King"
+                },
+                {
+                    "name": "queen",
+                    "value": "queen",
+                    "label": "Queen"
+                },
+                {
+                    "name": "robot",
+                    "value": "robot",
+                    "label": "Robot"
+                }
+            ]
+        },
+        {
+            "name": "Eyes",
+            "type": "radio",
+            "items": [
+                {
+                    "name": "eyes",
+                    "value": "yellow",
+                    "label": "Yellow"
+                },
+                {
+                    "name": "eyes",
+                    "value": "green",
+                    "label": "Green"
+                },
+                {
+                    "name": "eyes",
+                    "value": "mix",
+                    "label": "Mix"
+                },
+                {
+                    "name": "eyes",
+                    "value": "orange",
+                    "label": "Orange"
+                }
+            ]
+        }
+    ]
+}

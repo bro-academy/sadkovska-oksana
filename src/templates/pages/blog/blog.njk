@@ -1,11 +1,12 @@
 {% extends 'layouts/base.njk' %}
 
-{% block content %}
+{% block styles %}
+  <link rel="stylesheet" href="/css/blog.css" />
+{% endblock %}
 
-  {# {% include 'partials/blog/blog-part.njk' %}
-  {% include 'partials/blog/main-image.njk' %}
-  {% include 'partials/blog/main-info.njk' %}
-  {% include 'partials/blog/blog-tags.njk' %} #}
+{% set activePage = 'Blog' %}
+
+{% block content %}
 
   <section class="our-blog">
     {% include 'partials/blog/blog-header.njk' %}

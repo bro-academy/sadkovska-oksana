@@ -1,8 +1,12 @@
-<header>
+<header class="our-blog">
     <h1 class="our-blog__heading">{{ our_blog_heading }}</h1>
     <ul class="our-blog__menu">
         {% for item in our_blog %}
-            <li class="our-blog__item">{{ item.link }}</li>
+            <li class="our-blog__item">
+                <a href="#" class="our-blog__item-link bread-crumps">
+                    {{ item.link }}
+                </a>
+            </li>
         {% endfor %}
     </ul>
 </header>

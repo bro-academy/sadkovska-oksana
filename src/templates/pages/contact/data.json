@@ -1,0 +1,32 @@
+{
+    "title_site": "Binabox",
+    "our_blog_heading": "Contact Us",
+    "our_blog": [
+        {
+            "link": "Home"
+        },
+        {
+            "link": "Contact Us"
+        }
+    ],
+    "contact_info": [
+        {
+            "title": "Location",
+            "src": "/img/marker-pin.svg",
+            "alt": "mail",
+            "adress": "2163 Phillips Gap Rd"
+        },
+        {
+            "title": "Email",
+            "src": "/img/mail.svg",
+            "alt": "mail",
+            "adress": "Info.avitex@gmail.com"
+        },
+        {
+            "title": "Phone",
+            "src": "/img/phone.svg",
+            "alt": "mail",
+            "adress": "+1 666 8888"
+        }
+    ]
+}

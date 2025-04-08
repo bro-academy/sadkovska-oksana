@@ -1,0 +1,8 @@
+.bread-crumps {
+    color: var(--color-secondary);
+   
+
+    &:last-child {
+        color: var(--color-elements-secondary);
+    }
+}

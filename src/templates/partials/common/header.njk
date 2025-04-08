@@ -1,17 +1,14 @@
 <header class="header">
   <a class="header__link logo" href="/">
-    <img class="header__logo logo_img" src="img/logo.svg" alt="Logo"/>
+    <img class="header__logo logo__img" src="img/logo.svg" alt="Logo"/>
     <img src="img/logo-heading.svg" class="logo__heading" alt="Logo"></img>
   </a>
   <nav class="header__navigation">
     <ul class="header__list">
 
-      <li class="header__element">
-        <a class="header__link-menu header__link--active" href="#">{{ header_nav_underlined }}</a>
-      </li>
       {% for item in header_nav %}
         <li class="header__element">
-        <a class="header__link-menu" href="#">{{ item.element }}</a>
+          <a class="header__link-menu {{ "header__link--active" if activePage == item.title }}" href="{{ item.link }}">{{ item.title }}</a>
         </li>
       {% endfor %}
      

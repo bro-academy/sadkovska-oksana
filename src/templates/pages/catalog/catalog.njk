@@ -1,0 +1,17 @@
+{% extends 'layouts/base.njk' %} 
+
+{% block styles %}
+  <link rel="stylesheet" href="/css/catalog.css" />
+{% endblock %}
+{% set activePage = 'Catalogue' %}
+
+{% block content %}
+
+  <section class="our-blog wrapper">
+    {% include 'partials/blog/blog-header.njk' %}
+    {% include 'partials/catalog/aside-form.njk' %}
+
+   
+  </section>
+
+{% endblock %}

@@ -1,0 +1,25 @@
+<section class="filter">
+
+    {% for filter in filters %}
+        <form class="filter__clothing-block">
+            
+
+            <details class="filter__details details" open>
+                <summary class="details__heading"><h3>{{ filter.name }}</h3></summary>
+
+                {% for item in filter.items %}
+                    
+                    <div>
+                        <label>
+                        <input class="details__checkbox" type="{{ filter.type }}" name="{{ item.name }}" value="{{ item.value }}">
+                        {{ item.label}}
+                    </label>
+                    </div>
+
+                {% endfor %}
+            </details>
+
+        </form>
+    {% endfor %}
+
+</section>

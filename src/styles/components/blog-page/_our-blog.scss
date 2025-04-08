@@ -1,23 +1,36 @@
 @use './../../global/mixins' as mixin;
 
 .our-blog {
-    background-image: url("./../../assets/background-our-blog.webp");
+    background-image: url("/img/background-our-blog-1x.webp");
     background-repeat: no-repeat;
-    background-position: center;
+    // background-position: center;
+    padding: 2px;
   
     &__heading {
       @include mixin.heading1();
       font-family: var(--font-family-secondary);
       text-align: center;
+      margin: 62px 0 20px;
     }
   
     &__menu {
       display: flex;
+      justify-content: center;
+      margin: 0 auto 198px;
       list-style-type: none;
+      gap: 18px;
   
-      li:last-child {
-        color: var(--color-elements-secondary);
+      .our-blog__item {
+        padding: 6px 12px;
+
+        // &:last-child {
+        //   color: var(--color-elements-secondary);
+        // }
       }
+
+      // .our-blog__item-link {
+      //   color: var(--color-secondary);
+      // }
     }
   
     &__item {
