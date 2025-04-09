@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "start": "NODE_ENV=production gulp build",
-    "dev": "gulp serve --lint"
+    "dev": "gulp serve",
+    "dev:lint": "gulp serve --lint"
   },
   "author": "",
   "license": "MIT",

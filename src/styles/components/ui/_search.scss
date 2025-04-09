@@ -4,6 +4,16 @@
     position: relative;
     display: inline-block;
 
+    &:before {
+        content: url("/img/search.svg");
+        position: absolute;
+        display: block;
+        width: 20px;
+        height: 20px;
+        top: 14px;
+        left: 10px;
+    }
+
     &__input {
         @include mixin.text3();
         @include mixin.border_tags();
@@ -12,6 +22,7 @@
         height: 48px;
         background: transparent;
         background-color: var(--color-secondary-hover);
+        transition: border .25s ease, outline .25s ease;
 
         &:hover {
             border-color: var(--color-primary-hover);

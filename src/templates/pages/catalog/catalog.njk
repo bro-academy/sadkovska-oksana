@@ -1,7 +1,7 @@
-{% extends 'layouts/base.njk' %} 
+{% extends 'layouts/base.njk' %}
 
 {% block styles %}
-  <link rel="stylesheet" href="/css/catalog.css" />
+  <link rel="stylesheet" href="/css/catalog.css"/>
 {% endblock %}
 {% set activePage = 'Catalogue' %}
 
@@ -10,8 +10,9 @@
   <section class="our-blog wrapper">
     {% include 'partials/blog/blog-header.njk' %}
     {% include 'partials/catalog/aside-form.njk' %}
+    {% include 'partials/catalog/sorting-form.njk' %}
+    {% include 'partials/product-card.njk' %}
 
-   
   </section>
 
 {% endblock %}

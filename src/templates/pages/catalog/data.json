@@ -66,6 +66,203 @@
                     "label": "Orange"
                 }
             ]
+        },
+        {
+            "name": "Face",
+            "type": "radio",
+            "items": [
+                {
+                    "name": "face",
+                    "value": "round",
+                    "label": "Round"
+                },
+                {
+                    "name": "face",
+                    "value": "oval",
+                    "label": "Oval"
+                },
+                {
+                    "name": "face",
+                    "value": "mix",
+                    "label": "Mix"
+                },
+                {
+                    "name": "faceface",
+                    "value": "square",
+                    "label": "Square"
+                }
+            ]
+        },
+        {
+            "name": "Skin",
+            "type": "checkbox",
+            "items": [
+                {
+                    "name": "yellow",
+                    "value": "yellow",
+                    "label": "Yellow"
+                },
+                {
+                    "name": "green",
+                    "value": "green",
+                    "label": "Green"
+                },
+                {
+                    "name": "mix",
+                    "value": "mix",
+                    "label": "Mix"
+                },
+                {
+                    "name": "orange",
+                    "value": "orange",
+                    "label": "Orange"
+                }
+            ]
+        },
+        {
+            "name": "Background",
+            "type": "radio",
+            "items": [
+                {
+                    "name": "background",
+                    "value": "yellow",
+                    "label": "Yellow"
+                },
+                {
+                    "name": "background",
+                    "value": "brown",
+                    "label": "Brown"
+                },
+                {
+                    "name": "background",
+                    "value": "mix",
+                    "label": "Mix"
+                },
+                {
+                    "name": "background",
+                    "value": "white",
+                    "label": "White"
+                }
+            ]
+        },
+        {
+            "name": "Special",
+            "type": "checkbox",
+            "items": [
+                {
+                    "name": "yellow",
+                    "value": "yellow",
+                    "label": "Yellow"
+                },
+                {
+                    "name": "green",
+                    "value": "green",
+                    "label": "Green"
+                },
+                {
+                    "name": "mix",
+                    "value": "mix",
+                    "label": "Mix"
+                },
+                {
+                    "name": "orange",
+                    "value": "orange",
+                    "label": "Orange"
+                }
+            ]
         }
+    ],
+    "product_card": [
+        {
+          "img": "img/girl-face-2x.webp",
+          "label": "New",
+          "price": "199",
+          "currency": "$",
+          "title": "Name Product",
+          "width": "252",
+          "height": "324",
+          "alt": "girl-face"
+        },
+        { 
+        "img": "img/girl-face-2x.webp",
+        "label": "New",
+        "price": "199",
+        "currency": "$",
+        "title": "Name Product",
+        "width": "252",
+        "height": "324",
+        "alt": "girl-face"
+      },
+      { 
+        "img": "img/girl-face-2x.webp",
+        "label": "New",
+        "price": "199",
+        "currency": "$",
+        "title": "Name Product",
+        "width": "252",
+        "height": "324",
+        "alt": "girl-face"
+      },
+      { 
+        "img": "img/girl-face-2x.webp",
+        "label": "New",
+        "price": "199",
+        "currency": "$",
+        "title": "Name Product",
+        "width": "252",
+        "height": "324",
+        "alt": "girl-face"
+      },
+      { 
+        "img": "img/girl-face-2x.webp",
+        "label": "New",
+        "price": "199",
+        "currency": "$",
+        "title": "Name Product",
+        "width": "252",
+        "height": "324",
+        "alt": "girl-face"
+      },
+      { 
+        "img": "img/girl-face-2x.webp",
+        "label": "New",
+        "price": "199",
+        "currency": "$",
+        "title": "Name Product",
+        "width": "252",
+        "height": "324",
+        "alt": "girl-face"
+      },
+      { 
+        "img": "img/girl-face-2x.webp",
+        "label": "New",
+        "price": "199",
+        "currency": "$",
+        "title": "Name Product",
+        "width": "252",
+        "height": "324",
+        "alt": "girl-face"
+      },
+      { 
+        "img": "img/girl-face-2x.webp",
+        "label": "New",
+        "price": "199",
+        "currency": "$",
+        "title": "Name Product",
+        "width": "252",
+        "height": "324",
+        "alt": "girl-face"
+      },
+      { 
+        "img": "img/girl-face-2x.webp",
+        "label": "New",
+        "price": "199",
+        "currency": "$",
+        "title": "Name Product",
+        "width": "252",
+        "height": "324",
+        "alt": "girl-face"
+      }
     ]
+
 }
