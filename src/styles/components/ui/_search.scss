@@ -15,23 +15,7 @@
     }
 
     &__input {
-        @include mixin.text3();
-        @include mixin.border_tags();
+        @include mixin.input();
         padding-left: 38px;
-        color: var(--color-border-transparent);
-        height: 48px;
-        background: transparent;
-        background-color: var(--color-secondary-hover);
-        transition: border .25s ease, outline .25s ease;
-
-        &:hover {
-            border-color: var(--color-primary-hover);
-        }
-
-        &:focus-visible {
-            border-color: var(--color-focus-border);
-            outline: 2px solid var(--color-focus-border);
-            outline-offset: 0;
-        }
     }
 }

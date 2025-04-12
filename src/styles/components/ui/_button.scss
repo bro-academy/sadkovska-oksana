@@ -51,6 +51,10 @@
     }
   }
 
+  &--full-width {
+    width: 100%;
+  }
+
   &__icon {
     display: inline-block;
     line-height: 20px;

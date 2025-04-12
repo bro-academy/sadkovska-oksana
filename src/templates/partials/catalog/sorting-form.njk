@@ -2,33 +2,35 @@
     <form class="sorting__form">
 
         <div class="sorting__block">
-            <h1 class="sorting__heading">All item</h1>
+            <h1 class="sorting__heading">{{ sorting__heading }}</h1>
             <div class="sorting__controls">
-                <div class="sorting__dropdown">
-                    <button class="sorting__dropdown-button" onclick="toggleDropdown()">
-          Sort by 
-        </button>
-                    <div id="dropdown" class="sorting__dropdown-options">
-                        <button class="sorting__dropdown-element">Newest</button>
-                        <button class="sorting__dropdown-element">Most popular</button>
-                        <button class="sorting__dropdown-element selected">Increasing in price</button>
-                        <button class="sorting__dropdown-element">Lowering the price</button>
-                    </div>
-                    <div class="sorting__search">
-                        <div class="divider-vertical divider-vertical--right">
-                            <label class="search">
-                                <input class="search__input" type="search" placeholder="Search NFT"/>
-                            </label>
-                        </div>
-                    </div>
 
-                    <div class="sorting__filters">
-                        <button class="sorting__filter-tag">NFT</button>
-                        <button class="sorting__filter-tag">ICO</button>
-                        <button class="sorting__filter-tag">Crypto</button>
-                        <button class="sorting__filter-reset button-reset" type="reset">Clear all</button>
+                <div class="sorting__dropdown select">
+                    <select class="select__block button button__primary" name="selection" id="filter-by-selection">
+
+                        {% for item in select__block %}
+                            <option class="select__option" value="{{ item.value }}">Sort by {{ item.text }}</option>
+                        {% endfor %}
+
+                    </select>
+                </div>
+
+                <div class="sorting__search">
+                    <div class="divider-vertical divider-vertical--right">
+                        <label class="search">
+                            <input class="search__input" type="search" placeholder="Search NFT"/>
+                        </label>
                     </div>
+                </div>
+
+                <div class="sorting__filters">
+
+                    {% for item in tags %}
+                        <button class="sorting__filter-tag">{{ item.filter_tag }}</button>
+                    {% endfor %}
 
                 </div>
-            </form>
-        </section>
+
+            </div>
+        </form>
+    </section>

@@ -1,0 +1,51 @@
+@use './../../global/mixins' as mixin;
+
+.select {
+
+    position: relative;
+
+    &__block {
+        background-color: var(--color-background-dropdown);
+    }
+
+    &___option {
+        background-color: var(--color-background-dropdown);
+        border: 1px solid var(--transparen);
+        color: var(--color-secondary);
+        display: block;
+        outline: none;
+        padding: 4px 12px;
+
+    }
+
+    &__button {
+        padding: 10px 56px 10px 24px;
+        margin-right: 20px;
+        background-color: var(--color-background);
+        color: var(--color-secondary);
+        border-color: var(--color-border-transparent);
+        transition: border .25s ease, outline .25s ease;
+
+        &:hover {
+            border: 2px solid var(--color-primary-hover);
+        }
+
+        &:active {
+            outline: var(--color-primary-active);
+        }
+
+        &:focus-visible {
+            outline: var(--color-primary-active);
+
+        }
+
+    }
+
+    // &__button::after {
+    //     content: url("/img/chevron-up.svg");
+    //     position: absolute;
+    //     left: 93px;
+    //     top: 9px;
+
+    // }
+}

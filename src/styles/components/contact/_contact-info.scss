@@ -1,19 +1,24 @@
 @use './../../global/mixins' as mixin;
 
 .contact-info {
-    
+    display: flex;
+    justify-content: center;
     
     &__block {
         display: flex;
-      
-
+        gap: 16px;
     }
+    
     &__item {
         border: 1px solid var(--border-contact-page);
         text-align: center;
-        margin-right: 16px;
         width: 288px;
         padding: 40px 32px;
+        
+
+        // &:not(:last-child) {
+        //     margin-right: 16px;
+        // }
     }
 
     &__title {

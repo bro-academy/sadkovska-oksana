@@ -1,6 +1,7 @@
 {
     "title_site": "Binabox",
     "our_blog_heading": "Contact Us",
+    "form__title":"Get in touch",
     "our_blog": [
         {
             "link": "Home"
@@ -28,5 +29,66 @@
             "alt": "mail",
             "adress": "+1 666 8888"
         }
-    ]
+    ],
+    "form__subtitle": "Browse through the most freuently asked questions",
+    "form__switcher": "Use my profile information",
+    "contact_form": [
+        {
+            "title": "Name",
+            "type": "text",
+            "name": "user-name",
+            "id": "name",
+            "for": "name"
+        },
+        {
+            "title": "Lastname",
+            "type": "text",
+            "name": "surname",
+            "id": "lastname",
+            "for": "lastname"
+        },
+        {
+            "title": "Date of birth",
+            "type": "text",
+            "name": "bday",
+            "id": "birthday",
+            "for": "birthday"
+        }
+    ],
+    "contact-form__heading": "Gender",
+    "contact_form_second": [
+        {
+            "title": "Email",
+            "type": "email",
+            "name": "e-mail",
+            "id": "email",
+            "for": "email"
+        },
+        {
+            "title": "Phone Number",
+            "type": "tel",
+            "name": "user-phone",
+            "id": "phone",
+            "for": "phone"
+        }
+    ],
+    "form__textarea": {
+        "title": "Message",
+        "name": "user-phone",
+        "id": "message",
+        "for": "message"
+    },
+    "form_terms": {
+        "title": "Message",
+        "type": "checkbox",
+        "name": "contact",
+        "id": "send",
+        "for": "send",
+        "text": " By clicking on the ‘Send Message’ button I agree to",
+        "link": "all the terms of the security policy"
+    },
+    "submit_btn": "Send Message "
+
+
+
 }

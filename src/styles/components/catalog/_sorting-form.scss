@@ -6,8 +6,25 @@
 
     }
 
+    &__search {
+        input {
+            background-color: var(--color-background-secondary);
+        }
+    }
+
     &__filters {
         background-color: var(--color-background-alternative);
+
+    }
+
+    &__dropdown-options {
+        background-color: var(--color-background-dropdown);
+        padding-bottom: 36px;
+        max-width: 173px;
+        // display: none;
+
+
+
     }
 
     &__filter-tag {
@@ -15,32 +32,9 @@
         background-color: var(--color-background-alternative);
         color: var(--color-secondary);
         padding: 6px 36px 6px 12px;
+        text-align: left;
     }
 
-    &__dropdown {
-        position: relative;
-    }
-
-    &__dropdown-element {
-        background-color: var(--color-background-dropdown);
-        color: var(--color-secondary);
-
-    }
-
-    &__dropdown-button {
-        padding: 10px 56px 10px 24px;
-        background-color: var(--color-background);
-        color: var(--color-secondary);
-        border-color: var(--color-border-transparent);
-
-    }
-
-    &__dropdown-button::after {
-        content: url("/img/chevron-up.svg");
-        position: absolute;
-        left: 93px;
-        top: 9px;
-
-    }
+    
 
 }

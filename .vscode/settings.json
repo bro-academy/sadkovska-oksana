@@ -1,5 +1,6 @@
 {
     "html.suggest.html5": true,
+    "editor.linkedEditing": true,
     "emmet.includeLanguages": {
         "njk": "html",
         "nunjucks": "html"

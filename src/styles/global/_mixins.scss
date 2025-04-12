@@ -80,3 +80,24 @@
     outline: 2px solid var(--color-focus-border);
     border-radius: 5px;
 }
+
+@mixin input() {
+    @include text3();
+    @include border_tags();
+    width: 100%;
+    color: var(--color-border-transparent);
+    height: 48px;
+    background: transparent;
+    background-color: var(--color-background);
+    transition: border .25s ease, outline .25s ease;
+
+    &:hover {
+        border-color: var(--color-primary-hover);
+    }
+
+    &:focus-visible {
+        border-color: var(--color-focus-border);
+        outline: 2px solid var(--color-focus-border);
+        outline-offset: 0;
+    }
+}

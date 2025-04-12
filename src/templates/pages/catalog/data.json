@@ -1,12 +1,46 @@
 {
     "title_site": "Binabox",
     "our_blog_heading": "Explore Catalog",
+    "sorting__heading": "All item",
+    "select__button_heading": "Sort by",
     "our_blog": [
         {
             "link": "Home"
         },
         {
             "link": "Contact Us"
+        }
+    ],
+    "select__block": [
+        {
+            "text": "Newest",
+            "value": "newest"
+        },
+        {
+            "text": "Most popular",
+            "value": "popular"
+        },
+        {
+            "text": "Increasing in price",
+            "value": "high-price"
+        },
+        {
+            "text": "Lowering the price",
+            "value": "low-price"
+        }
+    ],
+    "tags": [
+        {
+            "filter_tag": "NFT"
+        },
+        {
+            "filter_tag": "ICO"
+        },
+        {
+            "filter_tag": "Crypto"
+        },
+        {
+            "filter_tag": "Clear all"
         }
     ],
     "filters": [
@@ -174,95 +208,94 @@
     ],
     "product_card": [
         {
-          "img": "img/girl-face-2x.webp",
-          "label": "New",
-          "price": "199",
-          "currency": "$",
-          "title": "Name Product",
-          "width": "252",
-          "height": "324",
-          "alt": "girl-face"
+            "img": "img/girl-face-2x.webp",
+            "label": "New",
+            "price": "199",
+            "currency": "$",
+            "title": "Name Product",
+            "width": "252",
+            "height": "324",
+            "alt": "girl-face"
         },
-        { 
-        "img": "img/girl-face-2x.webp",
-        "label": "New",
-        "price": "199",
-        "currency": "$",
-        "title": "Name Product",
-        "width": "252",
-        "height": "324",
-        "alt": "girl-face"
-      },
-      { 
-        "img": "img/girl-face-2x.webp",
-        "label": "New",
-        "price": "199",
-        "currency": "$",
-        "title": "Name Product",
-        "width": "252",
-        "height": "324",
-        "alt": "girl-face"
-      },
-      { 
-        "img": "img/girl-face-2x.webp",
-        "label": "New",
-        "price": "199",
-        "currency": "$",
-        "title": "Name Product",
-        "width": "252",
-        "height": "324",
-        "alt": "girl-face"
-      },
-      { 
-        "img": "img/girl-face-2x.webp",
-        "label": "New",
-        "price": "199",
-        "currency": "$",
-        "title": "Name Product",
-        "width": "252",
-        "height": "324",
-        "alt": "girl-face"
-      },
-      { 
-        "img": "img/girl-face-2x.webp",
-        "label": "New",
-        "price": "199",
-        "currency": "$",
-        "title": "Name Product",
-        "width": "252",
-        "height": "324",
-        "alt": "girl-face"
-      },
-      { 
-        "img": "img/girl-face-2x.webp",
-        "label": "New",
-        "price": "199",
-        "currency": "$",
-        "title": "Name Product",
-        "width": "252",
-        "height": "324",
-        "alt": "girl-face"
-      },
-      { 
-        "img": "img/girl-face-2x.webp",
-        "label": "New",
-        "price": "199",
-        "currency": "$",
-        "title": "Name Product",
-        "width": "252",
-        "height": "324",
-        "alt": "girl-face"
-      },
-      { 
-        "img": "img/girl-face-2x.webp",
-        "label": "New",
-        "price": "199",
-        "currency": "$",
-        "title": "Name Product",
-        "width": "252",
-        "height": "324",
-        "alt": "girl-face"
-      }
+        {
+            "img": "img/girl-face-2x.webp",
+            "label": "New",
+            "price": "199",
+            "currency": "$",
+            "title": "Name Product",
+            "width": "252",
+            "height": "324",
+            "alt": "girl-face"
+        },
+        {
+            "img": "img/girl-face-2x.webp",
+            "label": "New",
+            "price": "199",
+            "currency": "$",
+            "title": "Name Product",
+            "width": "252",
+            "height": "324",
+            "alt": "girl-face"
+        },
+        {
+            "img": "img/girl-face-2x.webp",
+            "label": "New",
+            "price": "199",
+            "currency": "$",
+            "title": "Name Product",
+            "width": "252",
+            "height": "324",
+            "alt": "girl-face"
+        },
+        {
+            "img": "img/girl-face-2x.webp",
+            "label": "New",
+            "price": "199",
+            "currency": "$",
+            "title": "Name Product",
+            "width": "252",
+            "height": "324",
+            "alt": "girl-face"
+        },
+        {
+            "img": "img/girl-face-2x.webp",
+            "label": "New",
+            "price": "199",
+            "currency": "$",
+            "title": "Name Product",
+            "width": "252",
+            "height": "324",
+            "alt": "girl-face"
+        },
+        {
+            "img": "img/girl-face-2x.webp",
+            "label": "New",
+            "price": "199",
+            "currency": "$",
+            "title": "Name Product",
+            "width": "252",
+            "height": "324",
+            "alt": "girl-face"
+        },
+        {
+            "img": "img/girl-face-2x.webp",
+            "label": "New",
+            "price": "199",
+            "currency": "$",
+            "title": "Name Product",
+            "width": "252",
+            "height": "324",
+            "alt": "girl-face"
+        },
+        {
+            "img": "img/girl-face-2x.webp",
+            "label": "New",
+            "price": "199",
+            "currency": "$",
+            "title": "Name Product",
+            "width": "252",
+            "height": "324",
+            "alt": "girl-face"
+        }
     ]
-
 }
