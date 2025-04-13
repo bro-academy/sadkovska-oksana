@@ -17,7 +17,7 @@
   <div class="header__search">
     <div class="divider-vertical divider-vertical--right">
       <label class="search">
-        <input class="search__input" type="search" placeholder="Search" />
+        <input class="search__input" type="search" placeholder="Search" minlength="5"/>
       </label>
     </div>
 
@@ -28,7 +28,7 @@
       <img src="img/discord.svg" class="button__icon button__icon--left" alt="discort"/>
      {{ header_btn_secondary }}
       </a>
-    <button class="button button--primary">
+    <button type="button" class="button button--primary">
       <img src="img/wallet.svg" class="button__icon button__icon--left" alt="wallet"/>
        {{ header_btn_primary }}</button>
   </div>

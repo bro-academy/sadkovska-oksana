@@ -4,9 +4,31 @@
     display: flex;
     justify-content: center;
     margin: 20px 0 0 ;
+    &__title {
+        text-align: center;
+    }
+    &__subtitle {
+        text-align: center;
+        @include mixin.subheading5();
+
+    }
+    &__item {
+        @include mixin.text3();
+    }
+    &__switcher-block {
+        background-color: var(--color-background-alternative);
+
+    }
+    &__switcher {
+        margin: 24px;
+       
+      
+    }
+ 
 
     &__form {
         max-width: 640px;
+        margin-bottom: 104px;
     }
 
     &__label {
@@ -16,10 +38,24 @@
 
     &__input {
         @include mixin.input();
+        color: rgb(217 217 217);
+        
+        &:user-invalid {
+            border: 2px solid red;
+        }
+
+        &:user-invalid + .contact-form__error {
+            display: block;
+        }
     }
     &__terms-link {
         color: var(--color-primary-accent-link);
 
+    }
+
+    .contact-form__error {
+        display: none;
+        color: red;
     }
          
 }

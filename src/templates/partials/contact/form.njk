@@ -4,48 +4,60 @@
     <p class="contact-form__subtitle">
         Browse through the most freuently asked questions
       </p>
-    <div class="contact-form__switcher">
+
+    <div class="contact-form__switcher-block">
       <label  class="contact-form__switcher-label">
           Use my profile information
           <input class="contact-form__switcher" type="checkbox" name="information"/>
       </label>
+    </div>
 
-    </div>
     <div class="contact-form__item">
-      <label class="contact-form__label" for="name"> name </label>
-      <input class="contact-form__input" id="name" type="text" name="user-name"/>
+      <label class="contact-form__label" for="name"> Name<sup>*</sup>
+      </label>
+      <input class="contact-form__input" id="name" type="text" name="user-name"  minlength="3" required/>
+      <span class="contact-form__error">Please enter your name</span>
     </div>
+
     <div class="contact-form__item">
-      <label class="contact-form__label" for="lastname">lastname</label>
-      <input class="contact-form__input"  id="lastname" type="text" name="surname"/>
+      <label class="contact-form__label" for="lastname">Lastname<sup>*</sup>
+      </label>
+      <input class="contact-form__input"  minlength="3" id="lastname" type="text" name="surname"  required/>
+      <span class="contact-form__error">Please enter your lastname</span>
     </div>
+
     <div class="contact-form__item">
-      <label class="contact-form__label" for="birthday">Date of birth</label>
-      <input class="contact-form__input" type="date" id="birthday" name="birthdaye"/>
+      <label class="contact-form__label" for="birthday">Date of birth<sup>*</sup>
+      </label>
+      <input class="contact-form__input" type="date" id="birthday" name="birthday" required/>
+      <span class="contact-form__error">Please enter correct date</span>
     </div>
     <div class="contact-form__item">
       <p class="contact-form__heading">Gender</p>
       <label class="contact-form__label">
-        <input class="contact-form__radio" type="radio" name="gender" checked/> Male
+        <input class="contact-form__radio" type="radio" name="gender"/> Male
         </label>
       <label class="contact-form__label">
         <input class="contact-form__radio" type="radio" name="gender"/> Female
         </label>
     </div>
     <div class="contact-form__item">
-      <label  class="contact-form__label" for="email">Email</label>
-      <input class="contact-form__input" type="email" id="email" name="e-mail"/>
+      <label  class="contact-form__label" for="email">Email<sup>*</sup>
+      </label>
+      <input class="contact-form__input" type="email" id="email" name="e-mail" required/>
+      <span class="contact-form__error">Please enter correct email</span>
     </div>
     <div class="contact-form__item">
-      <label  class="contact-form__label" for="phone"> Phone Number</label>
-      <input  class="contact-form__input" type="tel" id="phone" name="user-phone"/>
+      <label  class="contact-form__label" for="phzone"> Phone Number</label>
+      <input  class="contact-form__input" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="phone" name="user-phone" required/>
+      <span class="contact-form__error">Phone format: 123-456-7890</span>
     </div>
     <div class="contact-form__item">
       <label class="contact-form__label" for="message">Message</label>
       <textarea  class="contact-form__input" name="message" id="message"></textarea>
     </div>
     <div class="contact-form__item">
-      
+
       <label  class="contact-form__label" for="send">
         <input  class="contact-form__checkbox" type="checkbox" id="send" name="contact"/>
           By clicking on the ‘Send Message’ button I agree to

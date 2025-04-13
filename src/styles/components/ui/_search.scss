@@ -17,5 +17,9 @@
     &__input {
         @include mixin.input();
         padding-left: 38px;
+        
+        &:user-invalid {
+            border: 2px solid red;
+        }
     }
 }

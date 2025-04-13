@@ -4,6 +4,7 @@
     &__block {
         background-color: var(--color-background);
 
+
     }
 
     &__search {
@@ -14,7 +15,23 @@
 
     &__filters {
         background-color: var(--color-background-alternative);
+        padding: 16px;
+        
 
+    }
+
+    &__select {
+        color: var(--color-secondary);
+    }
+
+    &__filter-tag {
+
+        &::after {
+            content: url("/img/cross.svg");
+            position: relative;
+            top: 0px;
+            right: -18px;
+        }
     }
 
     &__dropdown-options {
@@ -35,6 +52,6 @@
         text-align: left;
     }
 
-    
+
 
 }
