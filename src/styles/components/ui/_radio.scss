@@ -1,0 +1,52 @@
+@use './../../global/mixins' as mixin;
+
+.radio {
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    border-radius: 50%;
+    appearance: none;
+    
+    border: 2px solid var(--color-border-transparent);
+    background-color: var(--color-background);
+    outline: 2px solid transparent;    
+    outline-offset: 1px;
+    
+    transition: 0.3s;
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--color-background-alternative);
+    }
+
+    &:active {
+        background-color: var(--color-background);
+        border-color: var(--color-primary);
+        border-width: 5px;
+    }
+
+    &:focus-visible {
+        border-color: var(--color-elements-secondary);
+        background-color: var(--color-background-alternative);
+        outline: 2px solid var(--color-focus-border);
+    }
+
+    &:checked {
+        border-color: var(--border-contact-page);
+        border-width: 5px;
+
+        &:hover {
+            border-color: var(--border-contact-page);
+        }
+
+        &:active {
+            border-color: var(--color-primary);
+        }
+    
+        &:focus-visible {
+            border-color: var(--color-focus-border);
+            background-color: var(--color-background-alternative);
+            outline: 2px solid var(--color-focus-border);
+        }
+    }
+}
