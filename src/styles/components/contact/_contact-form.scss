@@ -3,28 +3,37 @@
 .contact-form {
     display: flex;
     justify-content: center;
-    margin: 20px 0 0 ;
+    margin: 20px 0 0;
+
     &__title {
         text-align: center;
     }
+    &_radio{
+        margin-left: 4px;
+    }
+
     &__subtitle {
         text-align: center;
         @include mixin.subheading5();
 
     }
+
     &__item {
         @include mixin.text3();
     }
+
     &__switcher-block {
         background-color: var(--color-background-alternative);
 
     }
+
     &__switcher {
         margin: 24px;
-       
-      
+
+
+
     }
- 
+
 
     &__form {
         max-width: 640px;
@@ -39,15 +48,16 @@
     &__input {
         @include mixin.input();
         color: rgb(217 217 217);
-        
+
         &:user-invalid {
             border: 2px solid red;
         }
 
-        &:user-invalid + .contact-form__error {
+        &:user-invalid+.contact-form__error {
             display: block;
         }
     }
+
     &__terms-link {
         color: var(--color-primary-accent-link);
 
@@ -57,5 +67,5 @@
         display: none;
         color: red;
     }
-         
+
 }
