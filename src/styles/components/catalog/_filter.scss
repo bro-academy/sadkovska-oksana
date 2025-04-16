@@ -1,0 +1,9 @@
+@use './../../global/mixins' as mixin;
+
+.filter {
+    &__details {
+        padding: 24px;
+        margin-bottom: 21px;
+    }
+
+}

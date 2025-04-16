@@ -1,0 +1,299 @@
+{
+    "title_site": "Binabox",
+    "our_blog_heading": "Explore Catalog",
+    "sorting__heading": "All item",
+    "select__button_heading": "Sort by",
+    "our_blog": [
+        {
+            "link": "Home"
+        },
+        {
+            "link": "Contact Us"
+        }
+    ],
+    "select__block": [
+        {
+            "text": "Newest",
+            "value": "newest"
+        },
+        {
+            "text": "Most popular",
+            "value": "popular"
+        },
+        {
+            "text": "Increasing in price",
+            "value": "high-price"
+        },
+        {
+            "text": "Lowering the price",
+            "value": "low-price"
+        }
+    ],
+    "tags": [
+        {
+            "filter_tag": "NFT"
+        },
+        {
+            "filter_tag": "ICO"
+        },
+        {
+            "filter_tag": "Crypto"
+        }
+      
+    ],
+    "filters": [
+        {
+            "name": "Clothing",
+            "type": "checkbox",
+            "items": [
+                {
+                    "name": "combatant",
+                    "value": "combatant",
+                    "label": "Combatant"
+                },
+                {
+                    "name": "ninja",
+                    "value": "ninja",
+                    "label": "Ninja"
+                },
+                {
+                    "name": "king",
+                    "value": "king",
+                    "label": "King"
+                },
+                {
+                    "name": "queen",
+                    "value": "queen",
+                    "label": "Queen"
+                },
+                {
+                    "name": "robot",
+                    "value": "robot",
+                    "label": "Robot"
+                }
+            ]
+        },
+        {
+            "name": "Eyes",
+            "type": "radio",
+            "items": [
+                {
+                    "name": "eyes",
+                    "value": "yellow",
+                    "label": "Yellow"
+                },
+                {
+                    "name": "eyes",
+                    "value": "green",
+                    "label": "Green"
+                },
+                {
+                    "name": "eyes",
+                    "value": "mix",
+                    "label": "Mix"
+                },
+                {
+                    "name": "eyes",
+                    "value": "orange",
+                    "label": "Orange"
+                }
+            ]
+        },
+        {
+            "name": "Face",
+            "type": "radio",
+            "items": [
+                {
+                    "name": "face",
+                    "value": "round",
+                    "label": "Round"
+                },
+                {
+                    "name": "face",
+                    "value": "oval",
+                    "label": "Oval"
+                },
+                {
+                    "name": "face",
+                    "value": "mix",
+                    "label": "Mix"
+                },
+                {
+                    "name": "face",
+                    "value": "square",
+                    "label": "Square"
+                }
+            ]
+        },
+        {
+            "name": "Skin",
+            "type": "checkbox",
+            "items": [
+                {
+                    "name": "yellow",
+                    "value": "yellow",
+                    "label": "Yellow"
+                },
+                {
+                    "name": "green",
+                    "value": "green",
+                    "label": "Green"
+                },
+                {
+                    "name": "mix",
+                    "value": "mix",
+                    "label": "Mix"
+                },
+                {
+                    "name": "orange",
+                    "value": "orange",
+                    "label": "Orange"
+                }
+            ]
+        },
+        {
+            "name": "Background",
+            "type": "radio",
+            "items": [
+                {
+                    "name": "background",
+                    "value": "yellow",
+                    "label": "Yellow"
+                },
+                {
+                    "name": "background",
+                    "value": "brown",
+                    "label": "Brown"
+                },
+                {
+                    "name": "background",
+                    "value": "mix",
+                    "label": "Mix"
+                },
+                {
+                    "name": "background",
+                    "value": "white",
+                    "label": "White"
+                }
+            ]
+        },
+        {
+            "name": "Special",
+            "type": "checkbox",
+            "items": [
+                {
+                    "name": "yellow",
+                    "value": "yellow",
+                    "label": "Yellow"
+                },
+                {
+                    "name": "green",
+                    "value": "green",
+                    "label": "Green"
+                },
+                {
+                    "name": "mix",
+                    "value": "mix",
+                    "label": "Mix"
+                },
+                {
+                    "name": "orange",
+                    "value": "orange",
+                    "label": "Orange"
+                }
+            ]
+        }
+    ],
+    "product_card": [
+        {
+            "img": "img/girl-face-2x.webp",
+            "label": "New",
+            "price": "199",
+            "currency": "$",
+            "title": "Name Product",
+            "width": "252",
+            "height": "324",
+            "alt": "girl-face"
+        },
+        {
+            "img": "img/girl-face-2x.webp",
+            "label": "New",
+            "price": "199",
+            "currency": "$",
+            "title": "Name Product",
+            "width": "252",
+            "height": "324",
+            "alt": "girl-face"
+        },
+        {
+            "img": "img/girl-face-2x.webp",
+            "label": "New",
+            "price": "199",
+            "currency": "$",
+            "title": "Name Product",
+            "width": "252",
+            "height": "324",
+            "alt": "girl-face"
+        },
+        {
+            "img": "img/girl-face-2x.webp",
+            "label": "New",
+            "price": "199",
+            "currency": "$",
+            "title": "Name Product",
+            "width": "252",
+            "height": "324",
+            "alt": "girl-face"
+        },
+        {
+            "img": "img/girl-face-2x.webp",
+            "label": "New",
+            "price": "199",
+            "currency": "$",
+            "title": "Name Product",
+            "width": "252",
+            "height": "324",
+            "alt": "girl-face"
+        },
+        {
+            "img": "img/girl-face-2x.webp",
+            "label": "New",
+            "price": "199",
+            "currency": "$",
+            "title": "Name Product",
+            "width": "252",
+            "height": "324",
+            "alt": "girl-face"
+        },
+        {
+            "img": "img/girl-face-2x.webp",
+            "label": "New",
+            "price": "199",
+            "currency": "$",
+            "title": "Name Product",
+            "width": "252",
+            "height": "324",
+            "alt": "girl-face"
+        },
+        {
+            "img": "img/girl-face-2x.webp",
+            "label": "New",
+            "price": "199",
+            "currency": "$",
+            "title": "Name Product",
+            "width": "252",
+            "height": "324",
+            "alt": "girl-face"
+        },
+        {
+            "img": "img/girl-face-2x.webp",
+            "label": "New",
+            "price": "199",
+            "currency": "$",
+            "title": "Name Product",
+            "width": "252",
+            "height": "324",
+            "alt": "girl-face"
+        }
+    ]
+}

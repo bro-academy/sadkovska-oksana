@@ -1,0 +1,17 @@
+{% extends 'layouts/base.njk' %}
+
+{% block styles %}
+  <link rel="stylesheet" href="/css/contact.css" />
+{% endblock %}
+
+{% set activePage = 'Contact Us' %}
+
+{% block content %}
+
+  <section class="contact-us ">
+    {% include 'partials/blog/blog-header.njk' %}
+    {% include 'partials/contact/contact-info.njk' %}
+    {% include 'partials/contact/form.njk' %}
+  </section>
+
+{% endblock %}
