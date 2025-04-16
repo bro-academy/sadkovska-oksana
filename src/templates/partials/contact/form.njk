@@ -1,0 +1,69 @@
+<div class="contact-form">
+  <form class="contact-form__form" action="url" method="post">
+    <h1 class="contact-form__title">Get in touch</h1>
+    <p class="contact-form__subtitle">
+        Browse through the most freuently asked questions
+      </p>
+
+    <div class="contact-form__switcher-block">
+      <label  class="contact-form__switcher-label">
+          Use my profile information
+          <input class="contact-form__switcher checkbox" type="checkbox" name="information"/>
+      </label>
+    </div>
+
+    <div class="contact-form__item">
+      <label class="contact-form__label" for="name"> Name<sup>*</sup>
+      </label>
+      <input class="contact-form__input" id="name" type="text" name="user-name"  minlength="3" required/>
+      <span class="contact-form__error">Please enter your name</span>
+    </div>
+
+    <div class="contact-form__item">
+      <label class="contact-form__label" for="lastname">Lastname<sup>*</sup>
+      </label>
+      <input class="contact-form__input"  minlength="3" id="lastname" type="text" name="surname"  required/>
+      <span class="contact-form__error">Please enter your lastname</span>
+    </div>
+
+    <div class="contact-form__item">
+      <label class="contact-form__label" for="birthday">Date of birth<sup>*</sup>
+      </label>
+      <input class="contact-form__input" type="date" id="birthday" name="birthday" required/>
+      <span class="contact-form__error">Please enter correct date</span>
+    </div>
+    <div class="contact-form__item">
+      <p class="contact-form__heading">Gender</p>
+      <label class="contact-form__label">
+        <input class="contact-form__radio radio" type="radio" name="gender"/> Male
+        </label>
+      <label class="contact-form__label">
+        <input class="contact-form__radio radio" type="radio" name="gender"/> Female
+        </label>
+    </div>
+    <div class="contact-form__item">
+      <label  class="contact-form__label" for="email">Email<sup>*</sup>
+      </label>
+      <input class="contact-form__input" type="email" id="email" name="e-mail" required/>
+      <span class="contact-form__error">Please enter correct email</span>
+    </div>
+    <div class="contact-form__item">
+      <label  class="contact-form__label" for="phone"> Phone Number</label>
+      <input  class="contact-form__input" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" id="phone" name="user-phone" required/>
+      <span class="contact-form__error">Phone format: 123-456-7890</span>
+    </div>
+    <div class="contact-form__item">
+      <label class="contact-form__label" for="message">Message</label>
+      <textarea  class="contact-form__input" name="message" id="message"></textarea>
+    </div>
+    <div class="contact-form__item">
+
+      <label  class="contact-form__label" for="send">
+        <input  class="contact-form__checkbox checkbox" type="checkbox" id="send" name="contact"/>
+          By clicking on the ‘Send Message’ button I agree to
+          <a  class="contact-form__terms-link link" href="#">all the terms of the security policy</a>
+      </label>
+    </div>
+    <button class="button button--primary button--full-width" type="submit">Send Message</button>
+  </form>
+</div>

@@ -1,5 +1,5 @@
-{
-    "footer_tags__heading": "Tags:",
+{ "title_site": "Binabox",
+    "blog_tags__heading": "Tags:",
     "tags_block": [
         {
             "label": "NFT"
@@ -59,7 +59,7 @@
             "text": "You can find a range of NFT marketplaces where you can buy existing NFTs or list your own NFTs for sale."
         }
     ],
-    "our_blog_heading": "OUR blog",
+    "our_blog_heading": "Our blog",
     "our_blog": [
         {
             "link": "Home"
