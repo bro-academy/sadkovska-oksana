@@ -1,20 +1,28 @@
 .slider {
-    &__heading {
-      display: inline-block;
-      margin-right: 9px;
-      order: -1;
-    }
-  
-    &__header {
-      display: flex;
-      align-items: center;
-  
-      &::before {
-        content: '';
-        height: 2px;
-        background-color: var(--color-border-transparent);
-        flex-grow: 1;
-        margin-right: 10px;
-      }
+  &__heading {
+    display: inline-block;
+    margin-right: 9px;
+    order: -1;
+   
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+
+    &::before {
+      content: '';
+      height: 2px;
+      background-color: var(--color-border-transparent);
+      flex-grow: 1;
+      margin-right: 10px;
     }
   }
+
+  &__cards {
+    display: flex;
+    gap: 24px;
+    justify-content: space-between;
+  }
+
+}

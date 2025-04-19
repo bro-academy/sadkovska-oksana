@@ -1,4 +1,10 @@
 .wrapper {
-    margin: 0 auto;
+    width: 100%;
     max-width: 1600px;
+    display: flex;
+    justify-self: center;
+
+    &--column {
+        flex-direction: column;
+    }
 }

@@ -1,6 +1,31 @@
 <section class="slider">
+  <div class="slider__wrapper wrapper wrapper--column">
 
-  {% include "partials/slider.njk" %}
-  {% include "partials/product-card.njk" %}
+    <header class="slider__header">
+      <h2 class="slider__heading">
+        <img src="img/folder.svg" class="slider__img" alt="folder">
+        {{ slider.heading }}
+      </h2>
+      <div class="slider__header__actions">
+        <button type="button" class="slider__btn button button--secondary divider-vertical divider-vertical--right">
+          {{ slider.button }}
+        </button>
+        <button type="button"  class="slider__arrow-left  button button--secondary">
+          <img src="img/arrow-left.svg" class="slider__arrow-img" alt="arrow-left">
+        </button>
+
+        <button  type="button" class="slider__arrow-right button button--primary">
+          <img src="img/arrow-right.svg"
+              class="slider__arrow-img" alt="arrow-right">
+        </button>
+      </div>
+    </header>
+
+    <div class="slider__cards">
+      {% for item in product_card %}
+        {% include "partials/product-card.njk" %}
+      {% endfor %}
+    </div>
+  </div>
 
 </section>
