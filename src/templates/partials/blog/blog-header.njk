@@ -1,12 +1,17 @@
-<header class="our-blog">
-    <h1 class="our-blog__heading">{{ our_blog_heading }}</h1>
-    <ul class="our-blog__menu">
-        {% for item in our_blog %}
-            <li class="our-blog__item bread-crumps">
-                <a href="#" class="bread-crumps__link">
-                    {{ item.link }}
-                </a>
-            </li>
-        {% endfor %}
-    </ul>
+<header class="our-blog__header">
+    <div class="wrapper wrapper-column">
+        <div class="our-blog__header-wrapper">
+            <h1 class="our-blog__heading">{{ our_blog_heading }}</h1>
+
+            <ul class="our-blog__menu">
+                {% for item in our_blog %}
+                    <li class="our-blog__item bread-crumps">
+                        <a href="#" class="bread-crumps__link">
+                            {{ item.link }}
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
 </header>
