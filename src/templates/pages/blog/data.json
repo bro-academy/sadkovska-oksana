@@ -59,16 +59,18 @@
             "text": "You can find a range of NFT marketplaces where you can buy existing NFTs or list your own NFTs for sale."
         }
     ],
-    "our_blog_heading": "Our blog",
-    "our_blog": [
+    "page_header": "Our blog",
+    "breadcrumbs": [
         {
-            "link": "Home"
+            "title": "Home",
+            "link": "/"
         },
         {
-            "link": "Our Blog"
+            "title": "Our Blog",
+            "link": "/blog.html"
         },
         {
-            "link": "The Basilisks NFT"
+            "title": "The Basilisks NFT"
         }
     ],
     "aside_heading": "Categories",

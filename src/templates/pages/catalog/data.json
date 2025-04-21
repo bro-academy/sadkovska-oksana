@@ -1,14 +1,15 @@
 {
     "title_site": "Binabox",
-    "our_blog_heading": "Explore Catalog",
     "sorting__heading": "All item",
     "select__button_heading": "Sort by",
-    "our_blog": [
+    "page_header": "Explore Catalog",
+    "breadcrumbs": [
         {
-            "link": "Home"
+            "title": "Home",
+            "link": "/"
         },
         {
-            "link": "Contact Us"
+            "title": "Catalog"
         }
     ],
     "select__block": [

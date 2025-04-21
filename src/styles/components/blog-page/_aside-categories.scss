@@ -1,7 +1,10 @@
 @use './../../global/mixins' as mixin;
 
 .aside-categories {
+  background-color: var(--color-background-alternative);
+  padding: 24px;
     &__heading {
       @include mixin.subheading4();
+     
     }
-  }
+}

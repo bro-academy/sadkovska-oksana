@@ -1,6 +1,8 @@
 @use './../../global/mixins' as mixin;
 
 .blog-tags {
+  display: flex;
+  justify-content: space-between;
     &__item {
       @include mixin.border_tags();
       background-color: var( --transparent);
@@ -8,6 +10,13 @@
   
     &__link {
       color: var(--color-secondary);
+    }
+    
+    &__tags-block,
+    &__share-block {
+      display: flex;
+      gap: 24px;
+      align-items: center;
     }
   }
   

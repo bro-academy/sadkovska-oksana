@@ -1,33 +1,20 @@
 @use './../../global/mixins' as mixin;
 
 .our-blog {
-  &__header {
-    background-image: url("/img/background-our-blog-1x.webp");
-    background-repeat: no-repeat;
-    padding: 2px;
-    background-size: cover;
-  }
-  &__header-wrapper{
-    width: 100%;
-  }
 
-  &__heading {
-    @include mixin.heading1();
-    font-family: var(--font-family-secondary);
-    text-align: center;
-    margin: 62px 0 20px;
-  }
+    &__wrapper {
+        gap: 64px;
 
-  &__menu {
-    display: flex;
-    justify-content: center;
-    margin: 0 auto 198px;
-    list-style-type: none;
-    gap: 18px;
+    }
 
-  }
+    &__content {
+        flex: 1;
+    }
+    &__tags{
+       background-color: var(--color-background-alternative); 
+       padding: 24px;
+       margin-top: 21px;
+    }
+  
 
-  &__item {
-    font-weight: 600;
-  }
 }

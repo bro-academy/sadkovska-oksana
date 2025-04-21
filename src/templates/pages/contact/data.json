@@ -1,13 +1,14 @@
 {
     "title_site": "Binabox",
-    "our_blog_heading": "Contact Us",
     "form__title":"Get in touch",
-    "our_blog": [
+    "page_header": "Contact Us",
+    "breadcrumbs": [
         {
-            "link": "Home"
+            "title": "Home",
+            "link": "/"
         },
         {
-            "link": "Contact Us"
+            "title": "Contact Us"
         }
     ],
     "contact_info": [

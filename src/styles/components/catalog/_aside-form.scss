@@ -1,6 +1,8 @@
 @use './../../global/mixins' as mixin;
 
-.filter {
+.aside-form {
+    width: 320px;
+
     &__details {
         padding: 24px;
         margin-bottom: 21px;

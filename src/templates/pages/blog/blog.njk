@@ -7,11 +7,15 @@
 {% set activePage = 'Blog' %}
 
 {% block content %}
+  {% include 'partials/common/page-header.njk' %}
 
   <section class="our-blog">
-    {% include 'partials/blog/blog-header.njk' %}
-    {% include 'partials/blog/blog-aside.njk' %}
+      <div class="our-blog__wrapper wrapper">
+ {% include 'partials/blog/blog-aside.njk' %}
+    <div class="our-blog__content">
     {% include 'partials/blog/blog-article.njk' %}
+    </div>
+    </div>
   </section>
 
 {% endblock %}
