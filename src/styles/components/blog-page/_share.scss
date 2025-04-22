@@ -9,7 +9,6 @@
 
   &__item {
     @include mixin.border_tags();
-    display: block;
   }
 
   &__link {
