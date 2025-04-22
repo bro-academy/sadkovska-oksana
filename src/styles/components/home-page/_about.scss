@@ -4,7 +4,7 @@
     &__heading {
       @include mixin.heading2();
       font-family: var(--font-family-secondary);
-   
+      
     }
   
     &__text {
@@ -15,6 +15,10 @@
       display: flex;
       gap: 20px;
       counter-reset: cards-counter;
+    }
+    &__btn {
+      margin-bottom: 64px;
+    align-self: center;
     }
   }
   

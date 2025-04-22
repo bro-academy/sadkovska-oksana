@@ -1,0 +1,36 @@
+@use './../../global/mixins' as mixin;
+
+.image-card {
+    position: relative;
+    border-image-slice: 50;
+    border-image-width: 50px;
+    background-color: var(--color-background-alternative);
+    object-fit: cover;
+    margin: 0;
+
+    &:hover {
+        border-image-source: url("/img/info-card-hover-1x.webp");
+    }
+
+    &:active {
+        @include mixin.outline_card();
+    }
+
+    &__info-block {
+        padding: 24px;
+    }
+
+    &__blockquote {
+        margin: 0;
+    }
+
+    &__label {
+        position: absolute;
+        top: 16px;
+        right: 31px;
+
+    }
+    &__btn {
+    margin-bottom: 24px;
+    }
+}

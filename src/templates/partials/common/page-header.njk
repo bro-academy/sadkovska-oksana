@@ -1,0 +1,21 @@
+<header class="page-header">
+    <div class="page-header__wrapper wrapper wrapper--column">
+        <h1 class="page-header__heading">{{ page_header }}</h1>
+
+        <ul class="page-header__menu">
+            {% for item in breadcrumbs %}
+                <li class="our-blog__item breadcrumbs">
+                    {% if item.link %}
+                        <a href="{{ item.link }}" class="breadcrumbs__link">
+                            {{ item.title }}
+                        </a>
+                    {% else %}
+                        <span class="breadcrumbs__text">
+                            {{ item.title }}
+                        </a>
+                    {% endif %}
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</header>

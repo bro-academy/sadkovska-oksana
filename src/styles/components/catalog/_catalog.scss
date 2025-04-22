@@ -1,0 +1,15 @@
+@use './../../global/mixins' as mixin;
+
+.catalog {
+
+    &__wrapper {
+        gap: 64px;
+
+    }
+
+    &__content {
+        flex: 1;
+    }
+
+
+}

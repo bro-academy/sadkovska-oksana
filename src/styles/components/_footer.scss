@@ -11,4 +11,31 @@
       @include mixin.text4();
       color: var(--color-secondary);
     }
+    &__main {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 64px;
+    }
+    &__subscribe {
+      display: flex;
+      gap: 24px;
+    }
+    &__bottom{
+      display: flex;
+      justify-content: space-between;
+      border-top: 2px solid var(--color-border-transparent);
+    }
+    &__links-block {
+      display: flex;
+     gap: 10px;
+    }
+    &__nav-block, &__block-pages   {
+      padding-inline-start:0;
+    }
+    &__license-block {
+      padding-top: 20px;
+    }
+
+  
+  
   }

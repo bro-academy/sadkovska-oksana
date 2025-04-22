@@ -37,9 +37,15 @@
     "footer_heading": "Company",
     "footer_pages": [
         {
-            "link": "Terms Conditions",
-            "link": "Privacy Policy",
-            "link": "White paper",
+            "link": "Terms Conditions"
+        },
+        {
+            "link": "Privacy Policy"
+        },
+        {
+            "link": "White paper"
+        },
+        {
             "link": "Help Center"
         }
     ],
@@ -60,6 +66,10 @@
             "alt": "telegram"
         },
         {
+            "src": "img/youtube.svg",
+            "alt": "youtube"
+        },
+        {
             "src": "img/tiktok.svg",
             "alt": "tik-tok"
         },
@@ -67,5 +77,6 @@
             "src": "img/discord.svg",
             "alt": "discord"
         }
+
     ]
 }

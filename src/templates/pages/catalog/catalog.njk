@@ -7,12 +7,16 @@
 
 {% block content %}
 
-  <section class="our-blog wrapper">
-    {% include 'partials/blog/blog-header.njk' %}
-    {% include 'partials/catalog/aside-form.njk' %}
-    {% include 'partials/catalog/sorting-form.njk' %}
-    {% include 'partials/product-card.njk' %}
+  {% include 'partials/common/page-header.njk' %}
 
+  <section class="catalog">
+    <div class="catalog__wrapper wrapper">
+      {% include 'partials/catalog/aside-form.njk' %}
+      <div class="catalog__content">
+        {% include 'partials/catalog/sorting-form.njk' %}
+        {% include 'partials/catalog/products-list.njk' %}
+      </div>
+    </div>
   </section>
 
 {% endblock %}

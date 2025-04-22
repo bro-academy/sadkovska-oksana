@@ -1,0 +1,12 @@
+@use './../../global/mixins' as mixin;
+
+.products-list {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+
+    & > .product-card {
+        flex: 1 1 150px;
+    }
+
+}

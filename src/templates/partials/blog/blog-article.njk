@@ -38,9 +38,9 @@
             {{ main_image_text7 }}
         </p>
 
-        <ul class="main-image__list list-paragpaph">
+        <ul class="main-image__list list-paragraph">
             {% for item in list_paragraph %}
-                <li class="list-paragpaph__item">{{ item.text}}</li>
+                <li class="list-paragraph__item">{{ item.text}}</li>
             {% endfor %}
         </ul>
 
@@ -80,22 +80,29 @@
     </section>
 
     <section class="blog-tags">
-        <h2 class="blog-tags__heading">{{ blog_tags__heading }}</h2>
-        <ul class="blog-tags__block">
-            {% for item in tags_block %}
-                <li class="blog-tags__item label">
-                    <a class="blog-tags__link" href="#">{{ item.label }}</a>
-                </li>
-            {% endfor %}
-        </ul>
-        <h3 class="blog-tags__share share">{{ share_heading }}</h3>
-        <ul class="share__block">
-            {% for item in share_block %}
-                <li class="share__item">
-                    <a class="share__link" href="{{ item.href }}"><img class="share__icon" src="{{ item.src }}"
-              alt="{{ item.alt }}"></a>
-                </li>
-            {% endfor %}
-        </ul>
+
+        <div class="blog-tags__tags-block">
+            <h2 class="blog-tags__heading">{{ blog_tags__heading }}</h2>
+            <ul class="blog-tags__block">
+                {% for item in tags_block %}
+                    <li class="blog-tags__item label">
+                        <a class="blog-tags__link" href="#">{{ item.label }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="blog-tags__share-block">
+            <h3 class="blog-tags__share share">{{ share_heading }}</h3>
+            <ul class="share">
+                {% for item in share__block %}
+                    <li class="share__item">
+                        <a class="share__link" href="{{ item.href }}">
+                            <img class="share__icon" src="{{ item.src }}"alt="{{ item.alt }}"></a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+
     </section>
 </article>

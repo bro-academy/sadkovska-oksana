@@ -1,0 +1,7 @@
+@use './../../global/mixins' as mixin;
+.list-paragraph{
+    &__item {
+        list-style-type: circle;
+    }
+   
+}

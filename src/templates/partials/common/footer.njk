@@ -1,21 +1,24 @@
 <footer class="footer">
-  <div class="footer__top">
+
+  <div class="slider__wrapper wrapper wrapper--column">
+
+ 
+   <div class="footer__main">
     <div class="footer__logo-wrap">
       <img class="footer__logo logo__img" src="img/logo.svg" alt="Logo"/>
       <img src="img/logo-heading.svg" class="logo__heading" alt="Logo"></img>
-      <p class="footer__text">{{ footer__tex }}</p>
+      <p class="footer__text">{{ footer__text }}</p>
     </div>
 
     <div class="footer__subscribe">
-      <div class="footer__nav subscribe-nav">
-        <p class="subscribe-nav__heading">{{ nav__heading }}</p>
-        <ul class="subscribe-nav__block">
+      <div class="footer__nav">
+        <p class="footer__nav-heading">{{ nav__heading }}</p>
+        <ul class="footer__nav-block">
           {% for item in footer_nav %}
             <li class="subscribe-nav__item">
               <a class="footer__link link" href="#">{{ item.link }}</a>
             </li>
           {% endfor %}
-
         </ul>
       </div>
 
@@ -28,15 +31,15 @@
               <a class="footer__link link" href="#">{{ item.link }}</a>
             </li>
           {% endfor %}
-
         </ul>
       </div>
     </div>
   </div>
+ 
 
-  <div class="footer__license license">
-    <div class="license__block">
-      <small class="license__text">{{ license_text }}</small>
+<div class="footer__bottom">
+    <div class="footer__license-block">
+      <small class="footer__license-text">{{ license_text }}</small>
     </div>
 
     <div class="footer__social">
@@ -47,6 +50,8 @@
           </li>
         {% endfor %}
       </ul>
-    </div>
+  </div>
+  </div>
+
   </div>
 </footer>

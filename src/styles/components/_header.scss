@@ -1,7 +1,12 @@
 @use './../global/mixins' as mixin;
 
 .header {
+
+  &__wrapper {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   
     &__element {
       @include mixin.text2();
@@ -52,6 +57,10 @@
         height: 2px;
         background-color: var(--color-primary);
       }
+    }
+
+    &__actions {
+      display: flex;
     }
   
     &__search {

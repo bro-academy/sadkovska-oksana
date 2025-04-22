@@ -1,5 +1,4 @@
 @use "./../components/blog-page/blockquote-blog";
-@use "./../components/blog-page/blog";
 @use "./../components/blog-page/image-card";
 @use "./../components/blog-page/blog-tags";
 @use "./../components/blog-page/list-order";
@@ -7,6 +6,7 @@
 @use "./../components/blog-page/share";
 @use "./../components/blog-page/main-image";
 @use "./../components/blog-page/main-info";
-@use "./../components/blog-page/our-blog";
 @use "./../components/blog-page/tags-menu";
 @use "./../components/blog-page/aside-categories";
+@use "./../components/blog-page/our-blog";
+@use "./../components/blog-page/list-paragraph";

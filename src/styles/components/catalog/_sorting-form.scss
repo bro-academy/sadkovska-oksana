@@ -3,8 +3,11 @@
 .sorting {
     &__block {
         background-color: var(--color-background);
+    }
 
-
+    &__controls {
+        display: flex;
+        justify-content: space-between;
     }
 
     &__search {
@@ -14,10 +17,9 @@
     }
 
     &__filters {
+        flex: 1;
         background-color: var(--color-background-alternative);
         padding: 16px;
-        
-
     }
 
     &__select {

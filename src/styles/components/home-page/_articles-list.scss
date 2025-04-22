@@ -1,14 +1,24 @@
 @use './../../global/mixins' as mixin;
 .blog {
+    margin-bottom: 64px;
     &__heading {
         @include mixin.heading2();
     }
 
-    &__wrapper {
+    &__block {
         display: flex;
+        gap: 24px;
+        justify-content: space-between;
+        margin-bottom: 40px;
     }
 
     &__card {
         background-color: var(--color-background-alternative);
+        
     }
+    &__button {
+        margin-bottom: 64px ;
+        align-self: center;
+    }
+
 }
