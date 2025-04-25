@@ -3,11 +3,26 @@
 .sorting {
     &__block {
         background-color: var(--color-background);
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-template-rows: auto auto;
+        gap: 1rem 2rem;
+        align-items: center;
+        margin-bottom: 40px;
     }
 
     &__controls {
+        grid-column: 2 / 3;
         display: flex;
-        justify-content: space-between;
+        gap: 1rem;
+        align-items: center;
+        flex-wrap: wrap;
+
+    }
+
+    &__heading {
+        grid-column: 1 / 2;
+        margin-top: 0;
     }
 
     &__search {
@@ -17,8 +32,13 @@
     }
 
     &__filters {
-        flex: 1;
+    
         background-color: var(--color-background-alternative);
+        grid-column: 1 / -1;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-top: 0.5rem;
         padding: 16px;
     }
 
@@ -27,6 +47,8 @@
     }
 
     &__filter-tag {
+        background-color: var(--color-background-secondary);
+
 
         &::after {
             content: url("/img/cross.svg");
@@ -36,14 +58,25 @@
         }
     }
 
+    &__dropdown,
+    &__search {
+        display: flex;
+        align-items: center;
+        gap: 24px;
+    }
+
     &__dropdown-options {
         background-color: var(--color-background-dropdown);
         padding-bottom: 36px;
         max-width: 173px;
-        // display: none;
+    }
 
-
-
+    // display: none;
+    &__controls> :first-child,
+    &__controls> :nth-child(2) {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
     }
 
     &__filter-tag {
@@ -53,6 +86,7 @@
         padding: 6px 36px 6px 12px;
         text-align: left;
     }
+
 
 
 

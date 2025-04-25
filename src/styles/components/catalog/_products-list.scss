@@ -1,9 +1,11 @@
 @use './../../global/mixins' as mixin;
 
 .products-list {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 32px;
-    flex-wrap: wrap;
+    margin-bottom: 24px;
+   
 
     & > .product-card {
         flex: 1 1 150px;

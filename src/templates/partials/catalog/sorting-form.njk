@@ -16,14 +16,17 @@
                 </div>
 
                 <div class="sorting__search">
-                    <div class="divider-vertical divider-vertical--right">
+                    
                         <label class="search">
                             <input class="search__input" type="search" minlength="5" placeholder="Search NFT"/>
                         </label>
-                    </div>
+                   
                 </div>
 
-                <div class="sorting__filters">
+               
+
+            </div>
+             <div class="sorting__filters">
 
                     {% for item in tags %}
                         <button class="sorting__filter-tag">{{ item.filter_tag }}</button>
@@ -33,7 +36,5 @@
                     
 
                 </div>
-
-            </div>
         </form>
     </div>
