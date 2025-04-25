@@ -3,8 +3,8 @@
 .our-blog {
     &__aside-menu {
         position: sticky;
-        top: 20px; /* расстояние от верхней границы при залипании */
-        align-self: start; /* если используется CSS Grid */
+        top: 20px; 
+        align-self: start; 
         height: max-content;
     }
 

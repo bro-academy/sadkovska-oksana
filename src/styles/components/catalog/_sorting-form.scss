@@ -32,7 +32,7 @@
     }
 
     &__filters {
-    
+
         background-color: var(--color-background-alternative);
         grid-column: 1 / -1;
         display: flex;
@@ -71,7 +71,7 @@
         max-width: 173px;
     }
 
-    // display: none;
+
     &__controls> :first-child,
     &__controls> :nth-child(2) {
         display: flex;
