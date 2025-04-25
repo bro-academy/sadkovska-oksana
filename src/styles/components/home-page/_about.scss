@@ -12,9 +12,13 @@
     }
   
     &__cards {
-      display: flex;
-      gap: 20px;
+      display: grid;
+      gap: 24px;
+      grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
       counter-reset: cards-counter;
+      // display: flex;
+      // gap: 20px;
+   
     }
     &__btn {
       margin-bottom: 64px;
