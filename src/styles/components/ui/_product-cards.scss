@@ -1,12 +1,13 @@
 @use './../../global/mixins' as mixin;
 
 .product-card {
-  padding: 24px;
+  padding: 1.5rem;
   border-image-slice: 50;
   border-image-width: 50px;
   background-color: var(--color-background-alternative);
   object-fit: cover;
   margin: 0;
+  position: relative;
 
 
   &:hover {
@@ -32,8 +33,12 @@
   }
 
   &__label {
-    position: relative;
-    bottom: 506px;
-    right: -163px;
+    position: absolute;
+    top: 21px;
+    right: 34px;
+  }
+  &__img{
+    object-fit: cover;
+    width: 100%;
   }
 }

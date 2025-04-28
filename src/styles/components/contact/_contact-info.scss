@@ -6,18 +6,18 @@
     
     &__block {
         display: flex;
-        gap: 16px;
+        gap: 1rem;
     }
     
     &__item {
         border: 1px solid var(--border-contact-page);
         text-align: center;
         width: 288px;
-        padding: 40px 32px;
+        padding: 2.5rem 32px;
         
 
         // &:not(:last-child) {
-        //     margin-right: 16px;
+        //     margin-right: 1rem;
         // }
     }
 

@@ -6,13 +6,13 @@
     padding: 2px;
     background-size: cover;
     background-position: center bottom;
-    margin-bottom: 64px;
+    margin-bottom: 4rem;
 
   &__heading {
     @include mixin.heading1();
     font-family: var(--font-family-secondary);
     text-align: center;
-    margin: 62px 0 20px;
+    margin: 62px 0 1.25rem;
   }
 
   &__menu {

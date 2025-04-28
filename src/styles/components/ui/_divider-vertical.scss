@@ -7,15 +7,16 @@
       top: 50%;
       transform: translateY(-50%);
       width: 2px;
-      height: 24px;
+      height: 1.5rem;
       background-color: var(--color-border-transparent);
+      margin-right: 4px;
     }
   
     &--right {
-      margin-right: 20px;
+      margin-right: 1.25rem;
   
       &::after {
-        right: -15px;
+        right: -13125rem;
       }
     }
   }

@@ -1,4 +1,5 @@
 @use './../../global/mixins' as mixin;
+@use "./../../global/breakpoints" as bp;
 
 .banner {
   background: radial-gradient(42.5% 42.5% at 22.28% -4.22%,
@@ -11,6 +12,45 @@
     color: var(--color-secondary);
     text-transform: uppercase;
 
+    @include bp.sm {
+      font-size: 2.25rem;
+      line-height: 36px;
+    }
+
+    @include bp.xs {
+      font-size: 1.75rem;
+
+
+    }
+
+  }
+
+  &__content {
+    display: flex;
+
+    @include bp.md {
+      width: 100%;
+      flex-direction: column;
+    }
+  }
+
+  &__button-block {
+    display: flex;
+    gap: 1rem;
+
+    @include bp.xs {
+      flex-direction: column;
+
+    }
+  }
+
+  &__image-block {
+
+    @include bp.sm {
+      display: none;
+      visibility: hidden;
+
+    }
   }
 
   &__heading--highlight {
@@ -24,19 +64,46 @@
 
   &__statistics-numbers {
     font-family: var(--font-family-secondary);
-    font-size: 52px;
+    font-size: 3.25rem;
     font-weight: 400;
-    text-shadow: #f5f8fb 1px 0 10px;
+    text-shadow: #f5f8fb 1px 0 0.625rem;
+
+    @include bp.sm {
+      font-size: 2.25rem;
+    }
+
+    @include bp.xs {
+      font-size: 1.75rem;
+
+    }
+  }
+
+  &__statistics {
+    display: grid;
+    grid-template-rows: 50% auto;
+    gap: 14px;
+  }
+
+  &__statistics-numbers {
+    grid-row: 1;
   }
 
   &__statistics-text {
-    font-size: 16px;
+    grid-row: 2;
+    font-size: 1rem;
     font-weight: 400;
+    margin: 0;
+
   }
 
   &__wrapper {
     display: flex;
-    gap: 12px;
+    gap: 0.75rem;
     padding: 100px;
+
+    @include bp.sm {
+      padding: 1.5rem;
+
+    }
   }
 }

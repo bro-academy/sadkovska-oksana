@@ -1,9 +1,15 @@
 @use './../../global/mixins' as mixin;
 
 .our-blog {
+    &__aside-menu {
+        position: sticky;
+        top: 1.25rem; 
+        align-self: start; 
+        height: max-content;
+    }
 
     &__wrapper {
-        gap: 64px;
+        gap: 4rem;
 
     }
 
@@ -12,7 +18,7 @@
     }
     &__tags{
        background-color: var(--color-background-alternative); 
-       padding: 24px;
+       padding: 1.5rem;
        margin-top: 21px;
     }
   

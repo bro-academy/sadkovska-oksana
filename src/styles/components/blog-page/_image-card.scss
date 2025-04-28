@@ -8,7 +8,7 @@
   border-image-slice: 50;
   border-image-width: 50px;
   background-color: var(--color-background-secondary);
-  
+
 
   &:hover {
     border-image-source: url("/img/info-card-hover-1x.webp");
@@ -27,12 +27,16 @@
   }
 
   &__img {
+    width: 100%;
+    overflow: hidden;
+    aspect-ratio: 3.5 / 1;
+    object-position: center;
     object-fit: cover;
-    object-position: -19px -203px;
 
   }
 
   &__img--big {
+    aspect-ratio: 1 / 1;
     object-position: center;
     object-fit: cover;
   }
@@ -41,4 +45,3 @@
     background-color: var(--color-background-alternative);
   }
 }
-

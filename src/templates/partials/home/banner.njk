@@ -1,7 +1,10 @@
  <section class="banner">
-      <div class="banner__wrapper wrapper">
+
+  <div class="banner__wrapper wrapper">
         
-        <div class="banner__details">
+    <div class="banner__content">
+
+          <div class="banner__details">
           
           <h1 class="banner__heading">
             {{ banner.heading.first }}
@@ -18,12 +21,20 @@
             {% endfor %}
           </dl>
           
-          <button  type="button" class="banner__btn button button--primary">Connect Wallet</button>
+         <div class="banner__button-block">
+           <button  type="button" class="banner__btn button button--primary">Connect Wallet</button>
           <a class="button button--secondary" href="#" target="_blank">Whitelist now</a>
-        
         </div>
-        <div class="banner__image-block">
+
+        </div>
+
+   
+     <div class="banner__image-block">
           <img class="banner__image" width="533" height="642" src="img/banner-cube-1x.webp" alt="nft-cube" />
-        </div>
-      </div>
+     </div>
+
+    </div>
+
+
+  </div>
     </section>

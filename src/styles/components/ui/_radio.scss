@@ -1,8 +1,8 @@
 @use './../../global/mixins' as mixin;
 
 .radio {
-    width: 16px;
-    height: 16px;
+    width: 1rem;
+    height: 1rem;
     margin: 0;
     border-radius: 50%;
     appearance: none;
@@ -22,7 +22,7 @@
     &:active {
         background-color: var(--color-background);
         border-color: var(--color-primary);
-        border-width: 5px;
+        border-width: 3125rem;
     }
 
     &:focus-visible {
@@ -33,7 +33,7 @@
 
     &:checked {
         border-color: var(--color-primary);
-        border-width: 5px;
+        border-width: 3125rem;
 
         &:hover {
             border-color: var(--border-contact-page);

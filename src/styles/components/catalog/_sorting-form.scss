@@ -3,11 +3,25 @@
 .sorting {
     &__block {
         background-color: var(--color-background);
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 1rem 2rem;
+        align-items: center;
+        margin-bottom: 2.5rem;
     }
 
     &__controls {
+        grid-column: 2 / 3;
         display: flex;
-        justify-content: space-between;
+        gap: 1rem;
+        align-items: center;
+        flex-wrap: wrap;
+
+    }
+
+    &__heading {
+        grid-column: 1 / 2;
+        margin-top: 0;
     }
 
     &__search {
@@ -17,9 +31,14 @@
     }
 
     &__filters {
-        flex: 1;
+
         background-color: var(--color-background-alternative);
-        padding: 16px;
+        grid-column: 1 / -1;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        margin-top: 0.5rem;
+        padding: 1rem;
     }
 
     &__select {
@@ -27,6 +46,8 @@
     }
 
     &__filter-tag {
+        background-color: var(--color-background-secondary);
+
 
         &::after {
             content: url("/img/cross.svg");
@@ -36,23 +57,34 @@
         }
     }
 
+    &__dropdown,
+    &__search {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
     &__dropdown-options {
         background-color: var(--color-background-dropdown);
-        padding-bottom: 36px;
+        padding-bottom: 2.25rem;
         max-width: 173px;
-        // display: none;
+    }
 
 
-
+    &__controls> :first-child,
+    &__controls> :nth-child(2) {
+        display: flex;
+        gap: 1rem;
     }
 
     &__filter-tag {
         @include mixin.border_tags();
         background-color: var(--color-background-alternative);
         color: var(--color-secondary);
-        padding: 6px 36px 6px 12px;
+        padding: 6px 2.25rem 6px 0.75rem;
         text-align: left;
     }
+
 
 
 

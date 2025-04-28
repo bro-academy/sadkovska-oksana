@@ -14,11 +14,11 @@
     &__main {
       display: flex;
       justify-content: space-between;
-      margin-top: 64px;
+      margin-top: 4rem;
     }
     &__subscribe {
       display: flex;
-      gap: 24px;
+      gap: 1.5rem;
     }
     &__bottom{
       display: flex;
@@ -27,13 +27,13 @@
     }
     &__links-block {
       display: flex;
-     gap: 10px;
+     gap: 0.625rem;
     }
     &__nav-block, &__block-pages   {
       padding-inline-start:0;
     }
     &__license-block {
-      padding-top: 20px;
+      padding-top: 1.25rem;
     }
 
   

@@ -3,7 +3,7 @@
 .team {
     &__heading {
       font-family: var(--font-family-secondary);
-      font-size: 24px;
+      font-size: 1.5rem;
     }
   
     &__role {
@@ -13,15 +13,16 @@
   
     &__block {
       display: flex;
-      gap: 20px;
+      gap: 1.25rem;
       counter-reset: cards-counter;
+      flex-wrap: wrap;
     }
   
     &__item {
       display: inline-block;
       list-style: none;
       max-width: 300px;
-      padding: 20px;
+      padding: 1.25rem;
       border-image-slice: 50;
       border-image-width: 50px;
       background-color: var(--color-background-secondary);
