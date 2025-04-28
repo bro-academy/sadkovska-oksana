@@ -1,6 +1,12 @@
 @use './../../global/mixins' as mixin;
 
 .our-blog {
+    &__aside-menu {
+        position: sticky;
+        top: 20px; 
+        align-self: start; 
+        height: max-content;
+    }
 
     &__wrapper {
         gap: 64px;

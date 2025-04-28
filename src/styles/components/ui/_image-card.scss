@@ -1,12 +1,14 @@
 @use './../../global/mixins' as mixin;
 
 .image-card {
-    position: relative;
+    @include mixin.card_width_max();
+    display: inline-block;
+    padding: 24px;
+    margin: 20px;
     border-image-slice: 50;
     border-image-width: 50px;
-    background-color: var(--color-background-alternative);
-    object-fit: cover;
-    margin: 0;
+    background-color: var(--color-background-secondary);
+
 
     &:hover {
         border-image-source: url("/img/info-card-hover-1x.webp");
@@ -16,21 +18,45 @@
         @include mixin.outline_card();
     }
 
-    &__info-block {
-        padding: 24px;
+    &__text {
+        @include mixin.text2();
     }
 
-    &__blockquote {
-        margin: 0;
+    &__heading {
+        @include mixin.heading2();
+    }
+
+    &__img {
+        width: 100%;
+        overflow: hidden;
+        aspect-ratio: 3.5 / 1;
+        object-position: center;
+        object-fit: cover;
+
+    }
+
+
+    &__btn {
+        background-color: var(--color-background-alternative);
+        padding: 0;
+    }
+    
+
+    &__image-block {
+        position: relative;
     }
 
     &__label {
         position: absolute;
-        top: 16px;
-        right: 31px;
-
+        right: 16px;
     }
-    &__btn {
-    margin-bottom: 24px;
+
+    &__information {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+    }
+    &__blockquote, &__heading {
+        margin: 0;
     }
 }

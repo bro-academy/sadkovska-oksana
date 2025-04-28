@@ -2,7 +2,7 @@
   &__heading {
     margin-right: 9px;
     order: -1;
-   
+
   }
 
   &__header {
@@ -19,9 +19,13 @@
   }
 
   &__cards {
-    display: flex;
+    // display: flex;
+    // gap: 24px;
+    // justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
     gap: 24px;
-    justify-content: space-between;
+
   }
 
 }

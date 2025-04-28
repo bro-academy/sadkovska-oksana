@@ -1,22 +1,40 @@
 <article class="blog__card image-card">
 
-    <div class="image-card__info-block">
+    <figure class="image-card__info-block">
 
-        <img class="image-card__img image-card__img--big" width ="{{ item.widht }}" height="{{ item.height }}" src="{{ item.img }}" alt="{{ item.alt }}"/>
-        <img class="main-image__icon icon" src="img/profile.svg" alt="user"/>
+        
+      <div class="image-card__image-block">
+          <img class="image-card__img" src="{{ item.img }}" alt="{{ item.alt }}"/>
+        <p class="image-card__label label">{{ item.label }}</p>
+        
+      </div>
+        <figcaption class="image-card__info-text">
 
-        <p class="image-card__name autor-name">{{ item.name }}</p>
-        <img class="main-image__icon icon" src="img/calendar.svg" alt="calendar"/>
-        <time class="image-card__datetime datetime" datetime="{{ item.date }}">{{ item.datetime }}</time>
-        <h3 class="image-card__heading">{{ item.heading }}</h3>
-        <blockquote class="image-card__blockquote" cite="#">
-            <p class="image-card__text">
-                {{ item.text }}
-            </p>
-        </blockquote>
-    <a class="image-card__btn button button--secondary" href="#">{{ item.button }}</a>
+       <div class="image-card__information">
 
-    </div>
+             <div class="image-card__author">
+                <img class="main-image__icon icon" src="img/profile.svg" alt="user"/>
+                <p class="image-card__name autor-name">{{ item.name }}</p>
+            </div>
+            
+            <div class="image-card__date">
+                <img class="main-image__icon icon" src="img/calendar.svg" alt="calendar"/>
+                <time class="image-card__datetime datetime" datetime="{{ item.date }}">{{ item.datetime }}</time>
+            </div>
+       </div>
+            
+            <h3 class="image-card__heading">{{ item.heading }}</h3>
+            <blockquote class="image-card__blockquote" cite="#">
+                <p class="image-card__text">
+                    {{ item.text }}
+                </p>
+            </blockquote>
 
-    <p class="image-card__label label">{{ item.label }}</p>
+        </figcaption>
+        <a class="image-card__btn button button--secondary" href="#">{{ item.button }}</a>
+
+
+    </figure>
+
+
 </article>
