@@ -13,7 +13,7 @@
     text-transform: uppercase;
 
     @include bp.sm {
-      font-size: 2.25rem;
+      font-size: 36px;
       line-height: 36px;
     }
 
@@ -72,7 +72,7 @@
     text-shadow: #f5f8fb 1px 0 0.625rem;
 
     @include bp.sm {
-      font-size: 2.25rem;
+      font-size: 36px;
     }
 
     @include bp.xs {

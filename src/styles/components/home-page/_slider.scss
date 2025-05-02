@@ -1,8 +1,13 @@
+@use "./../../global/breakpoints" as bp;
+
 .slider {
   &__heading {
     margin-right: 9px;
     order: -1;
 
+    @include bp.md {
+      align-items: center;
+     }
   }
 
   &__header {
@@ -19,13 +24,17 @@
   }
 
   &__cards {
-    // display: flex;
-    // gap: 1.5rem;
-    // justify-content: space-between;
+
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 1.5rem;
 
+   
+    @include bp.md {
+     display: flex;
+     flex-wrap: inherit;
+     overflow: hidden;
+    }
   }
 
 }

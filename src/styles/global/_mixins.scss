@@ -8,18 +8,23 @@
 }
 
 @mixin heading2() {
-    font-size: 2.25rem;
-    line-height: 3rem;
+    font-size: 36px;
+    line-height: 48px;
+
+    @include bp.sm {
+   font-size: 28px;
+        
+    }
 }
 
 @mixin heading3() {
     font-size: 1.75rem;
-    line-height: 2.25rem;
+    line-height: 36px;
 }
 
 @mixin subheading3() {
     font-size: 1.75rem;
-    line-height: 2.25rem;
+    line-height: 36px;
 }
 
 @mixin subheading4() {
@@ -85,7 +90,7 @@
     @include border_tags();
     width: 100%;
     color: var(--color-secondary);
-    height: 3rem;
+    height: 48px;
     background: transparent;
     background-color: var(--color-background);
     transition: border .25s ease, outline .25s ease;
