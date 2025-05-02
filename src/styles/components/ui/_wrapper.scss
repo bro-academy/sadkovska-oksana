@@ -2,15 +2,15 @@
 
 .wrapper {
     width: 100%;
-    max-width: 162.5rem;
-    padding: 0 1.25rem;
+    max-width: 1728px;
+    padding: 0 64px;
     display: flex;
     justify-self: center;
     @include bp.sm {
         // overflow:hidden;
-        
-        
-      }  
+
+
+      }
 
     &--column {
         flex-direction: column;

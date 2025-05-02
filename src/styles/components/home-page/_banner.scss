@@ -3,8 +3,8 @@
 
 .banner {
   background: radial-gradient(42.5% 42.5% at 22.28% -4.22%,
-      var(--color-primary) 0%,
-      var(--color-gradient-banner) 100%);
+    var(--color-primary) 0%,
+    var(--color-gradient-banner) 100%);
 
   &__heading {
     @include mixin.heading1();
@@ -27,10 +27,13 @@
 
   &__content {
     display: flex;
+    gap: 100px;
+    align-items: center;
+    padding-left: 100px;
 
     @include bp.md {
       width: 100%;
-      flex-direction: column;
+      padding-left: 0;
     }
   }
 
@@ -46,7 +49,7 @@
 
   &__image-block {
 
-    @include bp.sm {
+    @include bp.md {
       display: none;
       visibility: hidden;
 
@@ -80,8 +83,8 @@
 
   &__statistics {
     display: grid;
-    grid-template-rows: 50% auto;
-    gap: 14px;
+    grid-template-columns: min-content auto;
+    gap: 14px 64px;
   }
 
   &__statistics-numbers {
@@ -94,16 +97,5 @@
     font-weight: 400;
     margin: 0;
 
-  }
-
-  &__wrapper {
-    display: flex;
-    gap: 0.75rem;
-    padding: 100px;
-
-    @include bp.sm {
-      padding: 1.5rem;
-
-    }
   }
 }

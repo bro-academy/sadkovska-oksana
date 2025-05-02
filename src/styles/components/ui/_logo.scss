@@ -1,16 +1,16 @@
 @use "./../../global/breakpoints" as bp;
 
-.logo{
-    display: flex;
-    gap: 18px;
-    
-    &__heading {
-        display: block;
-        text-align: center;
-        padding-bottom: 8px;
-    
-        @include bp.sm {
-            display: none;
-        }   
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+
+  &__heading {
+    display: block;
+    width: 134px;
+
+    @include bp.sm {
+      display: none;
     }
+  }
 }

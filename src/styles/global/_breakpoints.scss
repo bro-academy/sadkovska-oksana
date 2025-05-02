@@ -2,10 +2,9 @@
 
 $breakpoints: (
   "xs": 379px,
-  "sm": 47.9375rem,
+  "sm": 767px,
   "md": 1279px,
-  "lg": 1599px,
-  "xl": 1600px,
+  "lg": 1728px,
 );
 
 @mixin xs {
@@ -28,14 +27,15 @@ $breakpoints: (
     @content;
   }
 }
-@mixin xl {
-  @media (min-width: map.get($breakpoints, "xl")) {
-    @content;
-  }
-}
 
 @mixin breakpoint($bp: 0) {
   @media (max-width: $bp) {
     @content;
+  }
+}
+
+body {
+  @include lg {
+    color: white;
   }
 }

@@ -1,6 +1,6 @@
 .divider-vertical {
     position: relative;
-  
+
     &::after {
       content: '';
       position: absolute;
@@ -11,13 +11,12 @@
       background-color: var(--color-border-transparent);
       margin-right: 4px;
     }
-  
+
     &--right {
       margin-right: 1.25rem;
-  
+
       &::after {
-        right: -13125rem;
+        right: -1rem;
       }
     }
   }
-  
