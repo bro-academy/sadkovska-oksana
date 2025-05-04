@@ -1,22 +1,27 @@
 @use './../../global/mixins' as mixin;
 
 .main-info {
-    display: inline-block;
-  
-    &__image {
-      width: 31.25rem;
-      margin-left: 0;
-    }
-  
-    &__img-container {
-      display: flex;
-    }
-  
-    &__heading {
-      @include mixin.subheading3();
-    }
+  display: inline-block;
 
-    &__text {
-      @include mixin.text1();
-    }
+  &__image {
+    margin: 0;
+    width: 100%;
   }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__img-container {
+    display: flex;
+    gap: 24px;
+  }
+
+  &__heading {
+    @include mixin.subheading3();
+  }
+
+  &__text {
+    @include mixin.text1();
+  }
+}
