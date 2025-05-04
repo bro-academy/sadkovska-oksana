@@ -1,13 +1,11 @@
 @use "./../../global/breakpoints" as bp;
 
-.slider {
+.products-slider {
+  padding-block: 64px;
+
   &__heading {
     margin-right: 9px;
     order: -1;
-
-    @include bp.md {
-      align-items: center;
-     }
   }
 
   &__header {
@@ -24,16 +22,14 @@
   }
 
   &__cards {
-
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    overflow-y: scroll;
+    display: flex;
     gap: 1.5rem;
+    padding-bottom: 12px;
 
-   
-    @include bp.md {
-     display: flex;
-     flex-wrap: inherit;
-     overflow: hidden;
+    .product-card {
+      flex-shrink: 0;
+      flex-basis: 300px;
     }
   }
 

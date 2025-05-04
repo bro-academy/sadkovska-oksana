@@ -1,8 +1,11 @@
 @use './../../global/mixins' as mixin;
 
 .heading {
-    @include mixin.heading2();
-    &--highlight {
-        color: var(--color-primary);
-}
+  @include mixin.heading2();
+  text-align: center;
+  margin: 0;
+
+  &--highlight {
+    color: var(--color-primary);
+  }
 }

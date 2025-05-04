@@ -4,7 +4,7 @@
     <h2 class="faq__heading heading">FAQs</h2>
     {% for item in faq %}
 
-      <details class="faq__details details" open>
+      <details class="faq__details details" name="faq">
         <summary class="details__heading">{{ item.heading }}</summary>
         <p class="details__text">
           {{ item.text }}

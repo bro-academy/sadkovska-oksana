@@ -1,19 +1,18 @@
 @use "./../../global/breakpoints" as bp;
 
 .wrapper {
-    width: 100%;
-    max-width: 1728px;
-    padding: 0 64px;
-    display: flex;
-    justify-self: center;
-    @include bp.sm {
-        // overflow:hidden;
+  width: 100%;
+  max-width: 1728px;
+  padding: 0 64px;
+  display: flex;
+  justify-self: center;
 
+  @include bp.sm {
+    padding-inline: 24px;
+  }
 
-      }
-
-    &--column {
-        flex-direction: column;
-    }
+  &--column {
+    flex-direction: column;
+  }
 
 }

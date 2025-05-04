@@ -19,12 +19,5 @@
       {% block content %}default content{% endblock %}
     </main>
     {% include "partials/common/footer.njk" %}
-    <script>
-      document.addEventListener("DOMContentLoaded", () => {
-        document.querySelector('#burger').addEventListener('click', (e) => {
-          e.target.classList.toggle('burger--active');
-        })
-      });
-    </script>
   </body>
 </html>

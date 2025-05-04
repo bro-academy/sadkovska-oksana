@@ -1,42 +1,77 @@
 @use './../../global/mixins' as mixin;
+@use "./../../global/breakpoints" as bp;
 
 .team {
-    &__heading {
-      font-family: var(--font-family-secondary);
-      font-size: 1.5rem;
-    }
-  
-    &__role {
-      @include mixin.text2();
-      color: var(--color-text-secondary);
-    }
-  
-    &__block {
-      display: flex;
-      gap: 1.25rem;
-      counter-reset: cards-counter;
-      flex-wrap: wrap;
-    }
-  
-    &__item {
-      display: inline-block;
-      list-style: none;
-      max-width: 300px;
-      padding: 1.25rem;
-      border-image-slice: 50;
-      border-image-width: 50px;
-      background-color: var(--color-background-secondary);
-  
-      &:hover {
-        border-image-source: url("/img/info-card-hover-1x.webp");
-      }
-  
-      &:active {
-        outline: 2px solid var(--color-primary-hover);
-      }
-    }
-  
-    &__photo {
-      @include mixin.round_border();
+  padding-block: 64px;
+
+  &__heading {
+    @include mixin.heading2();
+    font-family: var(--font-family-secondary);
+    margin-bottom: 40px;
+  }
+
+  &__item-heading {
+    @include mixin.heading2();
+    font-family: var(--font-family-secondary);
+    margin: 16px 0 0;
+  }
+
+  &__role {
+    @include mixin.text2();
+    margin: 0 0 16px;
+    color: var(--color-text-secondary);
+  }
+
+  &__links {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+  }
+
+  &__block {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    @include bp.sm {
+      flex-wrap: nowrap;
+      overflow-y: scroll;
+      padding-bottom: 12px;
+      justify-content: unset;
     }
   }
+
+  &__item {
+    flex-basis: 300px;
+    list-style: none;
+    max-width: 300px;
+    padding: 32px;
+    border-image-slice: 50;
+    border-image-width: 50px;
+    background-color: var(--color-background-secondary);
+    text-align: center;
+
+    &:hover {
+      border-image-source: url("/img/info-card-hover-1x.webp");
+    }
+
+    &:active {
+      outline: 2px solid var(--color-primary-hover);
+    }
+  }
+
+  &__photo {
+    @include mixin.round_border();
+  }
+}

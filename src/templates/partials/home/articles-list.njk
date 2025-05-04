@@ -1,0 +1,14 @@
+<section class="articles-list">
+  <div class="articles-list__wrapper wrapper wrapper--column">
+  <h2 class="articles-list__heading heading">{{ blog__heading}}</h2>
+  <div class="articles-list__block">
+
+    {% for item in blog_card %}
+      {% include "partials/blog-card.njk" %}
+    {% endfor %}
+
+
+  </div>
+  <button class="articles-list__button button button--secondary">{{ button_read_more }}</button>
+  </div>
+</section>
