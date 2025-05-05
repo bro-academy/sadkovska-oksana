@@ -5,7 +5,12 @@
 
     &__wrapper {
         gap: 4rem;
-        flex-direction: column;
+        flex-direction: row;
+
+        @include bp.md {
+            flex-direction: column;
+          }
+      
 
     }
 
@@ -14,10 +19,10 @@
     }
     &__mobile-filter
     {
-        @include bp.md {
+        @include bp.lg {
          display: none;
           }
-          @include bp.xs{
+          @include bp.sm{
             display: block;
             
              }
