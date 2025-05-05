@@ -8,6 +8,10 @@
   @include bp.sm {
     flex-direction: column;
   }
+  &__block{
+    display: flex;
+    gap: 5px;
+  }
 
   &__item {
     @include mixin.border_tags();
@@ -16,6 +20,9 @@
 
   &__link {
     color: var(--color-secondary);
+  }
+  &__share-block{
+    margin-bottom: 64px;
   }
 
   &__tags-block,

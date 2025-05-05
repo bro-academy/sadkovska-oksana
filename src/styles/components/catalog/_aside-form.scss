@@ -1,11 +1,15 @@
 @use './../../global/mixins' as mixin;
+@use "./../../global/breakpoints" as bp;
 
 .aside-form {
-    width: 31.25rem;
+    width: 320px;
     position: sticky;
     top: 1.25rem;
     align-self: start; 
     height: max-content;
+    @include bp.sm {
+        display: none;
+      }
 
     &__details {
         padding: 1.5rem;

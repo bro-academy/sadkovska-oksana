@@ -3,8 +3,19 @@
 .aside-categories {
   background-color: var(--color-background-alternative);
   padding: 1.5rem;
-    &__heading {
-      @include mixin.subheading4();
-     
-    }
+
+  &__block {
+    // margin-block-start: unset;
+    padding-left: 0;
+  }
+  &__item{
+    padding: 10px 0;
+  }
+
+  &__heading {
+    @include mixin.subheading4();
+    border-bottom: 2px solid var(--color-border-transparent);
+    padding-bottom: 10px;
+
+  }
 }

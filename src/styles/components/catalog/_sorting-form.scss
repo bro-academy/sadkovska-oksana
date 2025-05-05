@@ -1,13 +1,20 @@
 @use './../../global/mixins' as mixin;
+@use "./../../global/breakpoints" as bp;
 
 .sorting {
     &__block {
         background-color: var(--color-background);
         display: grid;
-        grid-template-columns: 1fr auto;
+        grid-template-columns: auto auto;
         gap: 1rem 2rem;
         align-items: center;
         margin-bottom: 2.5rem;
+        @include bp.xs {
+            display: flex;
+            flex-direction: column;
+          }
+
+
     }
 
     &__controls {

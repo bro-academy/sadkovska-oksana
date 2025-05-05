@@ -21,6 +21,9 @@
   &__heading {
     @include mixin.heading1();
   }
+  &__list {
+   padding-left: 10px;
+  }
 
   &__text,
   &__list {

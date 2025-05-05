@@ -5,6 +5,7 @@
   &__wrapper {
     gap: 32px;
     max-width: 1512px;
+    flex-direction: row;
 
     @include bp.md {
       flex-direction: column;
@@ -17,7 +18,7 @@
     width: 328px;
     flex-shrink: 0;
 
-    @include bp.md {
+    @include bp.sm {
       width: 100%;
     }
   }

@@ -1,14 +1,26 @@
 @use './../../global/mixins' as mixin;
+@use "./../../global/breakpoints" as bp;
 
 .products-list {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, auto);
     gap: 32px;
     margin-bottom: 1.5rem;
+    @include bp.md {
+        grid-template-columns: repeat(2, auto);
+      }
+    @include bp.xs {
+        display: flex;
+        flex-direction: column;
+            
+      }
+
    
 
-    & > .product-card {
-        flex: 1 1 150px;
-    }
+    // & > .product-card {
+    //     flex: 1 1 150px;
+     
+
+    // }
 
 }

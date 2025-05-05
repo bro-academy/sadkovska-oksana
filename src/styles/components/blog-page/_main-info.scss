@@ -1,4 +1,5 @@
 @use './../../global/mixins' as mixin;
+@use "./../../global/breakpoints" as bp;
 
 .main-info {
   display: inline-block;
@@ -15,6 +16,19 @@
   &__img-container {
     display: flex;
     gap: 24px;
+
+    @include bp.xs {
+      display: flex;
+      flex-direction: column;
+    }
+
+    display: flex;
+    flex-direction: column;
+  }
+  &__blockquote{
+    margin: 0 0 32px 0 ;
+    
+
   }
 
   &__heading {

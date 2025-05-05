@@ -9,6 +9,9 @@
   object-fit: cover;
   margin: 0;
   position: relative;
+  @include bp.xs {
+    padding: 16px;
+  }
 
 
   &:hover {
@@ -41,12 +44,7 @@
   &__img{
     object-fit: cover;
     width: 100%;
-
-    @include bp.md {
-      width: 222px;
-
-
-    }
+    
 
 
   }
