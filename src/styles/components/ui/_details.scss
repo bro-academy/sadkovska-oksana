@@ -56,15 +56,16 @@
 
   }
 
-  &__heading-item {
+  // &__heading-item {
 
-    &::after {
-      content: '';
-      height: 2px;
-      background-color: var(--color-border-transparent);
-      display: block;
-      margin-right: 0.625rem;
-      margin-top: 1rem;
-    }
-  }
+  //   // &::after {
+  //   //   content: '';
+  //   //   height: 2px;
+  //   //   background-color: var(--color-border-transparent);
+  //   //   display: block;
+  //   //   margin-right: 0.625rem;
+  //   //   margin-top: 1rem;
+  //   // }
+  // }
+  
 }

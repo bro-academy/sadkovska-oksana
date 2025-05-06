@@ -11,7 +11,7 @@
 
                 {% for item in filter.items %}
                     
-                    <div>
+                    <div class="details__label-name">
                         <label class="details__label">
                         <input class="details__{{filter.type}} {{filter.type}}" type="{{ filter.type }}" name="{{ item.name }}" value="{{ item.value }}">
                         {{ item.label}}

@@ -1,41 +1,59 @@
 @use './../global/mixins' as mixin;
+@use "./../global/breakpoints" as bp;
 
 .footer {
-    background-color: var(--color-background-alternative);
-  
-    &__text {
-      @include mixin.text3();
-    }
-  
-    &__link {
-      @include mixin.text4();
-      color: var(--color-secondary);
-    }
-    &__main {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 4rem;
-    }
-    &__subscribe {
-      display: flex;
-      gap: 1.5rem;
-    }
-    &__bottom{
-      display: flex;
-      justify-content: space-between;
-      border-top: 2px solid var(--color-border-transparent);
-    }
-    &__links-block {
-      display: flex;
-     gap: 0.625rem;
-    }
-    &__nav-block, &__block-pages   {
-      padding-inline-start:0;
-    }
-    &__license-block {
-      padding-top: 1.25rem;
+  background-color: var(--color-background-alternative);
+
+  &__text {
+    @include mixin.text3();
+  }
+
+  &__link {
+    @include mixin.text4();
+    color: var(--color-secondary);
+  }
+
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+
+    @include bp.sm {
+      flex-direction: column;
     }
 
-  
-  
   }
+
+  &__subscribe {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid var(--color-border-transparent);
+  }
+
+  &__links-block {
+    display: flex;
+    gap: 0.625rem;
+  }
+
+  &__nav-block,
+  &__block-pages {
+    padding-inline-start: 0;
+  }
+
+  &__license-block {
+    padding-top: 1.25rem;
+  }
+
+  &__logo-heading {
+    @include bp.sm {
+      display: block;
+    }
+  }
+
+
+}
