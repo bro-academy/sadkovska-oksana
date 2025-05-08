@@ -16,14 +16,13 @@
   &__img-container {
     display: flex;
     gap: 24px;
+    flex-direction: row;
+
 
     @include bp.xs {
       display: flex;
       flex-direction: column;
     }
-
-    display: flex;
-    flex-direction: column;
   }
   &__blockquote{
     margin: 0 0 32px 0 ;

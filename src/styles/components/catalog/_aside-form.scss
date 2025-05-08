@@ -5,21 +5,38 @@
     width: 320px;
     position: sticky;
     top: 1.25rem;
-    align-self: start; 
+    align-self: start;
     height: max-content;
     margin-bottom: 32px;
 
     @include bp.md {
         display: none;
-      }
+    }
 
     &__details {
         padding: 1.5rem;
         margin-bottom: 21px;
     }
+
     &__button {
         width: inherit;
-        
+
+    }
+
+    &__mobile {
+        display: none;
+
+        @include bp.xs {
+            visibility: hidden;
+            background-color: var(--color-background);
+            display: block;
+            position: fixed;
+            top: 8px;
+            left: 0;
+            z-index: 1;
+            width: 100vw;
+            height: 100vh;
+        }
     }
 
 }

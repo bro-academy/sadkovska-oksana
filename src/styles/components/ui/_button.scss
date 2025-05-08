@@ -4,7 +4,7 @@
 .button {
   @include mixin.text1();
   @include mixin.border_tags();
-  display: inline-block;
+  display: flex;
   padding: 12px;
   font-size: 18px;
   line-height: 1.5rem;
@@ -39,6 +39,8 @@
     border-color: rgba(208, 215, 251, 0.17);
     color: var(--color-secondary);
     background-color: var(--transparent);
+    
+    
 
     &:hover {
       background-color: var(--color-secondary-hover);
@@ -60,7 +62,7 @@
   }
 
   &__icon {
-    display: inline-block;
+    display: flex;
     line-height: 1.25rem;
     vertical-align: middle;
   }

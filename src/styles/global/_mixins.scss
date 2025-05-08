@@ -5,6 +5,10 @@
     font-size: 3.25rem;
     line-height: 62px;
     font-weight: 400;
+    @include bp.sm {
+        font-size: 32px;
+             
+         }
 }
 
 @mixin heading2() {
@@ -90,7 +94,7 @@
     @include border_tags();
     width: 100%;
     color: var(--color-secondary);
-    height: 48px;
+    // height: 48px;
     background: transparent;
     background-color: var(--color-background);
     transition: border .25s ease, outline .25s ease;

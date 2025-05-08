@@ -6,8 +6,29 @@
         <input type="checkbox" class="burger__icon">
       </label>
 
+      <div class="header__mobile-nav">
+
+        <div class="header__search-mob">
+          <label class="search">
+            <input class="search__input" type="search" placeholder="Search" minlength="5"/>
+          </label>
+
+        </div>
+        <ul class="header__mobile-list">
+
+          {% for item in header_nav %}
+            <li class="header__element">
+              <a class="header__link-menu {{ "header__link--active" if activePage == item.title }}"
+               href="{{ item.link }}">{{ item.title }}</a>
+            </li>
+          {% endfor %}
+
+        </ul>
+
+      </div>
+
       <a class="header__link logo" href="/">
-        <img class="header__logo logo__img" src="img/logo.svg" alt="Logo" />
+        <img class="header__logo logo__img" src="img/logo.svg" alt="Logo"/>
         <img src="img/logo-heading.svg" class="logo__heading" alt="Logo"></img>
       </a>
     </div>
@@ -28,17 +49,17 @@
 
       <div class="header__search divider-vertical divider-vertical--right">
         <label class="search">
-          <input class="search__input" type="search" placeholder="Search" minlength="5" />
+          <input class="search__input" type="search" placeholder="Search" minlength="5"/>
         </label>
       </div>
 
       <a class="header__button-discord button button--secondary" href="#" target="_blank">
-        <img src="img/discord.svg" class="button__icon button__icon--left" alt="discort" />
+        <img src="img/discord.svg" class="button__icon button__icon--left" alt="discort"/>
         {{ header_btn_secondary }}
       </a>
 
       <button type="button" class="header__button-wallet button button--primary">
-        <img src="img/wallet.svg" class="button__icon button__icon--left" alt="wallet" />
+        <img src="img/wallet.svg" class="button__icon button__icon--left" alt="wallet"/>
         {{ header_btn_primary }}
       </button>
 

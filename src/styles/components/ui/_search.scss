@@ -1,4 +1,5 @@
 @use './../../global/mixins' as mixin;
+@use "./../global/breakpoints" as bp;
 
 .search {
     position: relative;
@@ -17,11 +18,14 @@
 
     &__input {
         @include mixin.input();
-        padding-left: 38px;
+        padding: 16px 38px;
         
         &:user-invalid {
             border: 2px solid red;
         }
+        @include bp.xs {
+            width: 321px;
+          } 
     }
 
 }

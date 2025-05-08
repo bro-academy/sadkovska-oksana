@@ -26,3 +26,33 @@
     <button class="aside-form__button button button--primary" type="submit">Apply</button>
 
 </aside>
+
+<aside class="aside-form__mobile">
+    <div class="catalog__mobile-filter select__block button button__primary">Filters</div>
+
+    {% for filter in filters %}
+        <form class="aside-form__clothing-block">
+            
+
+            <details class="aside-form__details details" open>
+                <summary class="details__heading">
+                    <h3 class="details__heading-item">{{ filter.name }}</h3>
+                    </summary>
+
+                {% for item in filter.items %}
+                    
+                    <div class="details__label-name">
+                        <label class="details__label">
+                        <input class="details__{{filter.type}} {{filter.type}}" type="{{ filter.type }}" name="{{ item.name }}" value="{{ item.value }}">
+                        {{ item.label}}
+                    </label>
+                    </div>
+
+                {% endfor %}
+            </details>
+
+        </form>
+    {% endfor %}
+    <button class="aside-form__button button button--primary" type="submit">Apply</button>
+
+</aside>

@@ -18,7 +18,7 @@
     width: 328px;
     flex-shrink: 0;
 
-    @include bp.sm {
+    @include bp.md {
       width: 100%;
     }
   }

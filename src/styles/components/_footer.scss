@@ -7,6 +7,15 @@
   &__text {
     @include mixin.text3();
   }
+  &__logo{
+    width: 36px;
+  }
+
+  &__block-logo{
+    display: flex;
+    gap: 10px;
+    align-items: center
+  }
 
   &__link {
     @include mixin.text4();

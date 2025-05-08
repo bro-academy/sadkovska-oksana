@@ -24,6 +24,19 @@
           }
           @include bp.sm{
             display: block;
+            background-color: var(--color-background);
+            margin-bottom: 16px;
+            &::before {
+                visibility: hidden;
+                content: url(/img/sorting-icon.svg);
+                position: absolute;
+                display: block;
+                width: 1.25rem;
+                height: 1.25rem;
+                top: 14px;
+                right: 26px;
+
+            }
             
              }
 

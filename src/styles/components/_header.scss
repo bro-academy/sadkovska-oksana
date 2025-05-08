@@ -2,6 +2,34 @@
 @use "./../global/breakpoints" as bp;
 
 .header {
+  &__mobile-nav {
+    display: none;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-background-secondary);
+    position: fixed;
+    left: 0;
+    top: 84px;
+    z-index: 1;
+
+    // @include bp.xs {
+    //   display: flex;
+    //   flex-direction: column;
+    // }
+
+  }
+
+  &__mobile-list {
+    display: none;
+   
+
+    @include bp.xs {
+      display: flex;
+      flex-direction: column;
+      align-items: baseline;
+      padding-left: 12px;
+    }
+  }
 
   &__wrapper {
     display: flex;
@@ -118,7 +146,7 @@
 
   &__actions {
     display: flex;
-    gap: 0.625rem;
+    gap: 10px;
   }
 
   &__search {
@@ -128,5 +156,8 @@
     @include bp.md {
       display: none;
     }
+  }
+  &__search-mob{
+    margin: 10px 16px;
   }
 }
