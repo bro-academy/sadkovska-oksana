@@ -2,83 +2,84 @@
 @use "./../../global/breakpoints" as bp;
 
 .contact-form {
+  display: flex;
+  margin: 1.25rem auto 0 auto;
+  width: 100%;
+  max-width: 600px;
+
+  @include bp.sm {
+    margin: 24px auto 0 auto;
+
+  }
+
+  @include bp.xs {
+    max-width: 328px;
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &_radio {
+    margin-left: 4px;
+  }
+
+  &__subtitle {
+    text-align: center;
+    @include mixin.subheading5();
+
+  }
+
+  &__item {
+    @include mixin.text3();
+  }
+
+  &__switcher-block {
+    background-color: var(--color-background-alternative);
+
+  }
+
+  &__switcher {
+    // margin: 1.5rem;
+    visibility: hidden;
+
+
+  }
+
+
+  &__form {
+    // max-width: 62.5rem;
+    margin-bottom: 104px;
     display: flex;
-    margin: 1.25rem auto 0 auto;
-    width: 100%;
-    max-width: 600px;
-    @include bp.sm {
-        margin: 24px auto 0 auto;
-    
-      }
-      @include bp.xs {
-        max-width: 328px;
-      }
+    flex-direction: column;
+  }
 
-    &__title {
-        text-align: center;
+  &__label {
+    display: block;
+    padding: 0.75rem 0;
+  }
+
+  &__input {
+    @include mixin.input();
+    color: rgb(217 217 217);
+
+    &:user-invalid {
+      border: 2px solid red;
     }
 
-    &_radio {
-        margin-left: 4px;
+    &:user-invalid + .contact-form__error {
+      display: block;
     }
+  }
 
-    &__subtitle {
-        text-align: center;
-        @include mixin.subheading5();
+  &__terms-link {
+    color: var(--color-primary-accent-link);
 
-    }
+  }
 
-    &__item {
-        @include mixin.text3();
-    }
-
-    &__switcher-block {
-        background-color: var(--color-background-alternative);
-
-    }
-
-    &__switcher {
-        // margin: 1.5rem;
-        visibility: hidden;
-
-
-
-    }
-
-
-    &__form {
-        // max-width: 62.5rem;
-        margin-bottom: 104px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    &__label {
-        display: block;
-        padding: 0.75rem 0;
-    }
-
-    &__input {
-        @include mixin.input();
-        color: rgb(217 217 217);
-
-        &:user-invalid {
-            border: 2px solid red;
-        }
-
-        &:user-invalid+.contact-form__error {
-            display: block;
-        }
-    }
-
-    &__terms-link {
-        color: var(--color-primary-accent-link);
-
-    }
-
-    .contact-form__error {
-        display: none;
-        color: red;
-    }
+  .contact-form__error {
+    display: none;
+    color: red;
+  }
 
 }
