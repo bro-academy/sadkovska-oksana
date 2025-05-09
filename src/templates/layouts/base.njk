@@ -10,6 +10,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Poppins:wght@400;500;600&display=swap"
     rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css"/>
+     <script>
+        window.addEventListener("load", (event) => {
+        const burgerOpener = document.querySelector(".js-burger");
+        const filterOpener = document.querySelector(".js-filter");
+        
+        burgerOpener.addEventListener("click", () => {
+          document.body.classList.remove("filter--active");
+          document.body.classList.toggle("side-menu--active");
+        });
+
+        filterOpener.addEventListener("click", () => {
+          document.body.classList.remove("side-menu--active");
+          document.body.classList.toggle("filter--active");
+        });
+
+        window.addEventListener("resize", () => {
+          document.body.classList.remove("side-menu--active");
+          document.body.classList.remove("filter--active");
+        });
+      });
+    </script>
+    <script src="js/menu.js"></script>
     {% block styles %}{% endblock %}
     <title>{{ title_site }}</title>
   </head>

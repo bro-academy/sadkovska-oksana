@@ -11,12 +11,16 @@
     left: 0;
     top: 84px;
     z-index: 1;
+    
 
-    // @include bp.xs {
-    //   display: flex;
-    //   flex-direction: column;
-    // }
+    @include bp.xs {
+      display: flex;
+      flex-direction: column;
+    }
 
+  }
+  &__logo{
+  fill: rgb(248, 18, 18);
   }
 
   &__mobile-list {
@@ -87,13 +91,13 @@
   &__link {
     text-decoration: none;
 
-    @include bp.md {
-      //flex: 1;
-      //margin-left: 1rem;
-      //height: 2.5rem;
+    // @include bp.md {
+    //   //flex: 1;
+    //   //margin-left: 1rem;
+    //   //height: 2.5rem;
 
 
-    }
+    // }
 
   }
 
