@@ -2,102 +2,79 @@
 @use "./../../global/breakpoints" as bp;
 
 .sorting {
-    &__block {
-        background-color: var(--color-background);
-        display: grid;
-        grid-template-columns: auto auto;
-        gap: 1rem 35rem;
-        align-items: center;
-        margin-bottom: 2.5rem;
-        @include bp.xs {
-            display: flex;
-            flex-direction: column;
-          }
+  margin-bottom: 32px;
 
+  &__block {
+    background-color: var(--color-background);
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 32px;
 
+    @include bp.sm {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__heading {
+    flex: 1;
+    margin: 0;
+  }
+
+  &__search {
+    @include bp.sm {
+      width: 100%;
     }
 
-    &__controls {
-        grid-column: 2 / 3;
-        display: flex;
-        gap: 1rem;
-        align-items: center;
-        flex-wrap: wrap;
-
+    input {
+      background-color: var(--color-background-secondary);
     }
+  }
 
-    &__heading {
-        grid-column: 1 / 2;
-        margin-top: 0;
+  &__filters {
+    background-color: var(--color-background-alternative);
+    grid-column: 1 / -1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 1rem;
+  }
+
+  &__select {
+    color: var(--color-secondary);
+  }
+
+  &__filter-tag {
+    background-color: var(--color-background-secondary);
+
+
+    &::after {
+      content: url("/img/cross.svg");
+      position: relative;
+      top: 0px;
+      right: -18px;
     }
+  }
 
-    &__search {
-        input {
-            background-color: var(--color-background-secondary);
-        }
-    }
+  &__dropdown,
+  &__search {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
 
-    &__filters {
+  &__dropdown-options {
+    background-color: var(--color-background-dropdown);
+    padding-bottom: 36px;
+    max-width: 173px;
+  }
 
-        background-color: var(--color-background-alternative);
-        grid-column: 1 / -1;
-        display: flex;
-        flex-wrap: wrap;
-        gap: 0.5rem;
-        margin-top: 0.5rem;
-        padding: 1rem;
-    }
-
-    &__select {
-        color: var(--color-secondary);
-    }
-
-    &__filter-tag {
-        background-color: var(--color-background-secondary);
-
-
-        &::after {
-            content: url("/img/cross.svg");
-            position: relative;
-            top: 0px;
-            right: -18px;
-        }
-    }
-
-    &__dropdown,
-    &__search {
-        display: flex;
-        align-items: center;
-        gap: 1.5rem;
-    }
-    &__dropdown {
-        @include bp.xs {
-            width: 321px;
-          }
-    }
-
-    &__dropdown-options {
-        background-color: var(--color-background-dropdown);
-        padding-bottom: 36px;
-        max-width: 173px;
-    }
-
-
-    &__controls> :first-child,
-    &__controls> :nth-child(2) {
-        display: flex;
-        gap: 1rem;
-    }
-
-    &__filter-tag {
-        @include mixin.border_tags();
-        background-color: var(--color-background-alternative);
-        color: var(--color-secondary);
-        padding: 6px 36px 6px 0.75rem;
-        text-align: left;
-    }
-
-
-
+  &__filter-tag {
+    @include mixin.border_tags();
+    background-color: var(--color-background-alternative);
+    color: var(--color-secondary);
+    padding: 6px 36px 6px 0.75rem;
+    text-align: left;
+  }
 
 }

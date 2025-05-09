@@ -2,37 +2,42 @@
 @use "./../global/breakpoints" as bp;
 
 .header {
+  position: sticky;
+  top: 0;
+  background: black;
+  z-index: 1;
+
   &__mobile-nav {
-    display: none;
-    width: 100vw;
-    height: 100vh;
-    background-color: var(--color-background-secondary);
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+
     position: fixed;
     left: 0;
+    right: 0;
     top: 84px;
+    bottom: 0;
+
     z-index: 1;
-    
 
-    @include bp.xs {
-      display: flex;
-      flex-direction: column;
-    }
-
+    background-color: var(--color-background-secondary);
+    transition: opacity .25s ease;
   }
-  &__logo{
-  fill: rgb(248, 18, 18);
+
+  &__mobile-search {
+    margin: 10px 16px;
+    width: calc(100% - 32px);
   }
 
   &__mobile-list {
-    display: none;
-   
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding-left: 12px;
+  }
 
-    @include bp.xs {
-      display: flex;
-      flex-direction: column;
-      align-items: baseline;
-      padding-left: 12px;
-    }
+  &__logo {
+    fill: rgb(248, 18, 18);
   }
 
   &__wrapper {
@@ -54,6 +59,13 @@
 
   &__burger {
     display: none;
+
+    &-icon {
+      &:checked ~ .header__mobile-nav {
+        opacity: 1;
+        visibility: visible;
+      }
+    }
 
     @include bp.md {
       display: block;
@@ -90,15 +102,6 @@
 
   &__link {
     text-decoration: none;
-
-    // @include bp.md {
-    //   //flex: 1;
-    //   //margin-left: 1rem;
-    //   //height: 2.5rem;
-
-
-    // }
-
   }
 
   &__list {
@@ -160,8 +163,5 @@
     @include bp.md {
       display: none;
     }
-  }
-  &__search-mob{
-    margin: 10px 16px;
   }
 }
