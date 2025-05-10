@@ -4,10 +4,11 @@
 .catalog {
 
   &__wrapper {
-    gap: 4rem;
+    gap: 64px;
     flex-direction: row;
 
     @include bp.md {
+      gap: 44px;
       flex-direction: column;
     }
 

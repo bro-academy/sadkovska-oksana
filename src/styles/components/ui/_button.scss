@@ -15,6 +15,10 @@
   white-space: nowrap;
   cursor: pointer;
 
+  &--full-width {
+    width: 100%;
+    justify-content: space-between;
+  }
 
   &--primary {
     background-color: var(--color-primary);
@@ -39,8 +43,8 @@
     border-color: rgba(208, 215, 251, 0.17);
     color: var(--color-secondary);
     background-color: var(--transparent);
-    
-    
+
+
 
     &:hover {
       background-color: var(--color-secondary-hover);
@@ -69,5 +73,9 @@
 
   &__icon--left {
     margin-right: 4px;
+  }
+
+  &__icon--right {
+    margin-left: 4px;
   }
 }
