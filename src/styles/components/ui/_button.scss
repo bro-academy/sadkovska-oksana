@@ -20,6 +20,8 @@
     justify-content: space-between;
   }
 
+
+
   &--primary {
     background-color: var(--color-primary);
     color: var(--color-secondary);
@@ -71,11 +73,25 @@
     vertical-align: middle;
   }
 
+  // &__icon--close{
+  //   visibility: hidden;
+  // }
+  &__icon--filter {
+    content: url("img/filter.svg");
+    transition: content 0.3s ease;
+  }
+
   &__icon--left {
     margin-right: 4px;
   }
 
   &__icon--right {
     margin-left: 4px;
+
+  }
+
+  #open-filter:checked+label .button__icon--filter {
+    content: url("img/close-button.svg");
+    
   }
 }

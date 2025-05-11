@@ -8,6 +8,7 @@
   &__heading {
     display: block;
     width: 134px;
+    color: var(--color-secondary);
 
     @include bp.sm {
       display: none;
