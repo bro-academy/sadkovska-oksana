@@ -13,10 +13,10 @@
 
 @mixin heading2() {
     font-size: 36px;
-    line-height: 48px;
+    line-height: 1.2em;
 
     @include bp.sm {
-   font-size: 28px;
+   font-size: 56px;
 
     }
 }

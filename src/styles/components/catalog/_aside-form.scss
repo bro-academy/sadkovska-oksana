@@ -76,3 +76,7 @@
     height: auto;
   }
 }
+
+#open-filter:checked + .aside-form .button__icon--filter {
+  content: url("/img/close-button.svg");    
+}
