@@ -1,15 +1,82 @@
 @use './../../global/mixins' as mixin;
+@use "./../../global/breakpoints" as bp;
 
 .aside-form {
-    width: 320px;
-    position: sticky;
-    top: 20px;
-    align-self: start; 
-    height: max-content;
+  width: 320px;
+  position: sticky;
+  top: 1.25rem;
+  align-self: start;
+  height: max-content;
+  margin-bottom: 32px;
 
-    &__details {
-        padding: 24px;
-        margin-bottom: 21px;
+  @include bp.md {
+    width: 100%;
+  }
+
+  &__filter-btn {
+    display: none;
+    margin-bottom: 20px;
+
+    @include bp.md {
+      display: flex;
     }
+  }
 
+  &__group {
+    @include bp.md {
+      opacity: 0;
+      visibility: hidden;
+      height: 0;
+    }
+  }
+
+  &__details {
+    padding: 1.5rem;
+    margin-bottom: 21px;
+  }
+
+  &__button {
+    width: inherit;
+
+  }
+
+  &__mobile {
+    display: none;
+
+    @include bp.xs {
+      visibility: hidden;
+      background-color: var(--color-background);
+      display: block;
+      position: fixed;
+      top: 8px;
+      left: 0;
+      z-index: 1;
+      width: 100vw;
+      height: 100vh;
+    }
+  }
+}
+
+#open-filter:checked + .aside-form {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  margin-bottom: 0;
+  padding: 16px;
+  background: var(--color-background);
+  height: 100%;
+  overflow: scroll;
+
+  & > .aside-form__group {
+    opacity: 1;
+    visibility: visible;
+    height: auto;
+  }
+}
+
+#open-filter:checked + .aside-form .button__icon--filter {
+  content: url("/img/close-button.svg");    
 }

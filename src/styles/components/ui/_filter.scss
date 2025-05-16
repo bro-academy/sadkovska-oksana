@@ -1,0 +1,41 @@
+@use './../../global/mixins' as mixin;
+@use "./../../global/breakpoints" as bp;
+
+.filter {
+    position: relative;
+}
+.fiter-opener{
+    width: 60px;
+    height: 60px;
+    background-color: red;
+    
+}
+
+.filter-drop {
+    position: fixed;
+    top: 280px;
+    left: 0;
+    width: 0;
+    height: 0;
+    z-index: 2;
+    transition: opacity 0.2s linear;
+    overflow-y: auto;
+  
+
+    @include bp.xs {
+        height: auto;
+        width: 100%;
+        position: static;
+    }
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 16px;
+    }
+
+    .filter--active & {
+        opacity: 1;
+        width: 100%;
+        height: calc(100vh - 80px);
+    }
+}

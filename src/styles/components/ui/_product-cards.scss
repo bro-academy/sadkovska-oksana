@@ -1,13 +1,17 @@
 @use './../../global/mixins' as mixin;
+@use "./../../global/breakpoints" as bp;
 
 .product-card {
-  padding: 24px;
+  padding: 1.5rem;
   border-image-slice: 50;
   border-image-width: 50px;
   background-color: var(--color-background-alternative);
   object-fit: cover;
   margin: 0;
   position: relative;
+  @include bp.xs {
+    padding: 16px;
+  }
 
 
   &:hover {
@@ -40,5 +44,8 @@
   &__img{
     object-fit: cover;
     width: 100%;
+    
+
+
   }
 }

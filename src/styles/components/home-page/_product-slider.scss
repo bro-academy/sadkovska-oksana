@@ -1,0 +1,56 @@
+@use "./../../global/breakpoints" as bp;
+
+.products-slider {
+  padding-block: 64px;
+  &__header-actions{
+    display: flex;
+    gap: 5px;
+    margin: 0;
+
+
+  }
+
+  &__heading {
+    margin-right: 9px;
+    order: -1;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+        @include bp.xs {
+      display: flex;
+          flex-direction: column;
+          align-items: normal;
+          margin-bottom: 32px;
+     } 
+
+    &::before {
+      content: '';
+      height: 2px;
+      background-color: var(--color-border-transparent);
+      flex-grow: 1;
+      margin-right: 0.625rem;
+      @include bp.xs {
+      position: relative;
+      top: -32px;
+      left: 139px;
+      width: 56%;
+      
+       } 
+    }
+  }
+
+  &__cards {
+    overflow-x: auto;
+    display: flex;
+    gap: 1.5rem;
+    padding-bottom: 12px;
+
+    .product-card {
+      flex-shrink: 0;
+      flex-basis: 300px;
+    }
+  }
+
+}

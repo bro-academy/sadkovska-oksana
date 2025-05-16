@@ -14,13 +14,13 @@
         color: var(--color-secondary);
         display: block;
         outline: none;
-        padding: 4px 12px;
+        padding: 4px 0.75rem;
 
     }
 
     &__button {
-        padding: 10px 56px 10px 24px;
-        margin-right: 20px;
+        padding: 0.625rem 56px 0.625rem 1.5rem;
+        margin-right: 1.25rem;
         background-color: var(--color-background);
         color: var(--color-secondary);
         border-color: var(--color-border-transparent);

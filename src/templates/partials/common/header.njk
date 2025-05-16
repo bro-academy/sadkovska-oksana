@@ -1,16 +1,43 @@
-<header class="header">
+<header class="header" id="header">
   <div class="header__wrapper wrapper">
 
-    <a class="header__link logo" href="/">
-      <img class="header__logo logo__img" src="img/logo.svg" alt="Logo"/>
-      <img src="img/logo-heading.svg" class="logo__heading" alt="Logo"></img>
-    </a>
-    <nav class="header__navigation">
+
+    <div class="header__logo-block">
+      <label id="burger" class="header__burger burger ">
+        <input type="checkbox" class="header__burger-icon burger__icon">
+
+        <div class="header__mobile-nav">
+
+          <label class="header__mobile-search search">
+            <input class="search__input" type="search" placeholder="Search" minlength="5"/>
+          </label>
+
+          <ul class="header__mobile-list">
+
+            {% for item in header_nav %}
+              <li class="header__element">
+                <a class="header__link-menu {{ "header__link--active" if activePage == item.title }}"
+                   href="{{ item.link }}">{{ item.title }}</a>
+              </li>
+            {% endfor %}
+
+          </ul>
+
+        </div>
+      </label>
+
+      <a class="header__link logo" href="/">
+        <img class="header__logo logo__img" src="img/logo.svg" alt="Logo"/>
+        <img src="img/logo-heading.svg" class="logo__heading" alt="Logo"></img>
+      </a>
+    </div>
+    <nav class="header__navigation" id="menu">
       <ul class="header__list">
 
         {% for item in header_nav %}
           <li class="header__element">
-            <a class="header__link-menu {{ "header__link--active" if activePage == item.title }}" href="{{ item.link }}">{{ item.title }}</a>
+            <a class="header__link-menu {{ "header__link--active" if activePage == item.title }}"
+               href="{{ item.link }}">{{ item.title }}</a>
           </li>
         {% endfor %}
 
@@ -25,12 +52,12 @@
         </label>
       </div>
 
-      <a class="button button--secondary" href="#" target="_blank">
+      <a class="header__button-discord button button--secondary" href="#" target="_blank">
         <img src="img/discord.svg" class="button__icon button__icon--left" alt="discort"/>
         {{ header_btn_secondary }}
       </a>
 
-      <button type="button" class="button button--primary">
+      <button type="button" class="header__button-wallet button button--primary">
         <img src="img/wallet.svg" class="button__icon button__icon--left" alt="wallet"/>
         {{ header_btn_primary }}
       </button>

@@ -1,9 +1,10 @@
 @use './../../global/mixins' as mixin;
+@use "./../../global/breakpoints" as bp;
 
 .banner {
   background: radial-gradient(42.5% 42.5% at 22.28% -4.22%,
-      var(--color-primary) 0%,
-      var(--color-gradient-banner) 100%);
+    var(--color-primary) 0%,
+    var(--color-gradient-banner) 100%);
 
   &__heading {
     @include mixin.heading1();
@@ -11,6 +12,48 @@
     color: var(--color-secondary);
     text-transform: uppercase;
 
+    @include bp.sm {
+      font-size: 36px;
+      line-height: 36px;
+    }
+
+    @include bp.xs {
+      font-size: 1.75rem;
+
+
+    }
+
+  }
+
+  &__content {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    padding-left: 100px;
+
+    @include bp.md {
+      width: 100%;
+      padding-left: 0;
+    }
+  }
+
+  &__button-block {
+    display: flex;
+    gap: 1rem;
+
+    @include bp.xs {
+      flex-direction: column;
+
+    }
+  }
+
+  &__image-block {
+
+    @include bp.md {
+      display: none;
+      visibility: hidden;
+
+    }
   }
 
   &__heading--highlight {
@@ -24,19 +67,35 @@
 
   &__statistics-numbers {
     font-family: var(--font-family-secondary);
-    font-size: 52px;
+    font-size: 3.25rem;
     font-weight: 400;
-    text-shadow: #f5f8fb 1px 0 10px;
+    text-shadow: #f5f8fb 1px 0 0.625rem;
+
+    @include bp.sm {
+      font-size: 36px;
+    }
+
+    @include bp.xs {
+      font-size: 1.75rem;
+
+    }
+  }
+
+  &__statistics {
+    display: grid;
+    grid-template-columns: min-content auto;
+    gap: 14px 64px;
+  }
+
+  &__statistics-numbers {
+    grid-row: 1;
   }
 
   &__statistics-text {
-    font-size: 16px;
+    grid-row: 2;
+    font-size: 1rem;
     font-weight: 400;
-  }
+    margin: 0;
 
-  &__wrapper {
-    display: flex;
-    gap: 12px;
-    padding: 100px;
   }
 }

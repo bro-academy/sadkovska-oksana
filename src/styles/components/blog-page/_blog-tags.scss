@@ -1,23 +1,50 @@
 @use './../../global/mixins' as mixin;
+@use "./../../global/breakpoints" as bp;
 
 .blog-tags {
   display: flex;
   justify-content: space-between;
-    &__item {
-      @include mixin.border_tags();
-      background-color: var( --transparent);
-    }
-  
-    &__link {
-      color: var(--color-secondary);
-    }
-    
-    &__tags-block,
-    &__share-block {
-      display: flex;
-      gap: 24px;
-      align-items: center;
+
+  &__heading{
+    @include bp.sm {
+      font-size: 16px;
     }
   }
+  &__share{
+    @include bp.sm {
+      font-size: 16px;
+    }
+  }
+
+  @include bp.sm {
+    flex-direction: column;
+  }
+  &__block{
+    display: flex;
+    gap: 5px;
+  }
+
+  &__item {
+    @include mixin.border_tags();
+    background-color: var(--transparent);
+  }
+
+  &__link {
+    color: var(--color-secondary);
+  }
+  &__share-block{
+    @include bp.xs {
+      margin-bottom: 64px;
+     } 
   
+  }
+
+  &__tags-block,
+  &__share-block {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+  }
+}
+
 

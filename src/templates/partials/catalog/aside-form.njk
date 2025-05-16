@@ -1,28 +1,37 @@
+<input id="open-filter" type="checkbox" hidden="hidden">
+
 <aside class="aside-form">
+  <label for="open-filter" class="aside-form__filter-btn button button--secondary button--full-width">
+    Filters
+    <img src="img/filter.svg" class="button__icon button__icon--right" alt="folder">
+        {# <img src="img/close-button.svg" class="button__icon button__icon--right button__icon--close" alt="folder"> #}
 
+
+
+  </label>
+
+  <form class="aside-form__group">
     {% for filter in filters %}
-        <form class="aside-form__clothing-block">
-            
+      <details class="aside-form__details details" open>
+        <summary class="details__heading">
+          <h3 class="details__heading-item">{{ filter.name }}</h3>
+        </summary>
 
-            <details class="aside-form__details details" open>
-                <summary class="details__heading">
-                    <h3 class="details__heading-item">{{ filter.name }}</h3>
-                    </summary>
+        {% for item in filter.items %}
 
-                {% for item in filter.items %}
-                    
-                    <div>
-                        <label class="details__label">
-                        <input class="details__{{filter.type}} {{filter.type}}" type="{{ filter.type }}" name="{{ item.name }}" value="{{ item.value }}">
-                        {{ item.label}}
-                    </label>
-                    </div>
+          <div class="details__label-name">
+            <label class="details__label">
+              <input class="details__{{ filter.type }} {{ filter.type }}" type="{{ filter.type }}"
+                     name="{{ item.name }}" value="{{ item.value }}">
+              {{ item.label }}
+            </label>
+          </div>
 
-                {% endfor %}
-            </details>
-
-        </form>
+        {% endfor %}
+      </details>
     {% endfor %}
     <button class="aside-form__button button button--primary" type="submit">Apply</button>
+  </form>
+
 
 </aside>

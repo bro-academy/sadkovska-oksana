@@ -1,7 +1,11 @@
+@use './../../global/mixins' as mixin;
+@use "./../../global/breakpoints" as bp;
+
 .breadcrumbs {
 
     &__link {
         color: var(--color-secondary);
+        font-size: 14px;
 
 
         &:hover {

@@ -1,70 +1,167 @@
 @use './../global/mixins' as mixin;
+@use "./../global/breakpoints" as bp;
 
 .header {
+  position: sticky;
+  top: 0;
+  background: black;
+  z-index: 1;
+
+  &__mobile-nav {
+    display: block;
+    opacity: 0;
+    visibility: hidden;
+
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 84px;
+    bottom: 0;
+
+    z-index: 1;
+
+    background-color: var(--color-background-secondary);
+    transition: opacity .25s ease;
+  }
+
+  &__mobile-search {
+    margin: 10px 16px;
+    width: calc(100% - 32px);
+  }
+
+  &__mobile-list {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding-left: 12px;
+  }
+
+  &__logo {
+    fill: rgb(248, 18, 18);
+  }
 
   &__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-    &__element {
-      @include mixin.text2();
-      text-align: center;
-      list-style-type: none;
-      display: inline-block;
-    }
-  
-    &__link {
-      width: 188px;
-      height: 42px;
-      text-decoration: none;
-    }
-  
-    &__link-menu {
-      text-decoration: none;
-      color: var(--color-secondary);
-      display: inline-block;
-      position: relative;
-      padding: 8px 20px;
-      transition: color .25s ease;
+    padding: 32px;
 
-  
-      &:hover {
-        color: var(--color-primary);
-      
-      }
-     
-  
-      &:active {
-        color: var(--color-primary-hover);
-      }
-  
-      &:focus {
-        color: var(--color-primary-active);
-      }
+    @include bp.md {
+      padding: 16px;
     }
-  
-    &__link--active {
-      &::after {
-        transition: background-color .25s;
-        content: '';
-        display: block;
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        height: 2px;
-        background-color: var(--color-primary);
+  }
+
+  &__logo-block {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  &__burger {
+    display: none;
+
+    &-icon {
+      &:checked ~ .header__mobile-nav {
+        opacity: 1;
+        visibility: visible;
       }
     }
 
-    &__actions {
-      display: flex;
-    }
-  
-    &__search {
-      position: relative;
+    @include bp.md {
+      display: block;
     }
   }
- 
+
+  &__navigation {
+    @include bp.md {
+      display: none;
+    }
+  }
+
+  &__button-discord {
+    @include bp.md {
+      font-size: 0;
+      line-height: 0;
+    }
+  }
+
+  &__button-wallet {
+    @include bp.xs {
+      font-size: 0;
+      line-height: 0;
+      padding-right: 8px;
+    }
+  }
+
+  &__element {
+    @include mixin.text2();
+    text-align: center;
+    list-style-type: none;
+    display: inline-block;
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+
+    @include bp.xs {
+      display: none;
+    }
+  }
+
+  &__link-menu {
+    text-decoration: none;
+    color: var(--color-secondary);
+    display: inline-block;
+    position: relative;
+    padding: 8px 1.25rem;
+    transition: color .25s ease;
+
+
+    &:hover {
+      color: var(--color-primary);
+
+    }
+
+
+    &:active {
+      color: var(--color-primary-hover);
+    }
+
+    &:focus {
+      color: var(--color-primary-active);
+    }
+  }
+
+  &__link--active {
+    &::after {
+      transition: background-color .25s;
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 2px;
+      background-color: var(--color-primary);
+    }
+  }
+
+  &__actions {
+    display: flex;
+    gap: 10px;
+  }
+
+  &__search {
+    position: relative;
+    width: 188px;
+
+    @include bp.md {
+      display: none;
+    }
+  }
+}

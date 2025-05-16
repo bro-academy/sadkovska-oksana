@@ -1,15 +1,47 @@
 @use './../../global/mixins' as mixin;
+@use "./../../global/breakpoints" as bp;
 
 .catalog {
 
-    &__wrapper {
-        gap: 64px;
+  &__wrapper {
+    gap: 64px;
+    flex-direction: row;
+
+    @include bp.md {
+      gap: 44px;
+      flex-direction: column;
+    }
+
+
+  }
+
+  &__content {
+    flex: 1;
+  }
+
+  &__mobile-filter {
+    display: none;
+
+    @include bp.sm {
+      display: block;
+      display: none;
+      background-color: var(--color-background);
+      margin-bottom: 16px;
+
+      &::before {
+        visibility: hidden;
+        content: url(/img/sorting-icon.svg);
+        position: absolute;
+        display: block;
+        width: 1.25rem;
+        height: 1.25rem;
+        top: 14px;
+        right: 26px;
+      }
 
     }
 
-    &__content {
-        flex: 1;
-    }
+  }
 
 
 }

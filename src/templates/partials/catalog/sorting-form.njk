@@ -1,40 +1,32 @@
 <div class="sorting">
-    <form class="sorting__form">
+  <form class="sorting__form">
 
-        <div class="sorting__block">
-            <h1 class="sorting__heading">{{ sorting__heading }}</h1>
-            <div class="sorting__controls">
+    <div class="sorting__block">
+      <h1 class="sorting__heading">{{ sorting__heading }}</h1>
 
-                <div class="sorting__dropdown select">
-                    <select class="sorting__select select__block button button__primary" name="selection" id="filter-by-selection">
+      <div class="sorting__dropdown select">
+        <select class="sorting__select select__block button button__primary" name="selection"
+                id="filter-by-selection">
 
-                        {% for item in select__block %}
-                            <option class="select__option" value="{{ item.value }}">Sort by {{ item.text }}</option>
-                        {% endfor %}
+          {% for item in select__block %}
+            <option class="select__option" value="{{ item.value }}">Sort by</option>
+          {% endfor %}
 
-                    </select>
-                </div>
+        </select>
+      </div>
 
-                <div class="sorting__search">
-                    
-                        <label class="search">
-                            <input class="search__input" type="search" minlength="5" placeholder="Search NFT"/>
-                        </label>
-                   
-                </div>
+      <label class="sorting__search search">
+        <input class="search__input" type="search" minlength="5" placeholder="Search NFT" />
+      </label>
 
-               
-
-            </div>
-             <div class="sorting__filters">
-
-                    {% for item in tags %}
-                        <button class="sorting__filter-tag">{{ item.filter_tag }}</button>
-                    {% endfor %}
-                     <button  type="reset" class="sorting__filter-tag--reset button-reset">Clear all</button>
-
-                    
-
-                </div>
-        </form>
     </div>
+
+    <div class="sorting__filters">
+      {% for item in tags %}
+        <button class="sorting__filter-tag">{{ item.filter_tag }}</button>
+      {% endfor %}
+      <button type="reset" class="sorting__filter-tag--reset button-reset">Clear all</button>
+    </div>
+
+  </form>
+</div>

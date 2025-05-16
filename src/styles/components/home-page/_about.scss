@@ -1,27 +1,46 @@
 @use './../../global/mixins' as mixin;
+@use "./../../global/breakpoints" as bp;
 
 .about {
-    &__heading {
-      @include mixin.heading2();
-      font-family: var(--font-family-secondary);
-      
+  padding-block: 64px;
+
+  &__heading {
+    @include mixin.heading2();
+    font-family: var(--font-family-secondary);
+  }
+
+  &__text {
+    @include mixin.subheading5();
+    margin: 0;
+  }
+
+  &__cards {
+    margin-block: 40px;
+    padding: 0;
+    display: grid;
+    gap: 32px;
+    counter-reset: cards-counter;
+    grid-template-columns: repeat(4, auto);
+
+    @include bp.md {
+      grid-template-columns: repeat(3, auto);
     }
-  
-    &__text {
-      @include mixin.subheading5();
-    }
-  
-    &__cards {
-      display: grid;
-      gap: 24px;
-      grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
-      counter-reset: cards-counter;
-    
-   
-    }
-    &__btn {
-      margin-bottom: 64px;
-    align-self: center;
+
+    @include bp.sm {
+      grid-template-columns: unset;
     }
   }
-  
+
+  &__card {
+    @include bp.md {
+      &:last-child {
+        grid-column: 1 / -1;
+      }
+    }
+  }
+
+  &__btn {
+    align-self: center;
+  }
+}
+

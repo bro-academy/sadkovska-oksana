@@ -1,16 +1,26 @@
 @use './../../global/mixins' as mixin;
+@use "./../../global/breakpoints" as bp;
 
 .button {
   @include mixin.text1();
   @include mixin.border_tags();
-  display: inline-block;
-  padding: 10px 24px;
+  display: flex;
+  padding: 12px;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 1.5rem;
   font-weight: 600;
   text-align: center;
   text-decoration: none;
-  transition: all .25s ease;
+  transition: background-color .25s ease, border .25s ease, color .25s ease;
+  white-space: nowrap;
+  cursor: pointer;
+
+  &--full-width {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+
 
   &--primary {
     background-color: var(--color-primary);
@@ -36,6 +46,8 @@
     color: var(--color-secondary);
     background-color: var(--transparent);
 
+
+
     &:hover {
       background-color: var(--color-secondary-hover);
     }
@@ -56,12 +68,25 @@
   }
 
   &__icon {
-    display: inline-block;
-    line-height: 20px;
+    display: flex;
+    line-height: 1.25rem;
     vertical-align: middle;
+  }
+
+  // &__icon--close{
+  //   visibility: hidden;
+  // }
+  &__icon--filter {
+    content: url("/img/filter.svg");
+    transition: content 0.3s ease;
   }
 
   &__icon--left {
     margin-right: 4px;
+  }
+
+  &__icon--right {
+    margin-left: 4px;
+
   }
 }

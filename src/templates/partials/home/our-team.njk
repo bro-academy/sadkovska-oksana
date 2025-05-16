@@ -7,17 +7,19 @@
 
         <li class="team__item">
           <img class="team__photo" width="{{ item.width }}" height="{{ item.height }}" src="{{ item.photo }}" alt="photo-personal" />
-          <h3 class="team__heading">{{ item.name }}</h3>
+          <h3 class="team__item-heading">{{ item.name }}</h3>
           <p class="team__role">{{ item.role }}</p>
-          <a class="team__link" href="#"><img class="team__icon" src="{{ item.twitter }}" alt="twitter" /></a>
-          <a class="team__link" href="#"><img class="team__icon" src="{{ item.facebook }}" alt="facebook" /></a>
-          <a class="team__link" href="#"><img class="team__icon" src="{{ item.telegram }}" alt="telegram" /></a>
-          <a class="team__link" href="#"><img class="team__icon" src="{{ item.linkedin }}" alt="linkedin" /></a>
-          <a class="team__link" href="#"><img class="team__icon" src="{{ item.insta }}" alt="instagram" /></a>
+          <div class="team__links">
+            <a class="team__link" href="#"><img class="team__icon" src="{{ item.twitter }}" alt="twitter" /></a>
+            <a class="team__link" href="#"><img class="team__icon" src="{{ item.facebook }}" alt="facebook" /></a>
+            <a class="team__link" href="#"><img class="team__icon" src="{{ item.telegram }}" alt="telegram" /></a>
+            <a class="team__link" href="#"><img class="team__icon" src="{{ item.linkedin }}" alt="linkedin" /></a>
+            <a class="team__link" href="#"><img class="team__icon" src="{{ item.insta }}" alt="instagram" /></a>
+          </div>
         </li>
 
         {% endfor %}
-       
+
       </ul>
       </div>
     </section>

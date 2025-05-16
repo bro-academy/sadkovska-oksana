@@ -6,12 +6,12 @@
     margin: 0;
     border-radius: 50%;
     appearance: none;
-    
+
     border: 2px solid var(--color-border-transparent);
     background-color: var(--color-background);
-    outline: 2px solid transparent;    
+    outline: 2px solid transparent;
     outline-offset: 1px;
-    
+
     transition: 0.3s;
     cursor: pointer;
 
@@ -42,7 +42,7 @@
         &:active {
             border-color: var(--color-primary);
         }
-    
+
         &:focus-visible {
             border-color: var(--color-focus-border);
             background-color: var(--color-background-alternative);

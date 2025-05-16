@@ -1,23 +1,32 @@
 @use './../../global/mixins' as mixin;
+@use "./../../global/breakpoints" as bp;
 
 .contact-info {
-    display: flex;
-    justify-content: center;
+    // display: flex;
+    // justify-content: center;
     
     &__block {
         display: flex;
         gap: 16px;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+       
     }
     
     &__item {
         border: 1px solid var(--border-contact-page);
         text-align: center;
         width: 288px;
-        padding: 40px 32px;
+        padding: 2.5rem 32px;
+        @include bp.xs {
+            width: 310px;
+          }
         
 
         // &:not(:last-child) {
-        //     margin-right: 16px;
+        //     margin-right: 1rem;
         // }
     }
 

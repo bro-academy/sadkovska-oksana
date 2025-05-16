@@ -1,22 +1,40 @@
 @use './../../global/mixins' as mixin;
+@use "./../../global/breakpoints" as bp;
 
 .main-info {
-    display: inline-block;
-  
-    &__image {
-      width: 500px;
-      margin-left: 0;
-    }
-  
-    &__img-container {
-      display: flex;
-    }
-  
-    &__heading {
-      @include mixin.subheading3();
-    }
+  display: inline-block;
 
-    &__text {
-      @include mixin.text1();
+  &__image {
+    margin: 0;
+    width: 100%;
+  }
+
+  &__img {
+    width: 100%;
+  }
+
+  &__img-container {
+    display: flex;
+    gap: 24px;
+    flex-direction: row;
+
+
+    @include bp.xs {
+      display: flex;
+      flex-direction: column;
     }
   }
+  &__blockquote{
+    margin: 0 0 32px 0 ;
+    
+
+  }
+
+  &__heading {
+    @include mixin.subheading3();
+  }
+
+  &__text {
+    @include mixin.text1();
+  }
+}

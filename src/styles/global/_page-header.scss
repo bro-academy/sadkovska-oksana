@@ -1,18 +1,27 @@
 @use './mixins' as mixin;
+@use "./breakpoints" as bp;
 
 .page-header {
-    background-image: url("/img/background-our-blog-1x.webp");
-    background-repeat: no-repeat;
-    padding: 2px;
-    background-size: cover;
-    background-position: center bottom;
-    margin-bottom: 64px;
+  background-image: url("/img/background-our-blog-1x.webp");
+  background-repeat: no-repeat;
+  padding: 2px;
+  background-size: cover;
+  background-position: center bottom;
+  margin-bottom: 64px;
+
+  @include bp.md {
+    margin-bottom: 24px;
+  }
 
   &__heading {
     @include mixin.heading1();
     font-family: var(--font-family-secondary);
     text-align: center;
     margin: 62px 0 20px;
+
+    @include bp.md {
+      margin-top: 24px;
+    }
   }
 
   &__menu {
@@ -21,6 +30,11 @@
     margin: 0 auto 198px;
     list-style-type: none;
     gap: 18px;
+
+    @include bp.md {
+      margin-bottom: 84px;
+      gap: 10px;
+    }
 
   }
 

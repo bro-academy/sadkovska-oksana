@@ -1,8 +1,12 @@
 @use './../../global/mixins' as mixin;
+@use "./../../global/breakpoints" as bp;
 
 .autor-name {
     @include mixin.text3();
     font-weight: 600;
     display: inline-block;
+    @include bp.md {
+        margin: 0
+    }
 
 }
